@@ -19,12 +19,12 @@ COPILOT_TIMEOUT = 120
 
 
 def _load_prompt() -> str:
-        path = PROMPTS_DIR / "classify.md"
-        text = path.read_text(encoding="utf-8")
-        # Strip the H1 title line (first non-empty line starting with #) — it's for humans, not the model
-        lines = text.splitlines()
-        body_lines = [l for i, l in enumerate(lines) if not (i == 0 and l.startswith("#"))]
-        return "\n".join(body_lines).lstrip("\n")
+    path = PROMPTS_DIR / "classify.md"
+    text = path.read_text(encoding="utf-8")
+    # Strip the H1 title line (first non-empty line starting with #) — it's for humans, not the model
+    lines = text.splitlines()
+    body_lines = [l for i, l in enumerate(lines) if not (i == 0 and l.startswith("#"))]
+    return "\n".join(body_lines).lstrip("\n")
 
 
 _cached_prompt: str | None = None
@@ -106,7 +106,11 @@ def main() -> None:
         print("Staging file is empty — nothing to classify")
         sys.exit(0)
 
-    skip_classify = os.environ.get("SKIP_CLASSIFY", "").strip().lower() in ("1", "true", "yes")
+    skip_classify = os.environ.get("SKIP_CLASSIFY", "").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+    )
 
     classified: list[dict] = []
     counts: dict[str, int] = {}

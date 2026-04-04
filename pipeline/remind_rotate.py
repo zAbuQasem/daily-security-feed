@@ -67,7 +67,7 @@ def build_embed() -> dict:
     fields.append(
         {
             "name": "Creator",
-            "value": creator_line().replace("Creator: ", ""),
+            "value": creator_line(),
             "inline": False,
         }
     )

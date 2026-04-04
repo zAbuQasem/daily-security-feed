@@ -110,6 +110,7 @@ jobs:
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          PAGES_URL: ${{ vars.PAGES_URL || '' }}
 
       - name: Notify Discord — failure
         if: failure()

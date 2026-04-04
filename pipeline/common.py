@@ -10,13 +10,12 @@ from config import (
     LINKEDIN_HANDLE,
     LINKEDIN_URL,
     NOTIFY_CHANNELS_ENV,
-    STAGING_FILE,
 )
 
 
 def channel_enabled(channel: str) -> bool:
     raw = os.environ.get(NOTIFY_CHANNELS_ENV, DEFAULT_NOTIFY_CHANNELS).strip().lower()
-    return not raw or raw in ("both", channel)
+    return not raw or raw == "both" or channel in [c.strip() for c in raw.split(",")]
 
 
 def run_date() -> str:
@@ -35,10 +34,11 @@ def creator_tags() -> list[str]:
 
 
 def creator_line() -> str:
-    return (
-        f"GitHub: @{GITHUB_HANDLE}\n"
-        f"LinkedIn: {LINKEDIN_URL}"
-    )
+    return f"GitHub: @{GITHUB_HANDLE}\nLinkedIn: {LINKEDIN_URL}"
+
+
+def truncate(text: str, length: int) -> str:
+    return text[: length - 1] + "\u2026" if len(text) > length else text
 
 
 def read_json_file(path: Path, default):
@@ -52,7 +52,3 @@ def read_json_file(path: Path, default):
 
 def load_articles() -> list[dict]:
     return read_json_file(CLASSIFIED_FILE, [])
-
-
-def load_staged_count() -> int:
-    return len(read_json_file(STAGING_FILE, []))

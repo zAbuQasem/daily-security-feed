@@ -5,15 +5,15 @@ Sends a Discord embed notification after the pipeline runs.
 
 Usage:
     # Success
-    python scripts/notify_discord.py success
+    python pipeline/notify_discord.py success
 
     # Failure
-    python scripts/notify_discord.py failure --step "Step 2 — Classify with Copilot"
+    python pipeline/notify_discord.py failure --step "Step 2 — Classify with Copilot"
 
 Environment variables:
     DISCORD_WEBHOOK_URL   Discord webhook URL (repo secret)
     RUN_URL               GitHub Actions run URL (set in workflow)
-    RUN_DATE              ISO date string (set in workflow)
+    RUN_DATE              ISO date string (optional, defaults to today UTC)
     NOTIFY_CHANNELS       Notification targets: discord, slack, both, or comma-separated list
 """
 
@@ -24,97 +24,59 @@ import sys
 import urllib.request
 from datetime import datetime, timezone
 
-from common import channel_enabled, creator_line, load_articles, run_date, run_url
+from common import (
+    channel_enabled,
+    creator_line,
+    load_articles,
+    run_date,
+    run_url,
+    truncate,
+)
 from config import USER_AGENT
 
 COLOR_SUCCESS = 0x57F287  # green
 COLOR_FAILURE = 0xED4245  # red
 
+MAX_TITLE_LEN = 80
 
-def _build_category_embed(
-    articles: list[dict],
-    categories: list[tuple[str, str, int]],
-    title: str,
-    color: int,
-) -> dict | None:
-    MAX_TITLE_LEN = 80
 
-    by_category: dict[str, list[dict]] = {}
-    for a in articles:
-        cat = a.get("category", "noise")
-        by_category.setdefault(cat, []).append(a)
+def build_feed_embed(articles: list[dict]) -> dict:
+    """Build a single embed with all research articles sorted by priority."""
+    title = f"📡  Today's Feed  ·  {run_date()}"
+    creator_field = {"name": "Creator", "value": creator_line(), "inline": False}
 
-    sections = []
-    for cat_key, cat_label, limit in categories:
-        cat_articles = sorted(
-            by_category.get(cat_key, []),
-            key=lambda a: (a.get("priority") or 3),
-        )[:limit]
-        if not cat_articles:
-            continue
-        lines = [f"**{cat_label}**"] if cat_label else []
-        for i, a in enumerate(cat_articles, 1):
-            t = a.get("title", "Untitled")
-            if len(t) > MAX_TITLE_LEN:
-                t = t[: MAX_TITLE_LEN - 1] + "…"
-            url = a.get("url", "")
-            tags = a.get("tags", [])
-            tag_str = "  " + " ".join(f"`{tag}`" for tag in tags[:3]) if tags else ""
-            lines.append(f"{i}. [{t}]({url}){tag_str}" if url else f"{i}. {t}{tag_str}")
-        sections.append("\n".join(lines))
+    sorted_articles = sorted(articles, key=lambda a: a.get("priority") or 3)
 
-    if not sections:
-        return None
+    if not sorted_articles:
+        embed = {
+            "title": title,
+            "description": "No new content today.",
+            "color": 0x99AAB5,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "fields": [creator_field],
+        }
+        url = run_url()
+        if url:
+            embed["url"] = url
+        return embed
 
-    description = "\n\n".join(sections)
+    lines = []
+    for i, a in enumerate(sorted_articles, 1):
+        t = truncate(a.get("title", "Untitled"), MAX_TITLE_LEN)
+        url = a.get("url", "")
+        lines.append(f"{i}. [{t}]({url})" if url else f"{i}. {t}")
+
+    description = "\n".join(lines)
     if len(description) > 4096:
         description = description[:4093] + "…"
 
     return {
         "title": title,
         "description": description,
-        "color": color,
+        "color": COLOR_SUCCESS,
         "timestamp": datetime.now(timezone.utc).isoformat(),
+        "fields": [creator_field],
     }
-
-
-def build_feed_embed(articles: list[dict]) -> dict | None:
-    """All articles: Research first, then Security Feed, sorted by priority."""
-    embed = _build_category_embed(
-        articles,
-        categories=[
-            ("research", "", 100),
-        ],
-        title=f"📡  Today's Feed  ·  {run_date()}",
-        color=COLOR_SUCCESS,
-    )
-    if embed is not None:
-        embed["fields"] = [
-            {
-                "name": "Creator",
-                "value": creator_line().replace("Creator: ", ""),
-                "inline": False,
-            }
-        ]
-        return embed
-
-    fallback = {
-        "title": f"📡  Today's Feed  ·  {run_date()}",
-        "description": "No new content today.",
-        "color": 0x99AAB5,
-        "timestamp": datetime.now(timezone.utc).isoformat(),
-    }
-    url = run_url()
-    if url:
-        fallback["url"] = url
-    fallback["fields"] = [
-        {
-            "name": "Creator",
-            "value": creator_line().replace("Creator: ", ""),
-            "inline": False,
-        }
-    ]
-    return fallback
 
 
 def build_failure_embed(step: str) -> dict:
@@ -137,7 +99,7 @@ def build_failure_embed(step: str) -> dict:
     embed["fields"].append(
         {
             "name": "Creator",
-            "value": creator_line().replace("Creator: ", ""),
+            "value": creator_line(),
             "inline": False,
         }
     )
@@ -187,9 +149,7 @@ def main() -> None:
 
     if args.mode == "success":
         articles = load_articles()
-        feed = build_feed_embed(articles)
-        if feed:
-            send([feed])
+        send([build_feed_embed(articles)])
     else:
         send([build_failure_embed(args.step)])
 
