@@ -48,9 +48,11 @@ jobs:
         run: uv sync
 
       - name: Install Copilot CLI
+        if: vars.SKIP_CLASSIFY != 'true'
         run: npm i -g @github/copilot
 
       - name: Cache Copilot CLI tokens
+        if: vars.SKIP_CLASSIFY != 'true'
         uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684  # v4.2.3
         with:
           path: ~/.config/github-copilot

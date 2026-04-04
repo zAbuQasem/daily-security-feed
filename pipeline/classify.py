@@ -27,12 +27,19 @@ def _load_prompt() -> str:
         return "\n".join(body_lines).lstrip("\n")
 
 
-SYSTEM_PROMPT = _load_prompt()
+_cached_prompt: str | None = None
+
+
+def _get_prompt() -> str:
+    global _cached_prompt
+    if _cached_prompt is None:
+        _cached_prompt = _load_prompt()
+    return _cached_prompt
 
 
 def classify_article(article: dict) -> dict | None:
     prompt = (
-        f"{SYSTEM_PROMPT}\n\n"
+        f"{_get_prompt()}\n\n"
         f"---\n\n"
         f"Title: {article['title']}\n"
         f"URL: {article['url']}\n"
