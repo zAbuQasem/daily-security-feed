@@ -41,9 +41,9 @@ notify_slack.py     →  Slack webhooks
 
 **persist_state.py** commits `state/processed_urls.json`, `logs/urls.txt`, and `site/_posts/` in a single commit by `github-actions[bot]`.
 
-**notify_discord.py** sends one daily feed embed on success (research only), sorted by priority, including creator info. On failure, it sends a red embed with failed step and run link.
+**notify_discord.py** sends one daily feed embed on success (research only), sorted by priority. On failure, it sends a red embed with failed step and run link.
 
-**notify_slack.py** sends a Slack webhook message using Block Kit on success or failure. Success groups research items by priority (critical/solid/low) with colored emoji indicators, stats summary, and footer links to the Pages site and GitHub Actions run. Failure shows the failed step with a "View Logs" button. Both include creator links.
+**notify_slack.py** sends a Slack webhook message using Block Kit on success or failure. Success groups research items by priority (critical/solid/low) with colored emoji indicators, stats summary, and footer links to the Pages site and GitHub Actions run. Failure shows the failed step with a "View Logs" button.
 
 **remind_rotate.py** sends a monthly Discord/Slack reminder to rotate `COPILOT_TOKEN`, plus a warning that untrusted feed content can attempt indirect prompt injection and secret exfiltration.
 

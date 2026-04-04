@@ -24,14 +24,7 @@ import sys
 import urllib.request
 from datetime import datetime, timezone
 
-from common import (
-    channel_enabled,
-    creator_line,
-    load_articles,
-    run_date,
-    run_url,
-    truncate,
-)
+from common import channel_enabled, load_articles, run_date, run_url, truncate
 from config import USER_AGENT
 
 COLOR_SUCCESS = 0x57F287  # green
@@ -43,7 +36,6 @@ MAX_TITLE_LEN = 80
 def build_feed_embed(articles: list[dict]) -> dict:
     """Build a single embed with all research articles sorted by priority."""
     title = f"📡  Today's Feed  ·  {run_date()}"
-    creator_field = {"name": "Creator", "value": creator_line(), "inline": False}
 
     sorted_articles = sorted(articles, key=lambda a: a.get("priority") or 3)
 
@@ -53,7 +45,6 @@ def build_feed_embed(articles: list[dict]) -> dict:
             "description": "No new content today.",
             "color": 0x99AAB5,
             "timestamp": datetime.now(timezone.utc).isoformat(),
-            "fields": [creator_field],
         }
         url = run_url()
         if url:
@@ -75,7 +66,6 @@ def build_feed_embed(articles: list[dict]) -> dict:
         "description": description,
         "color": COLOR_SUCCESS,
         "timestamp": datetime.now(timezone.utc).isoformat(),
-        "fields": [creator_field],
     }
 
 
@@ -95,14 +85,6 @@ def build_failure_embed(step: str) -> dict:
         embed["fields"].append(
             {"name": "Logs", "value": f"[View run →]({url})", "inline": False}
         )
-
-    embed["fields"].append(
-        {
-            "name": "Creator",
-            "value": creator_line(),
-            "inline": False,
-        }
-    )
 
     return embed
 

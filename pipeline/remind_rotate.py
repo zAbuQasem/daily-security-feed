@@ -16,7 +16,7 @@ import sys
 import urllib.request
 from datetime import datetime, timezone
 
-from common import channel_enabled, creator_line
+from common import channel_enabled
 from config import USER_AGENT
 
 COLOR_WARNING = 0xFEE75C  # yellow
@@ -61,13 +61,6 @@ def build_embed() -> dict:
                 "Update each value in **Repo → Settings → Secrets → Actions**\n"
                 "then re-run the pipeline to verify."
             ),
-            "inline": False,
-        }
-    )
-    fields.append(
-        {
-            "name": "Creator",
-            "value": creator_line(),
             "inline": False,
         }
     )
@@ -130,7 +123,6 @@ def build_slack_payload() -> dict:
     ]
     if run_url:
         lines.append(f"Workflow run: {run_url}")
-    lines.append(creator_line())
     return {"text": "\n".join(lines)}
 
 

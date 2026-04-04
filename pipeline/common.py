@@ -8,7 +8,6 @@ from config import (
     DEFAULT_NOTIFY_CHANNELS,
     GITHUB_HANDLE,
     LINKEDIN_HANDLE,
-    LINKEDIN_URL,
     NOTIFY_CHANNELS_ENV,
 )
 
@@ -31,10 +30,6 @@ def creator_tags() -> list[str]:
         f"github-{GITHUB_HANDLE.lower()}",
         f"linkedin-{LINKEDIN_HANDLE}",
     ]
-
-
-def creator_line() -> str:
-    return f"GitHub: @{GITHUB_HANDLE}\nLinkedIn: {LINKEDIN_URL}"
 
 
 def truncate(text: str, length: int) -> str:

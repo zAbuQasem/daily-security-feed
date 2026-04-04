@@ -22,7 +22,7 @@ import os
 import sys
 import urllib.request
 from common import channel_enabled, load_articles, run_date, run_url, truncate
-from config import GITHUB_HANDLE, LINKEDIN_URL, USER_AGENT
+from config import USER_AGENT
 
 PRIORITY_EMOJI = {
     1: ":red_circle:",
@@ -158,9 +158,14 @@ def build_success_payload(articles: list[dict]) -> dict:
         footer_parts.append(f"<{pages}|:globe_with_meridians: Browse feed>")
     if url:
         footer_parts.append(f"<{url}|:gear: View run>")
-    footer_parts.append(
-        f"<https://github.com/{GITHUB_HANDLE}|:bust_in_silhouette: @{GITHUB_HANDLE}>"
-    )
+
+    if footer_parts:
+        blocks.append(
+            {
+                "type": "context",
+                "elements": [{"type": "mrkdwn", "text": "  │  ".join(footer_parts)}],
+            }
+        )
     footer_parts.append(f"<{LINKEDIN_URL}|:briefcase: LinkedIn>")
 
     blocks.append(
@@ -211,22 +216,6 @@ def build_failure_payload(step: str) -> dict:
                 ],
             }
         )
-
-    blocks.append({"type": "divider"})
-    blocks.append(
-        {
-            "type": "context",
-            "elements": [
-                {
-                    "type": "mrkdwn",
-                    "text": (
-                        f"<https://github.com/{GITHUB_HANDLE}|@{GITHUB_HANDLE}>"
-                        f"  \u2502  <{LINKEDIN_URL}|LinkedIn>"
-                    ),
-                }
-            ],
-        }
-    )
 
     return {
         "text": f"\u274c Security Feed failed on {date} at: {step}",
