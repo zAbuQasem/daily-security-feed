@@ -41,7 +41,7 @@ notify_slack.py     →  Slack webhooks
 
 **persist_state.py** commits `state/processed_urls.json`, `logs/urls.txt`, and `site/_posts/` in a single commit by `github-actions[bot]`.
 
-**notify_discord.py** sends one daily feed embed on success (research only), sorted by priority. On failure, it sends a red embed with failed step and run link.
+**notify_discord.py** sends one daily feed embed on success (research only), sorted by priority, with a "Browse feed" link to the GitHub Pages site when `PAGES_URL` is set. On failure, it sends a red embed with failed step, run link, and feed link.
 
 **notify_slack.py** sends a Slack webhook message using Block Kit on success or failure. Success groups research items by priority (critical/solid/low) with colored emoji indicators, stats summary, and footer links to the Pages site and GitHub Actions run. Failure shows the failed step with a "View Logs" button.
 
@@ -82,7 +82,7 @@ Priority controls sort order within each section in the Discord feed embed.
 | AI model | `AI_MODEL` repo variable (e.g. `claude-sonnet-4-6`) |
 | Skip classification | `SKIP_CLASSIFY` repo variable (`true` to bypass AI and publish all articles unfiltered) |
 | Notification channels | `NOTIFY_CHANNELS` repo variable (`both`, `discord`, or `slack`) |
-| Pages URL | `PAGES_URL` env var (optional, used by Slack "Browse feed" link) |
+| Pages URL | `PAGES_URL` repo variable (optional, used by Discord and Slack "Browse feed" links) |
 | Creator branding | Hardcoded in `pipeline/config.py` (`GITHUB_HANDLE`, `LINKEDIN_URL`) |
 
 ## Security Guidance

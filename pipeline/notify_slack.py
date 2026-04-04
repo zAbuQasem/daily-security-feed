@@ -21,7 +21,14 @@ import json
 import os
 import sys
 import urllib.request
-from common import channel_enabled, load_articles, run_date, run_url, truncate
+from common import (
+    channel_enabled,
+    load_articles,
+    pages_url,
+    run_date,
+    run_url,
+    truncate,
+)
 from config import USER_AGENT
 
 PRIORITY_EMOJI = {
@@ -30,10 +37,6 @@ PRIORITY_EMOJI = {
     3: ":large_blue_circle:",
 }
 PRIORITY_LABEL = {1: "Critical", 2: "Solid", 3: "Low"}
-
-
-def _pages_url() -> str:
-    return os.environ.get("PAGES_URL", "").strip()
 
 
 def send(payload: dict) -> None:
@@ -153,7 +156,7 @@ def build_success_payload(articles: list[dict]) -> dict:
     # -- Footer actions --
     footer_parts = []
     url = run_url()
-    pages = _pages_url()
+    pages = pages_url()
     if pages:
         footer_parts.append(f"<{pages}|:globe_with_meridians: Browse feed>")
     if url:
@@ -166,14 +169,6 @@ def build_success_payload(articles: list[dict]) -> dict:
                 "elements": [{"type": "mrkdwn", "text": "  │  ".join(footer_parts)}],
             }
         )
-    footer_parts.append(f"<{LINKEDIN_URL}|:briefcase: LinkedIn>")
-
-    blocks.append(
-        {
-            "type": "context",
-            "elements": [{"type": "mrkdwn", "text": "  \u2502  ".join(footer_parts)}],
-        }
-    )
 
     # Fallback text for notifications/previews
     fallback = f"\U0001f4e1 Security Feed {date} \u2014 {len(articles)} article{'s' if len(articles) != 1 else ''}"
@@ -213,6 +208,20 @@ def build_failure_payload(step: str) -> dict:
                         "url": url,
                         "style": "danger",
                     },
+                ],
+            }
+        )
+
+    pages = pages_url()
+    if pages:
+        blocks.append(
+            {
+                "type": "context",
+                "elements": [
+                    {
+                        "type": "mrkdwn",
+                        "text": f"<{pages}|:globe_with_meridians: Browse feed>",
+                    }
                 ],
             }
         )

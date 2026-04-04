@@ -102,6 +102,7 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          PAGES_URL: ${{ vars.PAGES_URL || '' }}
 
       - name: Notify Slack — success
         if: success()
@@ -119,6 +120,7 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          PAGES_URL: ${{ vars.PAGES_URL || '' }}
 
       - name: Notify Slack — failure
         if: failure()
@@ -127,3 +129,4 @@ jobs:
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          PAGES_URL: ${{ vars.PAGES_URL || '' }}

@@ -60,6 +60,7 @@ flowchart TD
 | `AI_MODEL` | `claude-sonnet-4-6` | AI model used by the Copilot classifier |
 | `NOTIFY_CHANNELS` | `both`, `discord`, or `slack` | Where to send notifications (default: `both`) |
 | `SKIP_CLASSIFY` | `true` or `false` | Skip AI classification — publish all fetched articles (default: `false`) |
+| `PAGES_URL` | `https://you.github.io/security-feed-monitor/` | GitHub Pages site URL — included as a "Browse feed" link in Discord and Slack notifications |
 
 > [!NOTE]
 > Requires an active GitHub Copilot Pro subscription on the repo owner's account.

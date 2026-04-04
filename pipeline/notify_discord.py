@@ -15,6 +15,7 @@ Environment variables:
     RUN_URL               GitHub Actions run URL (set in workflow)
     RUN_DATE              ISO date string (optional, defaults to today UTC)
     NOTIFY_CHANNELS       Notification targets: discord, slack, both, or comma-separated list
+    PAGES_URL             GitHub Pages site URL (optional, for "Browse feed" link)
 """
 
 import argparse
@@ -24,7 +25,14 @@ import sys
 import urllib.request
 from datetime import datetime, timezone
 
-from common import channel_enabled, load_articles, run_date, run_url, truncate
+from common import (
+    channel_enabled,
+    load_articles,
+    pages_url,
+    run_date,
+    run_url,
+    truncate,
+)
 from config import USER_AGENT
 
 COLOR_SUCCESS = 0x57F287  # green
@@ -36,6 +44,7 @@ MAX_TITLE_LEN = 80
 def build_feed_embed(articles: list[dict]) -> dict:
     """Build a single embed with all research articles sorted by priority."""
     title = f"📡  Today's Feed  ·  {run_date()}"
+    pages = pages_url()
 
     sorted_articles = sorted(articles, key=lambda a: a.get("priority") or 3)
 
@@ -46,9 +55,8 @@ def build_feed_embed(articles: list[dict]) -> dict:
             "color": 0x99AAB5,
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
-        url = run_url()
-        if url:
-            embed["url"] = url
+        if pages:
+            embed["url"] = pages
         return embed
 
     lines = []
@@ -57,16 +65,22 @@ def build_feed_embed(articles: list[dict]) -> dict:
         url = a.get("url", "")
         lines.append(f"{i}. [{t}]({url})" if url else f"{i}. {t}")
 
+    if pages:
+        lines.append(f"\n[Browse feed →]({pages})")
+
     description = "\n".join(lines)
     if len(description) > 4096:
         description = description[:4093] + "…"
 
-    return {
+    embed = {
         "title": title,
         "description": description,
         "color": COLOR_SUCCESS,
         "timestamp": datetime.now(timezone.utc).isoformat(),
     }
+    if pages:
+        embed["url"] = pages
+    return embed
 
 
 def build_failure_embed(step: str) -> dict:
@@ -84,6 +98,12 @@ def build_failure_embed(step: str) -> dict:
         embed["url"] = url
         embed["fields"].append(
             {"name": "Logs", "value": f"[View run →]({url})", "inline": False}
+        )
+
+    pages = pages_url()
+    if pages:
+        embed["fields"].append(
+            {"name": "Feed", "value": f"[Browse feed →]({pages})", "inline": False}
         )
 
     return embed

@@ -25,6 +25,10 @@ def run_url() -> str:
     return os.environ.get("RUN_URL", "")
 
 
+def pages_url() -> str:
+    return os.environ.get("PAGES_URL", "").strip()
+
+
 def creator_tags() -> list[str]:
     return [
         f"github-{GITHUB_HANDLE.lower()}",
