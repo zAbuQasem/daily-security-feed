@@ -83,7 +83,7 @@ Do not use a classic PAT here. Keep the token scoped only for Copilot requests.
 | Articles per run | `MAX_ARTICLES` env var (workflow default: 15) |
 | Entries per feed | `ENTRIES_PER_FEED` env var (default: 5) |
 | Feed freshness | `FEED_MAX_AGE_DAYS` env var (default: 1, set `0` to disable) |
-| AI prompt | `prompts/classify.md` |
+| AI system prompt | `prompts/classify.md` |
 | Site theme | `_config.yml` and `_layouts/` |
 
 ## Security warning
