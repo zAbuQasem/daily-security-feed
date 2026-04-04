@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article>
+  <h2>{{ page.title }}</h2>
+  <p style="color: var(--muted); font-size: 0.85rem; margin: 0.5rem 0 1rem;">
+    {{ page.date | date: "%b %d, %Y" }}
+    {% if page.priority %}<span class="badge badge-{{ page.priority }}">P{{ page.priority }}</span>{% endif %}
+    {% if page.feed %} · {{ page.feed }}{% endif %}
+  </p>
+
+  {% if page.tags.size > 0 %}
+  <div style="margin-bottom: 1rem;">
+    {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+  </div>
+  {% endif %}
+
+  <div style="line-height: 1.7;">{{ content }}</div>
+
+  {% if page.url %}
+  <p style="margin-top: 1.5rem;">
+    <a href="{{ page.url }}" target="_blank" rel="noopener">Read original article →</a>
+  </p>
+  {% endif %}
+
+  <p style="margin-top: 2rem;"><a href="{{ '/' | relative_url }}">← Back to feed</a></p>
+</article>

@@ -1,0 +1,125 @@
+name: daily-security-feed-bot
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+      timezone: "Asia/Amman"
+  workflow_dispatch:
+    inputs:
+      max_articles:
+        description: "Max articles to process per run (default: 15)"
+        required: false
+        default: "15"
+
+permissions:
+  contents: write
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f  # v6.3.0
+        with:
+          node-version: "23"
+
+      - name: Install safe-chain
+        run: curl -fsSL https://github.com/AikidoSec/safe-chain/releases/latest/download/install-safe-chain.sh | sh -s -- --ci
+
+      - name: Install Defuddle
+        run: npm install -g defuddle
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
+        with:
+          python-version: "3.14"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@bd01e18f51369d5a26f1651c3cb451d3417e3bba  # v6.3.1
+
+      - name: Install Python dependencies
+        run: uv sync
+
+      - name: Install Copilot CLI
+        run: npm i -g @github/copilot
+
+      - name: Cache Copilot CLI tokens
+        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684  # v4.2.3
+        with:
+          path: ~/.config/github-copilot
+          key: copilot-cli-${{ runner.os }}
+
+      - name: Init state dirs
+        run: |
+          mkdir -p state logs _posts
+          if [ ! -f state/processed_urls.json ]; then
+            echo '{"processed_urls": [], "last_updated": null}' > state/processed_urls.json
+          fi
+
+      - name: Step 1 — Fetch feeds + extract content
+        run: uv run python scripts/fetch_feeds.py
+        env:
+          MAX_ARTICLES: ${{ github.event.inputs.max_articles || '15' }}
+
+      - name: Step 2 — Classify with Copilot
+        timeout-minutes: 50
+        run: uv run python scripts/classify.py
+        env:
+          COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_TOKEN }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+
+      - name: Step 3 — Write vault notes
+        run: uv run python scripts/write_vault.py
+
+      - name: Step 4 — Persist feed state
+        run: uv run python scripts/persist_state.py
+
+      - name: Upload staging artifacts (for debugging)
+        if: always()
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f  # v7.0.0
+        with:
+          name: pipeline-state-${{ github.run_id }}
+          path: |
+            state/staged_articles.json
+            state/classified_articles.json
+            _posts/
+          retention-days: 7
+
+      - name: Notify Discord — success
+        if: success()
+        run: uv run python scripts/notify_discord.py success
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: Notify Slack — success
+        if: success()
+        run: uv run python scripts/notify_slack.py success
+        env:
+          NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: Notify Discord — failure
+        if: failure()
+        run: uv run python scripts/notify_discord.py failure --step "${{ github.job }}"
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: Notify Slack — failure
+        if: failure()
+        run: uv run python scripts/notify_slack.py failure --step "${{ github.job }}"
+        env:
+          NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}

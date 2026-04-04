@@ -1,0 +1,26 @@
+title: Security Feed Monitor
+description: AI-curated security research feed — auto-updated daily
+remote_theme: pages-themes/hacker@v0.2.0
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - scripts/
+  - feeds/
+  - state/
+  - logs/
+  - prompts/
+  - pyproject.toml
+  - uv.lock
+  - AGENTS.md
+  - CLAUDE.md
+  - LICENSE
+  - .github/
+  - .superpowers/

@@ -1,0 +1,7 @@
+state/staged_articles.json
+state/classified_articles.json
+__pycache__/
+.env
+_site/
+.jekyll-cache/
+.superpowers/
