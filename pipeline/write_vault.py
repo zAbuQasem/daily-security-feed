@@ -47,7 +47,7 @@ def build_note(article: dict) -> str:
         "---\n"
         "layout: post\n"
         f'title: "{title.replace(chr(34), chr(39))}"\n'
-        f"url: {url}\n"
+        f"source_url: {url}\n"
         f"date: {date}\n"
         f"priority: {priority}\n"
         f"tags: {tag_yaml}\n"

@@ -1,27 +1,41 @@
 ---
 layout: default
 ---
-<article>
-  <h2>{{ page.title }}</h2>
-  <p style="color: var(--muted); font-size: 0.85rem; margin: 0.5rem 0 1rem;">
-    {{ page.date | date: "%b %d, %Y" }}
-    {% if page.priority %}<span class="badge badge-{{ page.priority }}">P{{ page.priority }}</span>{% endif %}
-    {% if page.feed %} · {{ page.feed }}{% endif %}
-  </p>
+<article class="post-article">
+  <a href="{{ '/' | relative_url }}" class="post-article__back">&larr; Back to feed</a>
 
-  {% if page.tags.size > 0 %}
-  <div style="margin-bottom: 1rem;">
-    {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+  <div class="post-article__header">
+    <h2 class="post-article__title">{{ page.title }}</h2>
+    <div class="post-article__meta">
+      <span class="post-article__date">{{ page.date | date: "%b %d, %Y" }}</span>
+      {% if page.priority %}<span class="badge badge-{{ page.priority }}">P{{ page.priority }}</span>{% endif %}
+      {% if page.feed %}<span class="post-article__feed" title="{{ page.feed }}">{{ page.feed | remove: "https://" | remove: "http://" | split: "/" | first }}</span>{% endif %}
+    </div>
+
+    {% assign filtered_tags = "" | split: "" %}
+    {% for tag in page.tags %}
+      {% assign _skip = false %}
+      {% if tag contains "github-" %}{% assign _skip = true %}{% endif %}
+      {% if tag contains "linkedin-" %}{% assign _skip = true %}{% endif %}
+      {% unless _skip %}
+        {% assign filtered_tags = filtered_tags | push: tag %}
+      {% endunless %}
+    {% endfor %}
+
+    {% if filtered_tags.size > 0 %}
+    <div class="post-article__tags">
+      {% for tag in filtered_tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
   </div>
+
+  <div class="post-article__body">
+    {{ content }}
+  </div>
+
+  {% if page.source_url %}
+  <a href="{{ page.source_url }}" class="post-article__source" target="_blank" rel="noopener">
+    Read original article &rarr;
+  </a>
   {% endif %}
-
-  <div style="line-height: 1.7;">{{ content }}</div>
-
-  {% if page.url %}
-  <p style="margin-top: 1.5rem;">
-    <a href="{{ page.url }}" target="_blank" rel="noopener">Read original article →</a>
-  </p>
-  {% endif %}
-
-  <p style="margin-top: 2rem;"><a href="{{ '/' | relative_url }}">← Back to feed</a></p>
 </article>
