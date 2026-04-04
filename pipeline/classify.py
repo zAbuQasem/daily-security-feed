@@ -99,11 +99,32 @@ def main() -> None:
         print("Staging file is empty — nothing to classify")
         sys.exit(0)
 
+    skip_classify = os.environ.get("SKIP_CLASSIFY", "").strip().lower() in ("1", "true", "yes")
+
     classified: list[dict] = []
     counts: dict[str, int] = {}
 
     for i, article in enumerate(articles, 1):
         print(f"[{i}/{len(articles)}] {article['title'][:70]}")
+
+        if skip_classify:
+            print("  → research (classification skipped)")
+            classified.append(
+                {
+                    "url": article["url"],
+                    "title": article["title"],
+                    "feed": article["feed"],
+                    "fetched_at": article["fetched_at"],
+                    "classified_at": datetime.now(timezone.utc).isoformat(),
+                    "category": "research",
+                    "priority": 2,
+                    "tags": [],
+                    "summary": "",
+                }
+            )
+            counts["research"] = counts.get("research", 0) + 1
+            continue
+
         result = classify_article(article)
         if result is None:
             continue

@@ -21,7 +21,7 @@ flowchart TD
     A["⏰ Cronjob — Daily at 05:00 Asia/Amman · UTC+3"]:::trigger
     B["Fetch & scrape new articles from RSS feeds"]:::fetch
     C["Filter & classify with AI keep research, assign priority"]:::classify
-    D["Write markdown posts to _posts/"]:::write
+    D["Write markdown posts to site/_posts/"]:::write
     E["Commit & push → Jekyll rebuilds GitHub Pages"]:::persist
     F["Post digest to Discord"]:::notify
     G["Post digest to Slack"]:::notify
@@ -59,6 +59,7 @@ flowchart TD
 | --- | --- | --- |
 | `AI_MODEL` | `claude-sonnet-4-6` | AI model used by the Copilot classifier |
 | `NOTIFY_CHANNELS` | `both`, `discord`, or `slack` | Where to send notifications (default: `both`) |
+| `SKIP_CLASSIFY` | `true` or `false` | Skip AI classification — publish all fetched articles (default: `false`) |
 
 > [!NOTE]
 > Requires an active GitHub Copilot Pro subscription on the repo owner's account.
@@ -84,7 +85,7 @@ Do not use a classic PAT here. Keep the token scoped only for Copilot requests.
 | Entries per feed | `ENTRIES_PER_FEED` env var (default: 5) |
 | Feed freshness | `FEED_MAX_AGE_DAYS` env var (default: 1, set `0` to disable) |
 | AI system prompt | `prompts/classify.md` |
-| Site theme | `_config.yml` and `_layouts/` |
+| Site theme | `site/_config.yml` and `site/_layouts/` |
 
 ## Security warning
 

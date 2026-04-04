@@ -11,23 +11,23 @@ npm install -g defuddle
 npm install -g @github/copilot   # required by classify.py
 
 # Run the pipeline step by step
-MAX_ARTICLES=5 uv run python scripts/fetch_feeds.py
-COPILOT_GITHUB_TOKEN=<fine-grained-pat> uv run python scripts/classify.py
-uv run python scripts/write_vault.py
-uv run python scripts/persist_state.py
+MAX_ARTICLES=5 uv run python pipeline/fetch_feeds.py
+COPILOT_GITHUB_TOKEN=<fine-grained-pat> uv run python pipeline/classify.py
+uv run python pipeline/write_vault.py
+uv run python pipeline/persist_state.py
 ```
 
 There are no tests. The staging files (`state/staged_articles.json`, `state/classified_articles.json`) are the main debugging surface — run steps individually and inspect them between runs.
 
 ## Architecture
 
-The pipeline runs as sequential Python scripts, each writing a file consumed by the next:
+Pipeline code lives in `pipeline/`, Jekyll site files in `site/`. The pipeline runs as sequential Python modules, each writing a file consumed by the next:
 
 ```text
 fetch_feeds.py      →  state/staged_articles.json
 classify.py         →  state/classified_articles.json
-write_vault.py      →  _posts/YYYY-MM-DD-slug.md  (Jekyll posts)
-persist_state.py    →  git push (state/processed_urls.json + logs/urls.txt + _posts)
+write_vault.py      →  site/_posts/YYYY-MM-DD-slug.md  (Jekyll posts)
+persist_state.py    →  git push (state/processed_urls.json + logs/urls.txt + site/_posts)
                         → triggers pages.yml → Jekyll rebuilds GitHub Pages
 notify_discord.py   →  Discord webhooks
 notify_slack.py     →  Slack webhooks
@@ -35,11 +35,11 @@ notify_slack.py     →  Slack webhooks
 
 **fetch_feeds.py** parses `feeds/feeds.yaml`, fetches up to `ENTRIES_PER_FEED` recent entries per feed via `feedparser` using 30 concurrent workers, skips URLs already in `state/processed_urls.json`, then calls `defuddle parse --json --md <url>` as a subprocess for each new article. It can filter by publication age with `FEED_MAX_AGE_DAYS` (default 1, set to 0 to disable). All candidate URLs are marked seen during scanning, so `processed_urls.json` grows even for capped/failed fetches. Articles shorter than 200 chars are discarded but still marked seen. Content is capped at 8000 chars. Caps at `MAX_ARTICLES` (default 100 in code; workflow default is 15). Appends processed URLs to `logs/urls.txt` with `[YYYY-MM-DD]` prefix.
 
-**classify.py** calls the `@github/copilot` npm CLI as a subprocess (`copilot --prompt "..." --allow-all-tools --allow-all-paths`), one process per article with a 120s timeout. Auth is via `COPILOT_GITHUB_TOKEN` env var — must be a **fine-grained PAT with Copilot Requests: Read permission** (classic `ghp_` PATs are rejected). Prompt text is loaded from `prompts/classify.md`. The classifier returns structured JSON with `category`, `tags`, `priority`, and `summary`. Only `research` articles are persisted to `state/classified_articles.json`. JSON is extracted by finding the first `{` and last `}` in stdout (Copilot CLI emits preamble before the JSON).
+**classify.py** calls the `@github/copilot` npm CLI as a subprocess (`copilot --prompt "..." --allow-all-tools --allow-all-paths`), one process per article with a 120s timeout. Auth is via `COPILOT_GITHUB_TOKEN` env var — must be a **fine-grained PAT with Copilot Requests: Read permission** (classic `ghp_` PATs are rejected). Prompt text is loaded from `prompts/classify.md`. The classifier returns structured JSON with `category`, `tags`, `priority`, and `summary`. Only `research` articles are persisted to `state/classified_articles.json`. JSON is extracted by finding the first `{` and last `}` in stdout (Copilot CLI emits preamble before the JSON). When `SKIP_CLASSIFY=true`, AI classification is bypassed entirely — all fetched articles are published as research with priority 2, no tags, and no summary. This removes the Copilot dependency for users who just want an unfiltered feed.
 
-**write_vault.py** reads `state/classified_articles.json` and writes Jekyll-compatible markdown posts to `_posts/` with frontmatter (`layout`, `title`, `url`, `date`, `priority`, `tags`, `feed`) and the AI summary body. Files are named `YYYY-MM-DD-slug.md`. Creator tags are always appended.
+**write_vault.py** reads `state/classified_articles.json` and writes Jekyll-compatible markdown posts to `site/_posts/` with frontmatter (`layout`, `title`, `url`, `date`, `priority`, `tags`, `feed`) and the AI summary body. Files are named `YYYY-MM-DD-slug.md`. Creator tags are always appended.
 
-**persist_state.py** commits `state/processed_urls.json`, `logs/urls.txt`, and `_posts/` in a single commit by `github-actions[bot]`.
+**persist_state.py** commits `state/processed_urls.json`, `logs/urls.txt`, and `site/_posts/` in a single commit by `github-actions[bot]`.
 
 **notify_discord.py** sends one daily feed embed on success (research only), sorted by priority, including creator info. On failure, it sends a red embed with failed step and run link.
 
@@ -80,12 +80,13 @@ Priority controls sort order within each section in the Discord feed embed.
 | Discord webhook | `DISCORD_WEBHOOK_URL` secret |
 | Slack webhook | `SLACK_WEBHOOK_URL` secret |
 | AI model | `AI_MODEL` repo variable (e.g. `claude-sonnet-4-6`) |
+| Skip classification | `SKIP_CLASSIFY` repo variable (`true` to bypass AI and publish all articles unfiltered) |
 | Notification channels | `NOTIFY_CHANNELS` repo variable (`both`, `discord`, or `slack`) |
-| Creator branding | Hardcoded in `scripts/config.py` (`GITHUB_HANDLE`, `LINKEDIN_URL`) |
+| Creator branding | Hardcoded in `pipeline/config.py` (`GITHUB_HANDLE`, `LINKEDIN_URL`) |
 
 ## Security Guidance
 
-Requires an active GitHub Copilot Pro subscription on the repository owner's account.
+Requires an active GitHub Copilot Pro subscription on the repository owner's account (not needed when `SKIP_CLASSIFY=true`).
 
 Create `COPILOT_TOKEN` as a fine-grained PAT with only `Copilot Requests: Read`. Store it only in GitHub Actions secrets and rotate it monthly.
 

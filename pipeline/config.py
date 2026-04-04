@@ -8,7 +8,7 @@ STAGING_FILE = STATE_DIR / "staged_articles.json"
 PROCESSED_URLS_FILE = STATE_DIR / "processed_urls.json"
 URL_LOG_FILE = REPO_ROOT / "logs" / "urls.txt"
 FEEDS_FILE = REPO_ROOT / "feeds" / "feeds.yaml"
-VAULT_DIR = REPO_ROOT / "_posts"
+VAULT_DIR = REPO_ROOT / "site" / "_posts"
 PROMPTS_DIR = REPO_ROOT / "prompts"
 
 NOTIFY_CHANNELS_ENV = "NOTIFY_CHANNELS"

@@ -12,15 +12,5 @@ defaults:
       layout: "post"
 
 exclude:
-  - scripts/
-  - feeds/
-  - state/
-  - logs/
-  - prompts/
-  - pyproject.toml
-  - uv.lock
-  - AGENTS.md
-  - CLAUDE.md
-  - LICENSE
-  - .github/
-  - .superpowers/
+  - Gemfile
+  - Gemfile.lock

@@ -3,7 +3,7 @@ persist_state.py
 
 Step 4 of the pipeline:
 - Commits and pushes updated state files needed for future deduplication
-- Also commits new vault/research notes written by write_vault.py
+- Also commits new Jekyll posts written by write_vault.py to site/_posts/
 """
 
 import os
@@ -12,9 +12,6 @@ import sys
 from datetime import datetime, timezone
 
 from config import PROCESSED_URLS_FILE, REPO_ROOT, URL_LOG_FILE, VAULT_DIR
-
-# Also stage index.md in case it was created on first run
-INDEX_FILE = REPO_ROOT / "index.md"
 
 TRACKED_PATHS = [
     str(PROCESSED_URLS_FILE.relative_to(REPO_ROOT)),

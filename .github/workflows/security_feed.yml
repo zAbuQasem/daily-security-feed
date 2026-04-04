@@ -58,28 +58,29 @@ jobs:
 
       - name: Init state dirs
         run: |
-          mkdir -p state logs _posts
+          mkdir -p state logs site/_posts
           if [ ! -f state/processed_urls.json ]; then
             echo '{"processed_urls": [], "last_updated": null}' > state/processed_urls.json
           fi
 
       - name: Step 1 — Fetch feeds + extract content
-        run: uv run python scripts/fetch_feeds.py
+        run: uv run python pipeline/fetch_feeds.py
         env:
           MAX_ARTICLES: ${{ github.event.inputs.max_articles || '15' }}
 
       - name: Step 2 — Classify with Copilot
         timeout-minutes: 50
-        run: uv run python scripts/classify.py
+        run: uv run python pipeline/classify.py
         env:
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_TOKEN }}
           AI_MODEL: ${{ vars.AI_MODEL }}
+          SKIP_CLASSIFY: ${{ vars.SKIP_CLASSIFY || 'false' }}
 
       - name: Step 3 — Write vault notes
-        run: uv run python scripts/write_vault.py
+        run: uv run python pipeline/write_vault.py
 
       - name: Step 4 — Persist feed state
-        run: uv run python scripts/persist_state.py
+        run: uv run python pipeline/persist_state.py
 
       - name: Upload staging artifacts (for debugging)
         if: always()
@@ -89,12 +90,12 @@ jobs:
           path: |
             state/staged_articles.json
             state/classified_articles.json
-            _posts/
+            site/_posts/
           retention-days: 7
 
       - name: Notify Discord — success
         if: success()
-        run: uv run python scripts/notify_discord.py success
+        run: uv run python pipeline/notify_discord.py success
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
@@ -102,7 +103,7 @@ jobs:
 
       - name: Notify Slack — success
         if: success()
-        run: uv run python scripts/notify_slack.py success
+        run: uv run python pipeline/notify_slack.py success
         env:
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
@@ -110,7 +111,7 @@ jobs:
 
       - name: Notify Discord — failure
         if: failure()
-        run: uv run python scripts/notify_discord.py failure --step "${{ github.job }}"
+        run: uv run python pipeline/notify_discord.py failure --step "${{ github.job }}"
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
@@ -118,7 +119,7 @@ jobs:
 
       - name: Notify Slack — failure
         if: failure()
-        run: uv run python scripts/notify_slack.py failure --step "${{ github.job }}"
+        run: uv run python pipeline/notify_slack.py failure --step "${{ github.job }}"
         env:
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

@@ -3,8 +3,8 @@ write_vault.py
 
 Step 3 of the pipeline:
 - Reads state/classified_articles.json
-- For each research article, writes a Markdown note to vault/research/
-- Notes include YAML frontmatter and the AI-generated summary
+- For each research article, writes a Jekyll post to site/_posts/
+- Posts include YAML frontmatter and the AI-generated summary
 - Skips articles that already have a note (idempotent)
 """
 
