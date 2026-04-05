@@ -1,2 +1,3 @@
 [2026-04-04] https://srd.cx/ato-bec/
 [2026-04-04] https://www.wiz.io/blog/six-accounts-one-actor-inside-the-prt-scan-supply-chain-campaign
+[2026-04-05] https://0xdf.gitlab.io/2026/04/04/htb-darkzero.html
