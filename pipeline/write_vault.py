@@ -31,32 +31,60 @@ def note_path(article: dict):
     return VAULT_DIR / f"{date}-{slug}.md"
 
 
+def _priority_label(priority: int) -> str:
+    return {1: "critical", 2: "solid", 3: "low"}.get(priority, "low")
+
+
 def build_note(article: dict) -> str:
     title = article.get("title", "Untitled")
     url = article.get("url", "")
-    tags = (article.get("tags") or []) + creator_tags()
+    category = article.get("category", "research")
+    tags = [t for t in (article.get("tags") or []) + creator_tags()
+            if not t.startswith("github-") and not t.startswith("linkedin-")]
     priority = article.get("priority", 3)
-    date = (article.get("fetched_at") or "")[:10]
+    date = (article.get("fetched_at") or "")[:19]  # YYYY-MM-DDTHH:MM:SS
+    if len(date) == 10:
+        date += " 00:00:00"
+    else:
+        date = date.replace("T", " ")
     feed = article.get("feed", "")
     summary = article.get("summary", "").strip()
+    feed_domain = feed.replace("https://", "").replace("http://", "").split("/")[0] if feed else ""
 
     unique_tags = list(dict.fromkeys(tags))
     tag_yaml = "[" + ", ".join(unique_tags) + "]" if unique_tags else "[]"
 
+    # Chirpy uses categories for hierarchy and tags for cross-cutting labels
+    categories = [category.replace("_", " ").title(), _priority_label(priority).title()]
+    cat_yaml = "[" + ", ".join(categories) + "]"
+
+    # Escape title for YAML
+    safe_title = title.replace('"', '\\"')
+
     frontmatter = (
         "---\n"
         "layout: post\n"
-        f'title: "{title.replace(chr(34), chr(39))}"\n'
-        f"source_url: {url}\n"
-        f"date: {date}\n"
-        f"priority: {priority}\n"
+        f'title: "{safe_title}"\n'
+        f"date: {date} +0300\n"
+        f"categories: {cat_yaml}\n"
         f"tags: {tag_yaml}\n"
-        f"feed: {feed}\n"
+        f"pin: {'true' if priority == 1 else 'false'}\n"
+        "toc: true\n"
         "---\n"
     )
 
-    body = summary if summary else "_No summary available._"
-    return frontmatter + "\n" + body + "\n"
+    body_parts = []
+    if summary:
+        body_parts.append(summary)
+    else:
+        body_parts.append("_No summary available._")
+
+    if url:
+        body_parts.append(f"\n---\n\n[Read original article]({url}){{: .btn .btn-primary }}")
+    if feed_domain:
+        body_parts.append(f"\n> Source: `{feed_domain}`\n{{: .prompt-info }}")
+
+    return frontmatter + "\n" + "\n".join(body_parts) + "\n"
 
 
 def main() -> None:

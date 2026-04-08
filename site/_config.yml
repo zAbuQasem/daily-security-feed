@@ -1,16 +1,70 @@
+theme: jekyll-theme-chirpy
+
+lang: en
+timezone: Asia/Amman
+
 title: Security Feed Monitor
-description: AI-curated security research feed — auto-updated daily
-remote_theme: pages-themes/hacker@v0.2.0
+tagline: AI-curated security research feed -- auto-updated daily
+description: >-
+  AI-curated security research feed. New articles classified and published
+  daily from 300+ security blogs, researchers, and vendors.
 
-permalink: /:year/:month/:day/:title/
+url: ""
 
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+social:
+  name: zAbuQasem
+  links:
+    - https://github.com/zAbuQasem
+    - https://www.linkedin.com/in/zeyad-abulaban/
+
+github:
+  username: zAbuQasem
+
+analytics:
+  google:
+    id:
+
+comments:
+  provider:
+
+assets:
+  self_host:
+    enabled: false
+
+toc: true
+
+paginate: 20
+
+permalink: /posts/:title/
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
 
 exclude:
   - Gemfile
   - Gemfile.lock
+  - "*.gem"
+  - node_modules
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      pin: false

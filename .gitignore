@@ -7,3 +7,6 @@ _site/
 .superpowers/
 .claude/
 .ruff_cache/
+site/Gemfile.lock
+site/.jekyll-cache/
+site/_site/
