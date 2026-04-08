@@ -2,9 +2,8 @@
 layout: post
 title: "What is LLM Penetration Testing? A Complete Guide"
 date: 2026-04-07 00:00:00 +0300
-categories: [Research, Low]
+categories: [Research]
 tags: [llm, prompt-injection, ai-security, methodology, pentesting]
-pin: false
 toc: true
 ---
 

@@ -2,9 +2,8 @@
 layout: post
 title: "Adversaries sometimes compute gradients. Other times, they rob you."
 date: 2026-04-08 00:00:00 +0300
-categories: [Research, Solid]
+categories: [Research]
 tags: [offensive-ml, evasion, red-team, phishing, malware]
-pin: false
 toc: true
 ---
 

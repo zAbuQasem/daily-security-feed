@@ -2,9 +2,8 @@
 layout: post
 title: "Understanding Current Threats to Kubernetes Environments"
 date: 2026-04-07 00:00:00 +0300
-categories: [Research, Critical]
+categories: [Research]
 tags: [kubernetes, cloud, token-theft, lateral-movement, apt]
-pin: true
 toc: true
 ---
 

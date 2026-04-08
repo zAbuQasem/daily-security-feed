@@ -3,7 +3,7 @@ theme: jekyll-theme-chirpy
 lang: en
 timezone: Asia/Amman
 
-title: zAbuQasem
+title: Zeyad AbuLaban
 tagline: AI-curated security research feed -- auto-updated daily
 description: >-
   AI-curated security research feed. New articles classified and published
@@ -12,7 +12,7 @@ description: >-
 url: "https://zabuqasem.github.io"
 baseurl: "/security-feed-monitor"
 
-avatar: "https://avatars.githubusercontent.com/u/63492370"
+avatar: "/assets/img/avatar.jpeg"
 
 social:
   name: zAbuQasem

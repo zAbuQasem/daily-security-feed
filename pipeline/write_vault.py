@@ -31,17 +31,12 @@ def note_path(article: dict):
     return VAULT_DIR / f"{date}-{slug}.md"
 
 
-def _priority_label(priority: int) -> str:
-    return {1: "critical", 2: "solid", 3: "low"}.get(priority, "low")
-
-
 def build_note(article: dict) -> str:
     title = article.get("title", "Untitled")
     url = article.get("url", "")
     category = article.get("category", "research")
     tags = [t for t in (article.get("tags") or []) + creator_tags()
             if not t.startswith("github-") and not t.startswith("linkedin-")]
-    priority = article.get("priority", 3)
     date = (article.get("fetched_at") or "")[:19]  # YYYY-MM-DDTHH:MM:SS
     if len(date) == 10:
         date += " 00:00:00"
@@ -54,9 +49,7 @@ def build_note(article: dict) -> str:
     unique_tags = list(dict.fromkeys(tags))
     tag_yaml = "[" + ", ".join(unique_tags) + "]" if unique_tags else "[]"
 
-    # Chirpy uses categories for hierarchy and tags for cross-cutting labels
-    categories = [category.replace("_", " ").title(), _priority_label(priority).title()]
-    cat_yaml = "[" + ", ".join(categories) + "]"
+    cat_yaml = "[" + category.replace("_", " ").title() + "]"
 
     # Escape title for YAML
     safe_title = title.replace('"', '\\"')
@@ -68,7 +61,6 @@ def build_note(article: dict) -> str:
         f"date: {date} +0300\n"
         f"categories: {cat_yaml}\n"
         f"tags: {tag_yaml}\n"
-        f"pin: {'true' if priority == 1 else 'false'}\n"
         "toc: true\n"
         "---\n"
     )

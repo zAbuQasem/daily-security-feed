@@ -2,9 +2,8 @@
 layout: post
 title: "Yandex Services Source Code Leak"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research, Solid]
+categories: [Research]
 tags: [source-code-leak, data-breach, threat-intelligence, api-keys]
-pin: false
 toc: true
 ---
 

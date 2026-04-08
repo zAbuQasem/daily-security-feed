@@ -2,9 +2,8 @@
 layout: post
 title: "Six Accounts, One Actor: Inside the prt-scan Supply Chain Campaign"
 date: 2026-04-04 00:00:00 +0300
-categories: [Research, Critical]
+categories: [Research]
 tags: [supply-chain, ci-cd, pull_request_target, npm]
-pin: true
 toc: true
 ---
 

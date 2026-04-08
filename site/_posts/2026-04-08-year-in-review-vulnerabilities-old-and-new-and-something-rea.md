@@ -2,9 +2,8 @@
 layout: post
 title: "Year in Review: Vulnerabilities old and new and something React2"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research, Solid]
+categories: [Research]
 tags: [threat-intelligence, rce, exploit, detection, cve]
-pin: false
 toc: true
 ---
 

@@ -2,9 +2,8 @@
 layout: post
 title: "Remote Session Enumeration via Undocumented Windows APIs"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research, Solid]
+categories: [Research]
 tags: [windows, enumeration, red-team, undocumented-api, rdp]
-pin: false
 toc: true
 ---
 

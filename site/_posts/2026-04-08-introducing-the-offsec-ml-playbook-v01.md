@@ -2,9 +2,8 @@
 layout: post
 title: "Introducing the Offsec ML Playbook v0.1"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research, Solid]
+categories: [Research]
 tags: [supply-chain, ml-security, adversarial-ml, llm, ttp]
-pin: false
 toc: true
 ---
 

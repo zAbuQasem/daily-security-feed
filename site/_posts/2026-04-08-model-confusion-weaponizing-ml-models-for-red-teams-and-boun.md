@@ -2,9 +2,8 @@
 layout: post
 title: "Model Confusion - Weaponizing ML models for red teams and bounty hunters"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research, Critical]
+categories: [Research]
 tags: [supply-chain, ml-security, malware, hugging-face, red-team]
-pin: true
 toc: true
 ---
 
