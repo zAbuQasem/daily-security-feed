@@ -143,8 +143,6 @@ def main() -> None:
         category = result.get("category", "noise")
         counts[category] = counts.get(category, 0) + 1
         print(f"  → {category}")
-        if category != "research":
-            continue
         classified.append(
             {
                 "url": article["url"],
