@@ -9,7 +9,8 @@ description: >-
   AI-curated security research feed. New articles classified and published
   daily from 300+ security blogs, researchers, and vendors.
 
-url: ""
+url: "https://zabuqasem.github.io"
+baseurl: "/security-feed-monitor"
 
 social:
   name: zAbuQasem
