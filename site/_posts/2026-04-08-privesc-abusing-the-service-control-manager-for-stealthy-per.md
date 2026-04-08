@@ -12,5 +12,3 @@ A Windows local privilege escalation technique abuses the Service Control Manage
 ---
 
 [Read original article](https://0xv1n.github.io/posts/scmanager/)
-
-> Source: `0xv1n.github.io`

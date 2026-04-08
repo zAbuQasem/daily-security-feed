@@ -12,5 +12,3 @@ This HTB write-up for the hard-rated DarkZero box covers a two-forest Windows AD
 ---
 
 [Read original article](https://0xdf.gitlab.io/2026/04/04/htb-darkzero.html)
-
-> Source: `0xdf.gitlab.io`

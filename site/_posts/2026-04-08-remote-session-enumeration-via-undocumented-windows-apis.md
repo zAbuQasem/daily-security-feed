@@ -12,5 +12,3 @@ This article demonstrates remote user session enumeration on Windows hosts using
 ---
 
 [Read original article](https://0xv1n.github.io/posts/sessionenumeration/)
-
-> Source: `0xv1n.github.io`

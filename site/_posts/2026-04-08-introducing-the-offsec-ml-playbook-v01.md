@@ -12,5 +12,3 @@ The Offsec ML Playbook v0.1 is a structured wiki of offensive ML TTPs organized 
 ---
 
 [Read original article](https://5stars217.github.io/2023-10-26-introducing-offsec-ml-framework/)
-
-> Source: `5stars217.github.io`

@@ -12,5 +12,3 @@ Wiz traces a multi-account supply chain campaign ('prt-scan') exploiting the Git
 ---
 
 [Read original article](https://www.wiz.io/blog/six-accounts-one-actor-inside-the-prt-scan-supply-chain-campaign)
-
-> Source: `www.wiz.io`

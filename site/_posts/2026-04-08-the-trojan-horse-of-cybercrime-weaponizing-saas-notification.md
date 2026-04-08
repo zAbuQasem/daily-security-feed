@@ -12,5 +12,3 @@ Cisco Talos documents a technique dubbed Platform-as-a-Proxy (PaaP), where attac
 ---
 
 [Read original article](https://blog.talosintelligence.com/weaponizing-saas-notification-pipelines/)
-
-> Source: `blog.talosintelligence.com`

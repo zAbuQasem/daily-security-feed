@@ -12,5 +12,3 @@ This article analyzes the practical attack surface that makes malicious ML model
 ---
 
 [Read original article](https://5stars217.github.io/2024-03-04-what-enables-malicious-models/)
-
-> Source: `5stars217.github.io`

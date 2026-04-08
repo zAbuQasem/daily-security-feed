@@ -12,5 +12,3 @@ Unit 42 researchers discovered that AWS Bedrock AgentCore's Code Interpreter san
 ---
 
 [Read original article](https://unit42.paloaltonetworks.com/bypass-of-aws-sandbox-network-isolation-mode/)
-
-> Source: `unit42.paloaltonetworks.com`

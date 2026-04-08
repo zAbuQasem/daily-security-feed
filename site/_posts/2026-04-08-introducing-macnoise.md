@@ -12,5 +12,3 @@ MacNoise is a modular macOS telemetry noise generator written in Go, designed to
 ---
 
 [Read original article](https://0xv1n.github.io/posts/macnoise/)
-
-> Source: `0xv1n.github.io`

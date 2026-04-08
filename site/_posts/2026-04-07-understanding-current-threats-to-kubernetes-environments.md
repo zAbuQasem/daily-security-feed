@@ -12,5 +12,3 @@ Unit 42 presents two real-world Kubernetes attack case studies showing a 282% ye
 ---
 
 [Read original article](https://unit42.paloaltonetworks.com/modern-kubernetes-threats/)
-
-> Source: `unit42.paloaltonetworks.com`

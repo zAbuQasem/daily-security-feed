@@ -12,5 +12,3 @@ Proprietary source code for virtually all major Yandex services was leaked via t
 ---
 
 [Read original article](https://arseniyshestakov.com/2023/01/26/yandex-services-source-code-leak/)
-
-> Source: `arseniyshestakov.com`

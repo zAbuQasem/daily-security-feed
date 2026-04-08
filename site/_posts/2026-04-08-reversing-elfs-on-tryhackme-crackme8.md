@@ -12,5 +12,3 @@ A CTF write-up for TryHackMe's crackme8 challenge, walking through static and dy
 ---
 
 [Read original article](https://0xv1n.github.io/posts/crackme8/)
-
-> Source: `0xv1n.github.io`

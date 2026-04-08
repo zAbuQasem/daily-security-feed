@@ -12,5 +12,3 @@ Talos's 2025 Year in Review highlights the year's most exploited vulnerabilities
 ---
 
 [Read original article](https://blog.talosintelligence.com/year-in-review-vulnerabilities-old-and-new-and-something-react2/)
-
-> Source: `blog.talosintelligence.com`

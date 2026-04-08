@@ -12,5 +12,3 @@ TrustedSec's final installment in their detection foundation series focuses on c
 ---
 
 [Read original article](https://trustedsec.com/blog/building-a-detection-foundation-part-5-correlation-in-practice)
-
-> Source: `trustedsec.com`

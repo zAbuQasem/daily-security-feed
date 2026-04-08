@@ -42,9 +42,7 @@ def build_note(article: dict) -> str:
         date += " 00:00:00"
     else:
         date = date.replace("T", " ")
-    feed = article.get("feed", "")
     summary = article.get("summary", "").strip()
-    feed_domain = feed.replace("https://", "").replace("http://", "").split("/")[0] if feed else ""
 
     unique_tags = list(dict.fromkeys(tags))
     tag_yaml = "[" + ", ".join(unique_tags) + "]" if unique_tags else "[]"
@@ -73,8 +71,6 @@ def build_note(article: dict) -> str:
 
     if url:
         body_parts.append(f"\n---\n\n[Read original article]({url}){{: .btn .btn-primary }}")
-    if feed_domain:
-        body_parts.append(f"\n> Source: `{feed_domain}`\n{{: .prompt-info }}")
 
     return frontmatter + "\n" + "\n".join(body_parts) + "\n"
 

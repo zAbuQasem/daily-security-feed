@@ -12,5 +12,3 @@ This research demonstrates how KServe — a Kubernetes-native ML model serving p
 ---
 
 [Read original article](https://5stars217.github.io/2023-10-25-using-KServe-to-deploy-malicious-models/)
-
-> Source: `5stars217.github.io`

@@ -12,5 +12,3 @@ This post documents the author's journey through Windows Protected Process Light
 ---
 
 [Read original article](https://0xv1n.github.io/posts/processprotection/)
-
-> Source: `0xv1n.github.io`

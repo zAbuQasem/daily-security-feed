@@ -12,5 +12,3 @@ A guide to LLM penetration testing covering the primary attack surfaces and vuln
 ---
 
 [Read original article](https://fortbridge.co.uk/pentesting/what-is-llm-penetration-testing/)
-
-> Source: `fortbridge.co.uk`

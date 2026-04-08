@@ -12,5 +12,3 @@ Trail of Bits audited WhatsApp's Private Inference system — a TEE-based archit
 ---
 
 [Read original article](https://blog.trailofbits.com/2026/04/07/what-we-learned-about-tee-security-from-auditing-whatsapps-private-inference/)
-
-> Source: `blog.trailofbits.com`

@@ -12,5 +12,3 @@ The article introduces the 'adversary flywheel' — a framework for red team ope
 ---
 
 [Read original article](https://5stars217.github.io/2024-04-23-adversaries-sometimes-compute-gradients/)
-
-> Source: `5stars217.github.io`

@@ -12,5 +12,3 @@ This DEFCON31 talk write-up details supply chain attack techniques targeting ML 
 ---
 
 [Read original article](https://5stars217.github.io/2023-08-08-red-teaming-with-ml-models/)
-
-> Source: `5stars217.github.io`
