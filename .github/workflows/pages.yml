@@ -41,7 +41,7 @@ jobs:
           working-directory: site
 
       - name: Build with Jekyll
-        run: bundle exec jekyll b -d "../_site${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll b -d "../_site"
         working-directory: site
         env:
           JEKYLL_ENV: production
