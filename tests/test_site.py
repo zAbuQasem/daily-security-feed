@@ -55,9 +55,7 @@ def test_posts_visible_on_homepage(page: Page):
 def test_no_severity_categories(page: Page):
     """Severity labels (Critical, Solid, Low) should not appear in post metadata."""
     page.goto(BASE)
-    content = page.content()
     for severity in ["Critical", "Solid", "Low"]:
-        # Check it's not in category badges/links (allow in post body text)
         badges = page.locator(f'a.badge:has-text("{severity}"), .categories a:has-text("{severity}")')
         assert badges.count() == 0, f"Severity '{severity}' found in category badges"
 
@@ -72,9 +70,16 @@ def test_tags_page_loads(page: Page):
 
 def test_tags_page_has_tags(page: Page):
     page.goto(f"{BASE}/tags/")
-    # Chirpy renders tags as anchor links with # prefix
     tags = page.locator("#tags-container .tag-name, #tags a, .tag")
     assert tags.count() > 5, f"Expected many tags, got {tags.count()}"
+
+
+def test_individual_tag_page_loads(page: Page):
+    """Clicking a tag should load a page listing posts for that tag."""
+    page.goto(f"{BASE}/tags/cloud/")
+    expect(page).to_have_title(re.compile(r"cloud", re.IGNORECASE))
+    posts = page.locator("article a, .post-preview a, ul li a")
+    assert posts.count() > 0, "No posts listed on tag page"
 
 
 # ── Categories page ──
@@ -83,6 +88,12 @@ def test_tags_page_has_tags(page: Page):
 def test_categories_page_loads(page: Page):
     page.goto(f"{BASE}/categories/")
     expect(page).to_have_title(re.compile(r"Categories"))
+
+
+def test_category_is_rss(page: Page):
+    """All posts should be under the RSS category."""
+    page.goto(f"{BASE}/categories/")
+    expect(page.locator("text=RSS")).to_be_visible()
 
 
 # ── Archives page ──
