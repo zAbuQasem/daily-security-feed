@@ -9,7 +9,7 @@ on:
       max_articles:
         description: "Max articles to process per run (default: 15)"
         required: false
-        default: "15"
+        default: "30"
 
 permissions:
   contents: write
@@ -68,7 +68,7 @@ jobs:
       - name: Step 1 — Fetch feeds + extract content
         run: uv run python pipeline/fetch_feeds.py
         env:
-          MAX_ARTICLES: ${{ github.event.inputs.max_articles || '15' }}
+          MAX_ARTICLES: ${{ github.event.inputs.max_articles || '30' }}
 
       - name: Step 2 — Classify with Copilot
         timeout-minutes: 50
