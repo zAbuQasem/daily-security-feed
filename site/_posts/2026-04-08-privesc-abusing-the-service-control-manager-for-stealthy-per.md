@@ -2,7 +2,7 @@
 layout: post
 title: "PrivEsc: Abusing the Service Control Manager for Stealthy & Persistent LPE"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research]
+categories: [RSS]
 tags: [privesc, windows, lpe, persistence, detection]
 toc: true
 ---

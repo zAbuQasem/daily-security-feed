@@ -2,7 +2,7 @@
 layout: post
 title: "Cracks in the Bedrock: Escaping the AWS AgentCore Sandbox"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research]
+categories: [RSS]
 tags: [cloud, aws, sandbox-escape, ssrf, dns-tunneling]
 toc: true
 ---

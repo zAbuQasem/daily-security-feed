@@ -2,7 +2,7 @@
 layout: post
 title: "HTB: DarkZero"
 date: 2026-04-05 00:00:00 +0300
-categories: [Research]
+categories: [RSS]
 tags: [active-directory, mssql, adcs, kerberos, privilege-escalation]
 toc: true
 ---

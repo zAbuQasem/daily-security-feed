@@ -45,6 +45,18 @@ collections:
     output: true
     sort_by: order
 
+plugins:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:

@@ -2,7 +2,7 @@
 layout: post
 title: "The Trojan horse of cybercrime: Weaponizing SaaS notification pipelines"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research]
+categories: [RSS]
 tags: [phishing, saas-abuse, email-security, social-engineering, github]
 toc: true
 ---

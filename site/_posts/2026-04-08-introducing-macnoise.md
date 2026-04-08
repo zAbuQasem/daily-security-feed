@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing MacNoise!"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research]
+categories: [RSS]
 tags: [detection, edr, macos, threat-hunting, telemetry]
 toc: true
 ---

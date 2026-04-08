@@ -2,7 +2,7 @@
 layout: post
 title: "Using KServe to deploy malicious models"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research]
+categories: [RSS]
 tags: [supply-chain, kubernetes, mlops, container-security, malware]
 toc: true
 ---

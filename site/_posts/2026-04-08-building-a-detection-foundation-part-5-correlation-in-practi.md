@@ -2,7 +2,7 @@
 layout: post
 title: "Building a Detection Foundation: Part 5 - Correlation in Practice"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research]
+categories: [RSS]
 tags: [detection, windows, siem, threat-hunting, dfir]
 toc: true
 ---

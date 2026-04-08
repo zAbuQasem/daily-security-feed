@@ -47,7 +47,7 @@ def build_note(article: dict) -> str:
     unique_tags = list(dict.fromkeys(tags))
     tag_yaml = "[" + ", ".join(unique_tags) + "]" if unique_tags else "[]"
 
-    cat_yaml = "[" + category.replace("_", " ").title() + "]"
+    cat_yaml = "[RSS]"
 
     # Escape title for YAML
     safe_title = title.replace('"', '\\"')

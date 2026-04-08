@@ -2,7 +2,7 @@
 layout: post
 title: "What enables malicious models?"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research]
+categories: [RSS]
 tags: [supply-chain, ml-security, typosquatting, huggingface]
 toc: true
 ---

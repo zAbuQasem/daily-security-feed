@@ -2,7 +2,7 @@
 layout: post
 title: "Kernel Drivers, Process Protection, and ...Bears?"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research]
+categories: [RSS]
 tags: [windows, kernel, lsass, credential-access, bypass]
 toc: true
 ---

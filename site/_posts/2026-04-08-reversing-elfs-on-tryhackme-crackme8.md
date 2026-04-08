@@ -2,7 +2,7 @@
 layout: post
 title: "Reversing ELFs on TryHackMe: Crackme8"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research]
+categories: [RSS]
 tags: [reverse-engineering, ctf, binary-analysis, gdb, elf]
 toc: true
 ---

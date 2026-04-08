@@ -2,7 +2,7 @@
 layout: post
 title: "What we learned about TEE security from auditing WhatsApp's Private Inference"
 date: 2026-04-08 00:00:00 +0300
-categories: [Research]
+categories: [RSS]
 tags: [tee, attestation, cryptography, cloud, privacy]
 toc: true
 ---
