@@ -5,7 +5,6 @@ Step 1 of the pipeline:
 - Parse feeds.yaml for the list of RSS URLs
 - Fetch each feed with feedparser (up to ENTRIES_PER_FEED recent entries)
 - Skip URLs already in state/processed_urls.json
-- Skip entries published before the FEED_MAX_AGE_DAYS cutoff (0 = no filter)
 - Run defuddle on new article URLs to extract clean markdown content
 - Write state/staged_articles.json for classify.py to consume
 - Update state/processed_urls.json (all seen URLs, including failed extractions)

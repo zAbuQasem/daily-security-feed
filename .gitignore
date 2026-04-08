@@ -5,3 +5,5 @@ __pycache__/
 _site/
 .jekyll-cache/
 .superpowers/
+.claude/
+.ruff_cache/

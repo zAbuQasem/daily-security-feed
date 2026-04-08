@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent
@@ -13,7 +14,7 @@ PROMPTS_DIR = REPO_ROOT / "prompts"
 
 NOTIFY_CHANNELS_ENV = "NOTIFY_CHANNELS"
 DEFAULT_NOTIFY_CHANNELS = "both"
-GITHUB_HANDLE = "zAbuQasem"
-LINKEDIN_URL = "https://www.linkedin.com/in/zeyad-abulaban/"
-LINKEDIN_HANDLE = "zeyad-abulaban"
+GITHUB_HANDLE = os.environ.get("GITHUB_HANDLE", "zAbuQasem")
+LINKEDIN_URL = os.environ.get("LINKEDIN_URL", "https://www.linkedin.com/in/zeyad-abulaban/")
+LINKEDIN_HANDLE = os.environ.get("LINKEDIN_HANDLE", "zeyad-abulaban")
 USER_AGENT = "rss-pipeline/1.0"

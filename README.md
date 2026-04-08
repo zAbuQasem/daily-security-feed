@@ -7,12 +7,13 @@ Fork this repo, add your feeds, and get a personal security research site at `ht
 ## Quick start
 
 1. **Fork** this repository.
-2. Enable **GitHub Pages** in your fork: `Settings → Pages → Source → GitHub Actions`.
-3. Edit `feeds/feeds.yaml` with the RSS/Atom feeds you want to follow.
-4. Add the required [secrets and variables](#setup).
-5. Create a Copilot PAT by following [Copilot token setup](#copilot-token-setup).
-6. Open **Actions** and run `daily-security-feed-bot` manually to seed the first batch.
-7. Your site will be live at `https://<you>.github.io/security-feed-monitor/` after the first run.
+2. Delete `state/processed_urls.json` — it contains the upstream's seen URLs and will prevent your fork from fetching articles that were already processed here.
+3. Enable **GitHub Pages** in your fork: `Settings → Pages → Source → GitHub Actions`.
+4. Edit `feeds/feeds.yaml` with the RSS/Atom feeds you want to follow.
+5. Add the required [secrets and variables](#setup).
+6. Create a Copilot PAT by following [Copilot token setup](#copilot-token-setup).
+7. Open **Actions** and run `daily-security-feed-bot` manually to seed the first batch.
+8. Your site will be live at `https://<you>.github.io/security-feed-monitor/` after the first run.
 
 ## How it works
 
@@ -82,11 +83,11 @@ Do not use a classic PAT here. Keep the token scoped only for Copilot requests.
 | What | Where |
 | --- | --- |
 | Feed list | `feeds/feeds.yaml` — add/remove RSS/Atom URLs |
-| Articles per run | `MAX_ARTICLES` env var (workflow default: 15) |
+| Articles per run | `MAX_ARTICLES` env var (workflow default: 30) |
 | Entries per feed | `ENTRIES_PER_FEED` env var (default: 5) |
-| Feed freshness | `FEED_MAX_AGE_DAYS` env var (default: 1, set `0` to disable) |
 | AI system prompt | `prompts/classify.md` |
 | Site theme | `site/_config.yml` and `site/_layouts/` |
+| Creator branding | `GITHUB_HANDLE`, `LINKEDIN_URL`, `LINKEDIN_HANDLE` env vars in workflow or `pipeline/config.py` |
 
 ## Security warning
 

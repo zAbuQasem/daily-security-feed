@@ -33,9 +33,9 @@ notify_discord.py   →  Discord webhooks
 notify_slack.py     →  Slack webhooks
 ```
 
-**fetch_feeds.py** parses `feeds/feeds.yaml`, fetches up to `ENTRIES_PER_FEED` recent entries per feed via `feedparser` using 30 concurrent workers, skips URLs already in `state/processed_urls.json`, then calls `defuddle parse --json --md <url>` as a subprocess for each new article. It can filter by publication age with `FEED_MAX_AGE_DAYS` (default 1, set to 0 to disable). All candidate URLs are marked seen during scanning, so `processed_urls.json` grows even for capped/failed fetches. Articles shorter than 200 chars are discarded but still marked seen. Content is capped at 8000 chars. Caps at `MAX_ARTICLES` (default 100 in code; workflow default is 15). Appends processed URLs to `logs/urls.txt` with `[YYYY-MM-DD]` prefix.
+**fetch_feeds.py** parses `feeds/feeds.yaml`, fetches up to `ENTRIES_PER_FEED` recent entries per feed via `feedparser` using 30 concurrent workers, skips URLs already in `state/processed_urls.json`, then calls `defuddle parse --json --md <url>` as a subprocess for each new article. All candidate URLs are marked seen during scanning, so `processed_urls.json` grows even for capped/failed fetches. Articles shorter than 200 chars are discarded but still marked seen. Content is capped at 8000 chars. Caps at `MAX_ARTICLES` (default 100 in code; workflow default is 30). Appends processed URLs to `logs/urls.txt` with `[YYYY-MM-DD]` prefix.
 
-**classify.py** calls the `@github/copilot` npm CLI as a subprocess (`copilot --prompt "..." --allow-all-tools --allow-all-paths`), one process per article with a 120s timeout. Auth is via `COPILOT_GITHUB_TOKEN` env var — must be a **fine-grained PAT with Copilot Requests: Read permission** (classic `ghp_` PATs are rejected). Prompt text is loaded from `prompts/classify.md`. The classifier returns structured JSON with `category`, `tags`, `priority`, and `summary`. Only `research` articles are persisted to `state/classified_articles.json`. JSON is extracted by finding the first `{` and last `}` in stdout (Copilot CLI emits preamble before the JSON). When `SKIP_CLASSIFY=true`, AI classification is bypassed entirely — all fetched articles are published as research with priority 2, no tags, and no summary. This removes the Copilot dependency for users who just want an unfiltered feed.
+**classify.py** calls the `@github/copilot` npm CLI as a subprocess (`copilot --prompt "..." --allow-all-tools --allow-all-paths`), one process per article with a 120s timeout. Auth is via `COPILOT_GITHUB_TOKEN` env var — must be a **fine-grained PAT with Copilot Requests: Read permission** (classic `ghp_` PATs are rejected). Prompt text is loaded from `prompts/classify.md`. The classifier returns structured JSON with `category`, `tags`, `priority`, and `summary`. All non-noise articles are persisted to `state/classified_articles.json`. JSON is extracted by finding the first `{` and last `}` in stdout (Copilot CLI emits preamble before the JSON). When `SKIP_CLASSIFY=true`, AI classification is bypassed entirely — all fetched articles are published as research with priority 2, no tags, and no summary. This removes the Copilot dependency for users who just want an unfiltered feed.
 
 **write_vault.py** reads `state/classified_articles.json` and writes Jekyll-compatible markdown posts to `site/_posts/` with frontmatter (`layout`, `title`, `source_url`, `date`, `priority`, `tags`, `feed`) and the AI summary body. Files are named `YYYY-MM-DD-slug.md`. Creator tags are always appended. Note: the frontmatter key is `source_url` (not `url`) to avoid collision with Jekyll's reserved `page.url` which holds the post permalink.
 
@@ -70,9 +70,8 @@ Priority controls sort order within each section in the Discord feed embed.
 | What | Where |
 | --- | --- |
 | Feed list | `feeds/feeds.yaml` — add/remove URLs freely |
-| Articles per run cap | `MAX_ARTICLES` env var (code default: 100; workflow default: 15) |
+| Articles per run cap | `MAX_ARTICLES` env var (code default: 100; workflow default: 30) |
 | Feed entries per source | `ENTRIES_PER_FEED` env var (code default: 5) |
-| Feed freshness filter | `FEED_MAX_AGE_DAYS` env var (default: 1, set `0` to disable) |
 | Seen URLs | `state/processed_urls.json` — committed after every run; delete entries to reprocess |
 | URL audit log | `logs/urls.txt` — append-only, grep by `[YYYY-MM-DD]` to filter by date |
 | Prompt template | `prompts/classify.md` |
@@ -83,7 +82,7 @@ Priority controls sort order within each section in the Discord feed embed.
 | Skip classification | `SKIP_CLASSIFY` repo variable (`true` to bypass AI and publish all articles unfiltered) |
 | Notification channels | `NOTIFY_CHANNELS` repo variable (`both`, `discord`, or `slack`) |
 | Pages URL | `PAGES_URL` repo variable (optional, used by Discord and Slack "Browse feed" links) |
-| Creator branding | Hardcoded in `pipeline/config.py` (`GITHUB_HANDLE`, `LINKEDIN_URL`) |
+| Creator branding | `GITHUB_HANDLE`, `LINKEDIN_URL`, `LINKEDIN_HANDLE` env vars (defaults in `pipeline/config.py`) |
 
 ## Security Guidance
 
