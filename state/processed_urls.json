@@ -1233,7 +1233,27 @@
     "https://www.datadoghq.com/blog/ci-cd-threat-matrix/": "2026-04-09",
     "https://www.datadoghq.com/blog/migrate-to-gateway-api/": "2026-04-09",
     "https://www.datadoghq.com/blog/secure-your-github-ecosystem/": "2026-04-09",
-    "https://www.blackhillsinfosec.com/getting-started-in-pentesting/": "2026-04-09"
+    "https://www.blackhillsinfosec.com/getting-started-in-pentesting/": "2026-04-09",
+    "http://security.googleblog.com/2026/04/protecting-cookies-with-device-bound.html": "2026-04-10",
+    "https://jub0bs.com/training/concurrent-programming-in-go/": "2026-04-10",
+    "https://jub0bs.com/training/websec/": "2026-04-10",
+    "https://jub0bs.com/training/introduction-to-go/": "2026-04-10",
+    "https://rastamouse.me/crystal-mask/": "2026-04-10",
+    "https://blog.syss.com/posts/scanscope/": "2026-04-10",
+    "https://projectdiscovery.io/blog/how-we-cut-llm-cost-with-prompt-caching": "2026-04-10",
+    "https://blog.talosintelligence.com/the-threat-hunters-gambit/": "2026-04-10",
+    "https://blog.talosintelligence.com/from-the-field-to-the-report-and-back-again-how-incident-responders-can-use-the-year-in-review/": "2026-04-10",
+    "https://securitylabs.datadoghq.com/articles/unpatchable-kubernetes-vulnerabilities-cve-2020-8562/": "2026-04-10",
+    "https://trustedsec.com/blog/iam-the-captain-now-hijacking-azure-identity-access": "2026-04-10",
+    "https://blog.trailofbits.com/2026/04/09/master-c-and-c-with-our-new-testing-handbook-chapter/": "2026-04-10",
+    "https://www.sentinelone.com/blog/edge-decay-how-a-failing-perimeter-is-fueling-modern-intrusions/": "2026-04-10",
+    "https://www.wiz.io/blog/cloud-threat-retrospective-2026": "2026-04-10",
+    "https://www.wiz.io/blog/introducing-wiz-vercel-integration": "2026-04-10",
+    "http://blog.quarkslab.com/tearing-down-a-car-telematic-unit-and-finding-an-accident-on-facebook.html": "2026-04-10",
+    "https://www.datadoghq.com/blog/boomi-observability-opentelemetry-datadog/": "2026-04-10",
+    "https://www.datadoghq.com/blog/detect-inefficient-index-scans-with-dbm/": "2026-04-10",
+    "https://www.datadoghq.com/blog/platform-engineering-metrics/": "2026-04-10",
+    "https://www.datadoghq.com/blog/recorded-future-content-pack/": "2026-04-10"
   },
-  "last_updated": "2026-04-09T03:11:39.535357+00:00"
+  "last_updated": "2026-04-10T03:13:04.470525+00:00"
 }
