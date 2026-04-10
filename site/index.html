@@ -1,4 +1,261 @@
 ---
-layout: home
-# index page
+layout: default
+title: Feed
 ---
+
+{% assign posts = site.posts | sort: "date" | reverse %}
+
+{% if posts.size == 0 %}
+<div class="empty-state">
+  <div class="empty-state__icon">&#9632;</div>
+  <p>No articles yet.</p>
+  <p style="margin-top: 0.5rem;">The pipeline runs daily — check back soon.</p>
+</div>
+{% else %}
+
+<!-- Stats bar -->
+{% assign p1_count = 0 %}
+{% assign p2_count = 0 %}
+{% assign p3_count = 0 %}
+{% for post in posts %}
+  {% if post.priority == 1 %}{% assign p1_count = p1_count | plus: 1 %}
+  {% elsif post.priority == 2 %}{% assign p2_count = p2_count | plus: 1 %}
+  {% else %}{% assign p3_count = p3_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+<div class="stats-bar">
+  <div class="stats-bar__item">
+    <span class="stats-bar__value">{{ posts.size }}</span> total
+  </div>
+  <div class="stats-bar__item">
+    <span class="stats-bar__dot stats-bar__dot--p1"></span>
+    <span class="stats-bar__value">{{ p1_count }}</span> critical
+  </div>
+  <div class="stats-bar__item">
+    <span class="stats-bar__dot stats-bar__dot--p2"></span>
+    <span class="stats-bar__value">{{ p2_count }}</span> solid
+  </div>
+  <div class="stats-bar__item">
+    <span class="stats-bar__dot stats-bar__dot--p3"></span>
+    <span class="stats-bar__value">{{ p3_count }}</span> low
+  </div>
+</div>
+
+<!-- Search -->
+<div class="search-bar">
+  <span class="search-bar__icon">&#9906;</span>
+  <input type="text" class="search-bar__input" id="searchInput" placeholder="Search articles by title, tag, or feed..." autocomplete="off" spellcheck="false">
+  <button class="search-bar__clear" id="searchClear" aria-label="Clear search">&times;</button>
+</div>
+
+<!-- Tag filters -->
+{% assign all_tags = "" | split: "" %}
+{% for post in posts %}
+  {% for tag in post.tags %}
+    {% assign _skip = false %}
+    {% if tag contains "github-" %}{% assign _skip = true %}{% endif %}
+    {% if tag contains "linkedin-" %}{% assign _skip = true %}{% endif %}
+    {% unless _skip %}
+      {% assign all_tags = all_tags | push: tag %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign unique_tags = all_tags | sort | uniq %}
+
+{% assign tag_counts = "" | split: "" %}
+{% for utag in unique_tags %}
+  {% assign tcount = 0 %}
+  {% for t in all_tags %}
+    {% if t == utag %}{% assign tcount = tcount | plus: 1 %}{% endif %}
+  {% endfor %}
+  {% if tcount >= 2 %}
+    {% assign tag_entry = utag | append: ":" | append: tcount %}
+    {% assign tag_counts = tag_counts | push: tag_entry %}
+  {% endif %}
+{% endfor %}
+
+{% if tag_counts.size > 0 %}
+<div class="tag-filters" id="tagFilters">
+  <span class="tag-filters__label">Filter</span>
+  {% for tc in tag_counts %}
+    {% assign parts = tc | split: ":" %}
+    <span class="tag" data-tag="{{ parts[0] }}">{{ parts[0] }} <span style="opacity:0.5">{{ parts[1] }}</span></span>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div id="noResults" class="no-results">No articles match your search.</div>
+
+<!-- Date cards -->
+<div id="dateCards">
+{% assign current_date = "" %}
+{% for post in posts %}
+  {% assign post_date = post.date | date: "%Y-%m-%d" %}
+  {% assign post_date_display = post.date | date: "%b %d, %Y" %}
+  {% assign post_date_weekday = post.date | date: "%A" %}
+
+  {% if post_date != current_date %}
+    {% if current_date != "" %}
+      </div></div></div>
+    {% endif %}
+    {% assign current_date = post_date %}
+
+    {% comment %} Count posts for this date and collect tags {% endcomment %}
+    {% assign day_count = 0 %}
+    {% assign day_p1 = 0 %}
+    {% assign day_tags = "" | split: "" %}
+    {% for p in posts %}
+      {% assign p_date = p.date | date: "%Y-%m-%d" %}
+      {% if p_date == post_date %}
+        {% assign day_count = day_count | plus: 1 %}
+        {% if p.priority == 1 %}{% assign day_p1 = day_p1 | plus: 1 %}{% endif %}
+        {% for tag in p.tags %}
+          {% assign _skip2 = false %}
+          {% if tag contains "github-" %}{% assign _skip2 = true %}{% endif %}
+          {% if tag contains "linkedin-" %}{% assign _skip2 = true %}{% endif %}
+          {% unless _skip2 %}
+            {% assign day_tags = day_tags | push: tag %}
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    {% assign day_tags_uniq = day_tags | sort | uniq | slice: 0, 5 %}
+
+    <div class="date-card" data-date="{{ post_date }}">
+      <div class="date-card__header" onclick="toggleDateCard(this.parentElement)">
+        <div style="display:flex;align-items:center;gap:0.6rem;">
+          <span class="date-card__date">{{ post_date_weekday }}, {{ post_date_display }}</span>
+          {% if day_p1 > 0 %}<span class="badge badge-1" style="font-size:0.55rem">{{ day_p1 }} critical</span>{% endif %}
+        </div>
+        <div class="date-card__info">
+          <div class="date-card__tags">
+            {% for dt in day_tags_uniq %}<span class="tag" style="cursor:default;font-size:0.55rem">{{ dt }}</span>{% endfor %}
+          </div>
+          <span class="date-card__count">{{ day_count }} article{% if day_count != 1 %}s{% endif %}</span>
+          <span class="date-card__chevron">&#9654;</span>
+        </div>
+      </div>
+      <div class="date-card__body"><div class="date-card__content">
+  {% endif %}
+
+  <div class="article-row" data-title="{{ post.title | downcase | escape }}" data-tags="{% for tag in post.tags %}{{ tag }} {% endfor %}" data-feed="{{ post.feed | escape }}" data-priority="{{ post.priority }}">
+    <div class="article-row__priority article-row__priority--{{ post.priority }}"></div>
+    <div class="article-row__body">
+      <a href="{{ post.url | relative_url }}" class="article-row__title">{{ post.title }}</a>
+      <div class="article-row__meta">
+        <span class="badge badge-{{ post.priority }}">P{{ post.priority }}</span>
+        {% assign filtered_post_tags = "" | split: "" %}
+        {% for tag in post.tags %}
+          {% assign _skip3 = false %}
+          {% if tag contains "github-" %}{% assign _skip3 = true %}{% endif %}
+          {% if tag contains "linkedin-" %}{% assign _skip3 = true %}{% endif %}
+          {% unless _skip3 %}
+            {% assign filtered_post_tags = filtered_post_tags | push: tag %}
+          {% endunless %}
+        {% endfor %}
+        {% for tag in filtered_post_tags %}<span class="tag" style="cursor:default;font-size:0.55rem">{{ tag }}</span>{% endfor %}
+        <span class="article-row__feed" title="{{ post.feed }}">{{ post.feed | remove: "https://" | remove: "http://" | split: "/" | first }}</span>
+      </div>
+    </div>
+  </div>
+
+{% endfor %}
+
+{% if current_date != "" %}
+  </div></div></div>
+{% endif %}
+</div>
+
+<script>
+(function() {
+  // ── Date card accordion ──
+  window.toggleDateCard = function(card) {
+    card.classList.toggle('is-open');
+  };
+
+  // Auto-open the first card
+  var firstCard = document.querySelector('.date-card');
+  if (firstCard) firstCard.classList.add('is-open');
+
+  // ── Search ──
+  var searchInput = document.getElementById('searchInput');
+  var searchClear = document.getElementById('searchClear');
+  var noResults = document.getElementById('noResults');
+  var dateCards = document.querySelectorAll('.date-card');
+  var activeTag = null;
+
+  function applyFilters() {
+    var query = (searchInput.value || '').toLowerCase().trim();
+    searchClear.style.display = query ? 'block' : 'none';
+    var anyVisible = false;
+
+    dateCards.forEach(function(card) {
+      var rows = card.querySelectorAll('.article-row');
+      var visibleInCard = 0;
+
+      rows.forEach(function(row) {
+        var title = row.getAttribute('data-title') || '';
+        var tags = row.getAttribute('data-tags') || '';
+        var feed = row.getAttribute('data-feed') || '';
+        var matchesSearch = !query || title.indexOf(query) !== -1 || tags.indexOf(query) !== -1 || feed.toLowerCase().indexOf(query) !== -1;
+        var matchesTag = !activeTag || tags.indexOf(activeTag) !== -1;
+
+        if (matchesSearch && matchesTag) {
+          row.style.display = '';
+          visibleInCard++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      if (visibleInCard > 0) {
+        card.style.display = '';
+        anyVisible = true;
+        // Update count display
+        var countEl = card.querySelector('.date-card__count');
+        if (countEl) {
+          var total = rows.length;
+          if (query || activeTag) {
+            countEl.textContent = visibleInCard + '/' + total;
+          } else {
+            countEl.textContent = total + ' article' + (total !== 1 ? 's' : '');
+          }
+        }
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    noResults.style.display = anyVisible ? 'none' : 'block';
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', applyFilters);
+    searchClear.addEventListener('click', function() {
+      searchInput.value = '';
+      applyFilters();
+      searchInput.focus();
+    });
+  }
+
+  // ── Tag filter ──
+  var tagFilterEls = document.querySelectorAll('#tagFilters .tag');
+  tagFilterEls.forEach(function(el) {
+    el.addEventListener('click', function() {
+      var tag = el.getAttribute('data-tag');
+      if (activeTag === tag) {
+        activeTag = null;
+        el.classList.remove('is-active');
+      } else {
+        tagFilterEls.forEach(function(t) { t.classList.remove('is-active'); });
+        activeTag = tag;
+        el.classList.add('is-active');
+      }
+      applyFilters();
+    });
+  });
+})();
+</script>
+
+{% endif %}
