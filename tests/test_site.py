@@ -1,5 +1,5 @@
 """
-Playwright E2E tests for the deployed site.
+Playwright E2E tests for the deployed Chirpy site.
 Run with: uv run pytest tests/test_site.py -v
 """
 
@@ -16,65 +16,40 @@ def browser_context_args():
     return {"ignore_https_errors": True}
 
 
-# ── Homepage / Masthead ──
+# ── Homepage ──
 
 
 def test_homepage_loads(page: Page):
     page.goto(BASE)
-    expect(page).to_have_title(re.compile(r"Security Feed Monitor"))
+    expect(page).to_have_title(re.compile(r"Zeyad AbuLaban"))
 
 
-def test_masthead_title(page: Page):
+def test_avatar_visible(page: Page):
     page.goto(BASE)
-    title = page.locator(".masthead__title")
-    expect(title).to_contain_text("Security Feed Monitor")
+    avatar = page.locator('img[alt="avatar"]')
+    expect(avatar).to_be_visible()
+    assert "avatar.jpeg" in (avatar.get_attribute("src") or "")
 
 
-def test_masthead_subtitle(page: Page):
+def test_sidebar_title(page: Page):
     page.goto(BASE)
-    expect(page.locator(".masthead__subtitle")).to_be_visible()
+    title = page.locator("#sidebar .site-title, #sidebar a.site-title")
+    expect(title).to_contain_text("Zeyad AbuLaban")
 
 
-def test_nav_home_link(page: Page):
+def test_sidebar_nav_links(page: Page):
     page.goto(BASE)
-    home = page.locator(".nav .nav__link", has_text="Home")
-    expect(home.first).to_be_visible()
-
-
-def test_nav_theme_toggle(page: Page):
-    page.goto(BASE)
-    toggle = page.locator("#themeToggle")
-    expect(toggle).to_be_visible()
+    nav = page.locator("#sidebar .nav-item")
+    labels = [nav.nth(i).inner_text().strip().upper() for i in range(nav.count())]
+    for expected in ["HOME", "CATEGORIES", "TAGS", "ARCHIVES", "ABOUT"]:
+        assert expected in labels, f"Missing nav link: {expected}"
 
 
 def test_posts_visible_on_homepage(page: Page):
     page.goto(BASE)
-    posts = page.locator(".article-row")
+    # Chirpy lists posts as article or .post-preview or card-body elements
+    posts = page.locator("article, .card-body, .post-preview")
     assert posts.count() > 0, "No posts visible on homepage"
-
-
-def test_date_groups_on_homepage(page: Page):
-    page.goto(BASE)
-    groups = page.locator(".date-card")
-    assert groups.count() > 0, "No date groups on homepage"
-
-
-def test_numbered_articles(page: Page):
-    """Editorial style uses CSS counters; the article-row element must exist."""
-    page.goto(BASE)
-    first = page.locator(".article-row").first
-    expect(first).to_be_visible()
-
-
-def test_tag_filters_visible(page: Page):
-    page.goto(BASE)
-    filters = page.locator("#tagFilters .tag")
-    assert filters.count() > 5, "Expected tag filter pills"
-
-
-def test_search_bar_visible(page: Page):
-    page.goto(BASE)
-    expect(page.locator("#searchInput")).to_be_visible()
 
 
 def test_no_severity_categories(page: Page):
@@ -85,54 +60,77 @@ def test_no_severity_categories(page: Page):
         assert badges.count() == 0, f"Severity '{severity}' found in category badges"
 
 
+# ── Tags page ──
+
+
+def test_tags_page_loads(page: Page):
+    page.goto(f"{BASE}/tags/")
+    expect(page).to_have_title(re.compile(r"Tags"))
+
+
+def test_tags_page_has_tags(page: Page):
+    page.goto(f"{BASE}/tags/")
+    tags = page.locator("#tags-container .tag-name, #tags a, .tag")
+    assert tags.count() > 5, f"Expected many tags, got {tags.count()}"
+
+
+def test_individual_tag_page_loads(page: Page):
+    """Clicking a tag should load a page listing posts for that tag."""
+    page.goto(f"{BASE}/tags/cloud/")
+    expect(page).to_have_title(re.compile(r"cloud", re.IGNORECASE))
+    posts = page.locator("article a, .post-preview a, ul li a")
+    assert posts.count() > 0, "No posts listed on tag page"
+
+
+# ── Categories page ──
+
+
+def test_categories_page_loads(page: Page):
+    page.goto(f"{BASE}/categories/")
+    expect(page).to_have_title(re.compile(r"Categories"))
+
+
+def test_category_is_rss(page: Page):
+    """All posts should be under the RSS category."""
+    page.goto(f"{BASE}/categories/")
+    expect(page.locator("text=RSS")).to_be_visible()
+
+
+# ── Archives page ──
+
+
+def test_archives_page_loads(page: Page):
+    page.goto(f"{BASE}/archives/")
+    expect(page).to_have_title(re.compile(r"Archives"))
+
+
+# ── About page ──
+
+
+def test_about_page_loads(page: Page):
+    page.goto(f"{BASE}/about/")
+    expect(page).to_have_title(re.compile(r"About"))
+    expect(page.locator("main")).to_contain_text("AI-curated")
+
+
 # ── Individual post ──
 
 
 def test_post_page_has_content(page: Page):
     page.goto(BASE)
-    page.wait_for_load_state("networkidle")
-    first_post = page.locator(".article-row__title").first
+    # Click the first post link
+    first_post = page.locator("article a, .card-body a, .post-preview a").first
     first_post.click()
     page.wait_for_load_state("domcontentloaded")
-    expect(page.locator("h1.post-article__title")).to_be_visible()
-    expect(page.locator(".post-article__body")).to_be_visible()
+    # Post page should have a title and body content
+    expect(page.locator("h1")).to_be_visible()
+    body = page.locator(".post-content, article .content, .post")
+    assert body.count() > 0, "No post content found"
 
 
 def test_post_has_read_original_link(page: Page):
     page.goto(BASE)
-    page.wait_for_load_state("networkidle")
-    first_post = page.locator(".article-row__title").first
+    first_post = page.locator("article a, .card-body a, .post-preview a").first
     first_post.click()
     page.wait_for_load_state("domcontentloaded")
     expect(page.locator("text=Read original article")).to_be_visible()
-
-
-def test_post_back_link(page: Page):
-    page.goto(BASE)
-    page.wait_for_load_state("networkidle")
-    page.locator(".article-row__title").first.click()
-    page.wait_for_load_state("domcontentloaded")
-    back = page.locator(".post-article__back")
-    expect(back).to_be_visible()
-    expect(back).to_contain_text("Back to feed")
-
-
-def test_post_shows_tags(page: Page):
-    page.goto(BASE)
-    page.wait_for_load_state("networkidle")
-    page.locator(".article-row__title").first.click()
-    page.wait_for_load_state("domcontentloaded")
-    tags = page.locator(".post-article__tags .tag")
-    assert tags.count() > 0, "No tags shown on post page"
-
-
-# ── Dark mode ──
-
-
-def test_dark_mode_toggle(page: Page):
-    page.goto(BASE)
-    toggle = page.locator("#themeToggle")
-    initial = page.evaluate("document.documentElement.getAttribute('data-theme')")
-    toggle.click()
-    after = page.evaluate("document.documentElement.getAttribute('data-theme')")
-    assert initial != after, "Theme did not change after toggle"
