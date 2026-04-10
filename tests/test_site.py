@@ -16,7 +16,7 @@ def browser_context_args():
     return {"ignore_https_errors": True}
 
 
-# ── Homepage ──
+# ── Homepage / Masthead ──
 
 
 def test_homepage_loads(page: Page):
@@ -24,19 +24,24 @@ def test_homepage_loads(page: Page):
     expect(page).to_have_title(re.compile(r"Security Feed Monitor"))
 
 
-def test_sidebar_title(page: Page):
+def test_masthead_title(page: Page):
     page.goto(BASE)
-    title = page.locator("#sidebar .brand__title")
+    title = page.locator(".masthead__title")
     expect(title).to_contain_text("Security Feed Monitor")
 
 
-def test_sidebar_home_link(page: Page):
+def test_masthead_subtitle(page: Page):
     page.goto(BASE)
-    home = page.locator("#sidebar .sidebar-nav a")
-    expect(home.first).to_contain_text("Home")
+    expect(page.locator(".masthead__subtitle")).to_be_visible()
 
 
-def test_sidebar_theme_toggle(page: Page):
+def test_nav_home_link(page: Page):
+    page.goto(BASE)
+    home = page.locator(".nav .nav__link", has_text="Home")
+    expect(home.first).to_be_visible()
+
+
+def test_nav_theme_toggle(page: Page):
     page.goto(BASE)
     toggle = page.locator("#themeToggle")
     expect(toggle).to_be_visible()
@@ -52,6 +57,13 @@ def test_date_groups_on_homepage(page: Page):
     page.goto(BASE)
     groups = page.locator(".date-card")
     assert groups.count() > 0, "No date groups on homepage"
+
+
+def test_numbered_articles(page: Page):
+    """Editorial style uses CSS counters; the article-row element must exist."""
+    page.goto(BASE)
+    first = page.locator(".article-row").first
+    expect(first).to_be_visible()
 
 
 def test_tag_filters_visible(page: Page):
