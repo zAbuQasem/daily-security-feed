@@ -4,27 +4,23 @@ layout: default
 <article class="post-article">
   <a href="{{ '/' | relative_url }}" class="post-article__back">&larr; Back to feed</a>
 
-  <div class="post-article__header">
-    <h2 class="post-article__title">{{ page.title }}</h2>
-    <div class="post-article__meta">
-      <span class="post-article__date">{{ page.date | date: "%b %d, %Y" }}</span>
-      {% if page.priority %}<span class="badge badge-{{ page.priority }}">P{{ page.priority }}</span>{% endif %}
-      {% if page.feed %}<span class="post-article__feed" title="{{ page.feed }}">{{ page.feed | remove: "https://" | remove: "http://" | split: "/" | first }}</span>{% endif %}
-    </div>
+  <h1 class="post-article__title">{{ page.title }}</h1>
+
+  <div class="post-article__meta">
+    <span class="post-article__date">{{ page.date | date: "%b %d, %Y" }}</span>
 
     {% assign filtered_tags = "" | split: "" %}
     {% for tag in page.tags %}
-      {% assign _skip = false %}
-      {% if tag contains "github-" %}{% assign _skip = true %}{% endif %}
-      {% if tag contains "linkedin-" %}{% assign _skip = true %}{% endif %}
-      {% unless _skip %}
+      {% unless tag contains "github-" or tag contains "linkedin-" %}
         {% assign filtered_tags = filtered_tags | push: tag %}
       {% endunless %}
     {% endfor %}
 
     {% if filtered_tags.size > 0 %}
     <div class="post-article__tags">
-      {% for tag in filtered_tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+      {% for tag in filtered_tags %}
+        <span class="tag" style="cursor:default">{{ tag }}</span>
+      {% endfor %}
     </div>
     {% endif %}
   </div>
