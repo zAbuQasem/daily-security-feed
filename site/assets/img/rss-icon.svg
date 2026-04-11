@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="RSS feed icon">
-  <rect width="256" height="256" rx="56" ry="56" fill="#f26522"/>
-  <g fill="#ffffff">
-    <circle cx="68" cy="188" r="26"/>
-    <path d="M 42 126 A 88 88 0 0 1 130 214 L 96 214 A 54 54 0 0 0 42 160 Z"/>
-    <path d="M 42 72 A 142 142 0 0 1 184 214 L 150 214 A 108 108 0 0 0 42 106 Z"/>
-  </g>
-</svg>

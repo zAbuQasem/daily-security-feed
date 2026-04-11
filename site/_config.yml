@@ -12,7 +12,7 @@ description: >-
 url: "https://zabuqasem.github.io"
 baseurl: "/security-feed-monitor"
 
-avatar: "/assets/img/rss-icon.svg"
+avatar: "/assets/img/rss-icon.webp"
 
 social:
   name: Daily Security Feed
