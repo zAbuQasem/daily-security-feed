@@ -21,20 +21,20 @@ def browser_context_args():
 
 def test_homepage_loads(page: Page):
     page.goto(BASE)
-    expect(page).to_have_title(re.compile(r"Zeyad AbuLaban"))
+    expect(page).to_have_title(re.compile(r"Daily Security Feed"))
 
 
 def test_avatar_visible(page: Page):
     page.goto(BASE)
     avatar = page.locator('img[alt="avatar"]')
     expect(avatar).to_be_visible()
-    assert "avatar.jpeg" in (avatar.get_attribute("src") or "")
+    assert "rss-icon" in (avatar.get_attribute("src") or "")
 
 
 def test_sidebar_title(page: Page):
     page.goto(BASE)
     title = page.locator("#sidebar .site-title, #sidebar a.site-title")
-    expect(title).to_contain_text("Zeyad AbuLaban")
+    expect(title).to_contain_text("Daily Security Feed")
 
 
 def test_sidebar_nav_links(page: Page):

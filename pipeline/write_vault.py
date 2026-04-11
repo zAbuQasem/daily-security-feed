@@ -70,7 +70,7 @@ def build_note(article: dict) -> str:
         body_parts.append("_No summary available._")
 
     if url:
-        body_parts.append(f"\n---\n\n[Read original article]({url}){{: .btn .btn-primary }}")
+        body_parts.append(f"\n[Read original article]({url}){{: .btn .btn-primary }}")
 
     return frontmatter + "\n" + "\n".join(body_parts) + "\n"
 

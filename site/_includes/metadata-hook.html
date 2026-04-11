@@ -1,10 +1,21 @@
-<!-- Custom spacing overrides for sparse posts -->
+<!-- Custom spacing overrides for short summary posts -->
 <style>
-  /* Tighten gap between post meta and content for short summary posts */
-  article .post-meta { margin-bottom: 0.75rem; }
-  article .post-meta .d-flex { margin-top: 0.35rem; }
-  article > header { margin-bottom: 1rem; }
-  article .content > hr:first-child,
-  article .content > p:first-child { margin-top: 0; }
-  article .content hr { margin: 1.5rem 0; }
+  /* Shrink the gap between the post header block and the content */
+  article > header { margin-bottom: 0.5rem !important; }
+  article > header h1 + .post-meta { margin-top: 0.75rem !important; }
+  article .post-meta { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+  article .post-meta .d-flex { margin-top: 0.25rem !important; }
+
+  /* Collapse any top margin on the first element of content */
+  article .content { margin-top: 0.75rem !important; }
+  article .content > :first-child { margin-top: 0 !important; padding-top: 0 !important; }
+  article .content > hr:first-child { display: none; }
+
+  /* Tighten the "Read original article" button spacing */
+  article .content .btn.btn-primary {
+    margin-top: 0.75rem;
+  }
+
+  /* Give related-posts / post-nav a little less room */
+  .post-tail-wrapper { margin-top: 3rem !important; }
 </style>

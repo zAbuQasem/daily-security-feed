@@ -1,8 +1,8 @@
-# Security Feed Monitor
+# Daily Security Feed
 
 AI-curated security research feed — auto-updated daily, deployed to GitHub Pages.
 
-Fork this repo, add your feeds, and get a personal security research site at `https://<you>.github.io/security-feed-monitor/` with optional Discord/Slack notifications.
+Fork this repo, add your feeds, and get your own daily security feed at `https://<you>.github.io/security-feed-monitor/` with optional Discord/Slack notifications.
 
 ## Quick start
 

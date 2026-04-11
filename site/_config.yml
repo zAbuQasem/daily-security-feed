@@ -3,22 +3,21 @@ theme: jekyll-theme-chirpy
 lang: en
 timezone: Asia/Amman
 
-title: Zeyad AbuLaban
-tagline: AI-curated security research feed -- auto-updated daily
+title: Daily Security Feed
+tagline: AI-curated security research — auto-updated daily
 description: >-
-  AI-curated security research feed. New articles classified and published
-  daily from 300+ security blogs, researchers, and vendors.
+  Daily Security Feed — an AI-curated stream of security research. New articles
+  classified and published daily from 300+ security blogs, researchers, and vendors.
 
 url: "https://zabuqasem.github.io"
 baseurl: "/security-feed-monitor"
 
-avatar: "/assets/img/avatar.jpeg"
+avatar: "/assets/img/rss-icon.svg"
 
 social:
-  name: zAbuQasem
+  name: Daily Security Feed
   links:
-    - https://github.com/zAbuQasem
-    - https://www.linkedin.com/in/zeyad-abulaban/
+    - https://github.com/zAbuQasem/security-feed-monitor
 
 github:
   username: zAbuQasem
