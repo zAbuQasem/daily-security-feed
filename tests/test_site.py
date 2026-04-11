@@ -8,7 +8,7 @@ import re
 import pytest
 from playwright.sync_api import Page, expect
 
-BASE = "https://zabuqasem.github.io/security-feed-monitor"
+BASE = "https://zabuqasem.github.io/rss-feed"
 
 
 @pytest.fixture(scope="session")

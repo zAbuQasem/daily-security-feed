@@ -2,7 +2,7 @@
 
 AI-curated security research feed — auto-updated daily, deployed to GitHub Pages.
 
-Fork this repo, add your feeds, and get your own daily security feed at `https://<you>.github.io/security-feed-monitor/` with optional Discord/Slack notifications.
+Fork this repo, add your feeds, and get your own daily security feed at `https://<you>.github.io/rss-feed/` with optional Discord/Slack notifications.
 
 ## Quick start
 
@@ -13,7 +13,7 @@ Fork this repo, add your feeds, and get your own daily security feed at `https:/
 5. Add the required [secrets and variables](#setup).
 6. Create a Copilot PAT by following [Copilot token setup](#copilot-token-setup).
 7. Open **Actions** and run `daily-security-feed-bot` manually to seed the first batch.
-8. Your site will be live at `https://<you>.github.io/security-feed-monitor/` after the first run.
+8. Your site will be live at `https://<you>.github.io/rss-feed/` after the first run.
 
 ## How it works
 
@@ -61,7 +61,7 @@ flowchart TD
 | `AI_MODEL` | `claude-sonnet-4-6` | AI model used by the Copilot classifier |
 | `NOTIFY_CHANNELS` | `both`, `discord`, or `slack` | Where to send notifications (default: `both`) |
 | `SKIP_CLASSIFY` | `true` or `false` | Skip AI classification — publish all fetched articles (default: `false`) |
-| `PAGES_URL` | `https://you.github.io/security-feed-monitor/` | GitHub Pages site URL — included as a "Browse feed" link in Discord and Slack notifications |
+| `PAGES_URL` | `https://you.github.io/rss-feed/` | GitHub Pages site URL — included as a "Browse feed" link in Discord and Slack notifications |
 
 > [!NOTE]
 > Requires an active GitHub Copilot Pro subscription on the repo owner's account.
