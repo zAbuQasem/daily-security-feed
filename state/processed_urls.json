@@ -1253,7 +1253,18 @@
     "https://www.datadoghq.com/blog/boomi-observability-opentelemetry-datadog/": "2026-04-10",
     "https://www.datadoghq.com/blog/detect-inefficient-index-scans-with-dbm/": "2026-04-10",
     "https://www.datadoghq.com/blog/platform-engineering-metrics/": "2026-04-10",
-    "https://www.datadoghq.com/blog/recorded-future-content-pack/": "2026-04-10"
+    "https://www.datadoghq.com/blog/recorded-future-content-pack/": "2026-04-10",
+    "http://security.googleblog.com/2026/04/bringing-rust-to-pixel-baseband.html": "2026-04-11",
+    "https://dayzerosec.com/podcast/283.html": "2026-04-11",
+    "https://jub0bs.com/training/generics-and-iterators-in-go/": "2026-04-11",
+    "https://outpost24.com/blog/pci-asv-approved-scanning-vendor/": "2026-04-11",
+    "https://www.praetorian.com/blog/indirect-prompt-injection-llm/": "2026-04-11",
+    "https://blog.nviso.eu/2026/04/10/securitys-blind-spot-physical-keyloggers-that-bypass-antivirus-entirely/": "2026-04-11",
+    "https://blog.talosintelligence.com/video-the-ttp-ep-22-the-collapse-of-the-patch-window/": "2026-04-11",
+    "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-15-7/": "2026-04-11",
+    "https://www.wiz.io/blog/claude-mythos": "2026-04-11",
+    "https://salt.security/blog/the-ai-supply-chain-is-actually-an-api-supply-chain-lessons-from-the-litellm-breach": "2026-04-11",
+    "https://www.datadoghq.com/blog/open-source-ai-sast/": "2026-04-11"
   },
-  "last_updated": "2026-04-10T03:13:04.470525+00:00"
+  "last_updated": "2026-04-11T03:10:17.265423+00:00"
 }
