@@ -97,3 +97,9 @@ Feed content is untrusted input. A malicious article can include indirect prompt
 2. Use least-privilege credentials only. Do not reuse repo-admin, org-admin, or broadly scoped API tokens.
 3. Rotate the Copilot PAT and notification webhooks every month.
 4. Re-run the pipeline after rotation to verify the new secrets work.
+
+## Author & credits
+
+Built and maintained by **Zeyad AbuLaban** ([@zAbuQasem](https://github.com/zAbuQasem) · [LinkedIn](https://www.linkedin.com/in/zeyad-abulaban/)).
+
+If you fork or adapt this project, a link back is appreciated but not required.
