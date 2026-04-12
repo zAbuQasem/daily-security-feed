@@ -70,3 +70,4 @@
 [2026-04-11] https://www.datadoghq.com/blog/open-source-ai-sast/
 [2026-04-12] https://0xdf.gitlab.io/2026/04/11/htb-eighteen.html
 [2026-04-12] https://blog.thinkst.com/2026/04/thinkst-canary-alerts-in-google-secops-soar.html
+[2026-04-12] https://computer.rip/2026-04-11-IrDA.html
