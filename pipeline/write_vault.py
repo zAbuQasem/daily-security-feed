@@ -27,7 +27,7 @@ def slugify(title: str) -> str:
 
 def note_path(article: dict):
     date = (article.get("fetched_at") or datetime.now(timezone.utc).isoformat())[:10]
-    slug = slugify(article.get("title", "untitled"))
+    slug = slugify(article.get("title", "untitled")) or "untitled"
     return VAULT_DIR / f"{date}-{slug}.md"
 
 
@@ -50,7 +50,7 @@ def build_note(article: dict) -> str:
     cat_yaml = "[RSS]"
 
     # Escape title for YAML
-    safe_title = title.replace('"', '\\"')
+    safe_title = title.replace('"', '\\"').replace('\n', ' ').replace('\r', ' ')
 
     frontmatter = (
         "---\n"

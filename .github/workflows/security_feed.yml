@@ -85,12 +85,11 @@ jobs:
         run: uv run python pipeline/persist_state.py
 
       - name: Upload staging artifacts (for debugging)
-        if: always()
+        if: failure()
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f  # v7.0.0
         with:
           name: pipeline-state-${{ github.run_id }}
           path: |
-            state/staged_articles.json
             state/classified_articles.json
             site/_posts/
           retention-days: 7
@@ -115,18 +114,20 @@ jobs:
 
       - name: Notify Discord — failure
         if: failure()
-        run: uv run python pipeline/notify_discord.py failure --step "${{ github.job }}"
+        run: uv run python pipeline/notify_discord.py failure --step "$FAILED_STEP"
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           PAGES_URL: ${{ vars.PAGES_URL || '' }}
+          FAILED_STEP: ${{ github.job }}
 
       - name: Notify Slack — failure
         if: failure()
-        run: uv run python pipeline/notify_slack.py failure --step "${{ github.job }}"
+        run: uv run python pipeline/notify_slack.py failure --step "$FAILED_STEP"
         env:
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           PAGES_URL: ${{ vars.PAGES_URL || '' }}
+          FAILED_STEP: ${{ github.job }}

@@ -54,7 +54,7 @@ def classify_article(article: dict) -> dict | None:
 
     try:
         result = subprocess.run(
-            ["copilot", "--prompt", prompt, "--allow-all-tools", "--allow-all-paths"],
+            ["copilot", "--prompt", prompt],
             stdin=subprocess.DEVNULL,
             capture_output=True,
             text=True,
