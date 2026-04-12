@@ -10,14 +10,14 @@ description: >-
   classified and published daily from 300+ security blogs, researchers, and vendors.
 
 url: "https://zabuqasem.github.io"
-baseurl: "/rss-feed"
+baseurl: "/daily-security-feed"
 
 avatar: "/assets/img/rss-icon.png"
 
 social:
   name: Daily Security Feed
   links:
-    - https://github.com/zAbuQasem/rss-feed
+    - https://github.com/zAbuQasem/daily-security-feed
 
 github:
   username: zAbuQasem

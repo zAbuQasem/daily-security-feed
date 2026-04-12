@@ -18,4 +18,4 @@ New articles are fetched, classified by an AI model, and published here with pri
 
 ## Fork it
 
-This project is open source. Fork the [repository](https://github.com/zAbuQasem/rss-feed) and customize the feed list to build your own curated security feed.
+This project is open source. Fork the [repository](https://github.com/zAbuQasem/daily-security-feed) and customize the feed list to build your own curated security feed.
