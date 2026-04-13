@@ -98,6 +98,25 @@ Feed content is untrusted input. A malicious article can include indirect prompt
 3. Rotate the Copilot PAT and notification webhooks every month.
 4. Re-run the pipeline after rotation to verify the new secrets work.
 
+## Security disclaimer
+
+This project processes untrusted RSS/Atom content and passes it to an AI classifier. We implement multiple layers of defense against indirect prompt injection:
+
+- **Pre-classifier scanning** (`pipeline/injection_scanner.py`) — a heuristic engine that normalises text through 8 layers (HTML entities, URL encoding, Unicode NFKD, zero-width characters, homoglyphs, leetspeak, base64 decoding) and matches against injection patterns in 14 languages before content ever reaches the AI. Articles that match are quarantined and never sent to Copilot.
+- **In-prompt defenses** (`prompts/classify.md`) — explicit instructions telling the AI to treat all article content as data, never as instructions.
+- **Output validation** — JSON extraction ignores non-JSON output from the classifier.
+- **Least-privilege credentials** — the Copilot PAT is scoped to `Copilot Requests: Read` only.
+
+> [!CAUTION]
+> These defenses reduce risk but **do not guarantee complete protection**. Prompt injection is an open research problem with no known universal solution. By using this project, you acknowledge that:
+>
+> - No heuristic scanner can catch every possible injection technique. Adversaries may find bypasses.
+> - AI models can behave unpredictably when processing adversarial input regardless of system prompt hardening.
+> - The maintainers of this project provide these security measures on a best-effort basis and **accept no liability** for any damage, data exposure, credential leakage, or other harm arising from the use of this software.
+> - You are responsible for securing your own secrets, tokens, and infrastructure.
+>
+> Use at your own risk. Review the code, scope your credentials tightly, rotate secrets regularly, and monitor your pipeline runs.
+
 ## Author & credits
 
 Built and maintained by **Zeyad AbuLaban** ([@zAbuQasem](https://github.com/zAbuQasem) · [LinkedIn](https://www.linkedin.com/in/zeyad-abulaban/)).

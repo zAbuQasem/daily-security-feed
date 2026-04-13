@@ -14,6 +14,7 @@ import sys
 from datetime import datetime, timezone
 
 from config import CLASSIFIED_FILE, PROMPTS_DIR, STAGING_FILE
+from injection_scanner import scan_for_injection
 
 COPILOT_TIMEOUT = 120
 
@@ -134,6 +135,38 @@ def main() -> None:
                 }
             )
             counts["research"] = counts.get("research", 0) + 1
+            continue
+
+        # --- Prompt-injection pre-filter ---
+        hits_content = [
+            f"[content] {h}" for h in scan_for_injection(article.get("content", ""))
+        ]
+        hits_title = [
+            f"[title]   {h}" for h in scan_for_injection(article.get("title", ""))
+        ]
+        injection_hits = list(dict.fromkeys(hits_content + hits_title))
+        if injection_hits:
+            print(
+                f"  ⚠ Prompt-injection detected — {len(injection_hits)} pattern(s) matched, "
+                "skipping Copilot call",
+                file=sys.stderr,
+            )
+            for h in injection_hits:
+                print(f"    ↳ {h}", file=sys.stderr)
+            classified.append(
+                {
+                    "url": article["url"],
+                    "title": article["title"],
+                    "feed": article["feed"],
+                    "fetched_at": article["fetched_at"],
+                    "classified_at": datetime.now(timezone.utc).isoformat(),
+                    "category": "noise",
+                    "priority": 3,
+                    "tags": ["prompt-injection"],
+                    "summary": "Article quarantined: content matched prompt-injection heuristics.",
+                }
+            )
+            counts["noise-injection"] = counts.get("noise-injection", 0) + 1
             continue
 
         result = classify_article(article)
