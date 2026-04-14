@@ -72,3 +72,13 @@
 [2026-04-12] https://blog.thinkst.com/2026/04/thinkst-canary-alerts-in-google-secops-soar.html
 [2026-04-12] https://computer.rip/2026-04-11-IrDA.html
 [2026-04-13] https://medium.com/@delivrto/validating-browser-defences-with-push-security-and-delivr-to-51d4f5300074?source=rss-1242be189bc------2
+[2026-04-14] https://projectblack.io/blog/librenms-authenticated-rce-and-xss/
+[2026-04-14] https://projectblack.io/blog/fixing-esc8-web-enrollment-is-enabled-over-http-and-https-and-channel-binding-is-disabled/
+[2026-04-14] https://research.openanalysis.net/jitterdropper/dropper/rust/srdi/donut/pixeldrain/2026/04/13/jitterdropper.html
+[2026-04-14] https://awssecuritydigest.com/past-issues/aws-security-digest-256
+[2026-04-14] https://binary.ninja/2026/04/13/binary-ninja-5.3-jotunheim.html
+[2026-04-14] https://www.aquasec.com/blog/unveiling-the-mythos-behind-runtime-security/
+[2026-04-14] https://salt.security/blog/everyone-is-securing-the-wrong-layer-of-ai
+[2026-04-14] https://www.sygnia.co/press-release/sygnia-released-ciso-survey-2026/
+[2026-04-14] https://www.sygnia.co/guides-and-tools/ciso-survey-2026/
+[2026-04-14] https://www.sygnia.co/webinars/a-tale-of-two-incidents/
