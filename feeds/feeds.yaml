@@ -309,6 +309,7 @@ feeds:
   # --- Conference / Community ---
   - https://defcon.org/defconrss.xml
   - https://pagedout.institute/atom.xml
+  - https://lab.ctbb.show/feed.xml
 
   # --- DFIR / Threat Intel ---
   - https://thedfirreport.com/feed/
