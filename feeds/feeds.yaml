@@ -7,6 +7,7 @@ feeds:
 
   # --- Independent Researchers ---
   - https://www.uncommonengineer.com/docs/rss.xml
+  - https://rayhan0x01.github.io/feed.xml
   - https://0xash.io/feed.xml
   - https://0xdarkvortex.dev/feed.xml
   - https://0xdf.gitlab.io/feed.xml
