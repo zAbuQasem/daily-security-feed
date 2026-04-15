@@ -103,3 +103,5 @@
 [2026-04-15] https://lab.ctbb.show/writeups/chaining-service-key-leakage-and-path-confusion-in-langsmith
 [2026-04-15] https://lab.ctbb.show/research/bun-slacker-slash
 [2026-04-15] https://lab.ctbb.show/research/can-a-predicted-window-open-target-really-be-that-impactful
+[2026-04-15] https://blog.talosintelligence.com/the-n8n-n8mare/
+[2026-04-15] https://harfanglab.io/blog/methodology/recommandations-cybersecurity-mobile/
