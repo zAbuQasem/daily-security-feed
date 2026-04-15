@@ -1,5 +1,12 @@
 # Daily Security Feed
 
+[![Daily Feed](https://github.com/zAbuQasem/daily-security-feed/actions/workflows/security_feed.yml/badge.svg)](https://github.com/zAbuQasem/daily-security-feed/actions/workflows/security_feed.yml)
+[![Deploy Pages](https://github.com/zAbuQasem/daily-security-feed/actions/workflows/pages.yml/badge.svg)](https://github.com/zAbuQasem/daily-security-feed/actions/workflows/pages.yml)
+[![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![GitHub Copilot](https://img.shields.io/badge/AI-GitHub%20Copilot-8957e5?logo=githubcopilot&logoColor=white)](https://github.com/features/copilot)
+[![Jekyll](https://img.shields.io/badge/site-Jekyll-CC0000?logo=jekyll&logoColor=white)](https://jekyllrb.com/)
+[![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-222?logo=githubpages&logoColor=white)](https://zabuqasem.github.io/daily-security-feed/)
+
 AI-curated security research feed — auto-updated daily, deployed to GitHub Pages.
 
 Fork this repo, add your feeds, and get your own daily security feed at `https://<you>.github.io/daily-security-feed/` with optional Discord/Slack notifications.
