@@ -150,11 +150,11 @@ layout: default
         {% endif %}
       {% endfor %}
 
-      <h2 class="post-date-header mt-4 mb-3"
+      <h2 class="post-date-header mt-4 mb-3{% if date_index > 0 %} collapsed{% endif %}"
           data-bs-toggle="collapse"
           data-bs-target="#{{ collapse_id }}"
           data-date-group="{{ date_index }}"
-          aria-expanded="true"
+          aria-expanded="{% if date_index == 0 %}true{% else %}false{% endif %}"
           aria-controls="{{ collapse_id }}">
         <span>
           <i class="far fa-calendar-alt fa-fw me-1"></i>{{ post_date }}
@@ -163,7 +163,7 @@ layout: default
         <i class="fas fa-chevron-down collapse-icon"></i>
       </h2>
 
-      <div class="collapse show date-group-collapse" data-date-group="{{ date_index }}" id="{{ collapse_id }}">
+      <div class="collapse{% if date_index == 0 %} show{% endif %} date-group-collapse" data-date-group="{{ date_index }}" id="{{ collapse_id }}">
       {% assign last_date = post_date %}
       {% assign date_index = date_index | plus: 1 %}
     {% endif %}
