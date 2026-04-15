@@ -82,7 +82,7 @@ Priority controls sort order within each section in the Discord feed embed.
 | Skip classification | `SKIP_CLASSIFY` repo variable (`true` to bypass AI and publish all articles unfiltered) |
 | Notification channels | `NOTIFY_CHANNELS` repo variable (`both`, `discord`, or `slack`) |
 | Pages URL | `PAGES_URL` repo variable (optional, used by Discord and Slack "Browse feed" links) |
-| Creator branding | `GITHUB_HANDLE`, `LINKEDIN_URL`, `LINKEDIN_HANDLE` env vars (defaults in `pipeline/config.py`) |
+| Creator branding | Hardcoded in `pipeline/config.py` |
 
 ## Security Guidance
 
