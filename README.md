@@ -87,7 +87,6 @@ Do not use a classic PAT here. Keep the token scoped only for Copilot requests.
 | Entries per feed | `ENTRIES_PER_FEED` env var (default: 5) |
 | AI system prompt | `prompts/classify.md` |
 | Site theme | `site/_config.yml` and `site/_layouts/` |
-| Creator branding | Hardcoded in `pipeline/config.py` |
 
 ## Security warning
 
