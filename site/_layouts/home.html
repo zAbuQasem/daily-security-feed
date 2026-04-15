@@ -153,6 +153,7 @@ layout: default
       <h2 class="post-date-header mt-4 mb-3"
           data-bs-toggle="collapse"
           data-bs-target="#{{ collapse_id }}"
+          data-date-group="{{ date_index }}"
           aria-expanded="true"
           aria-controls="{{ collapse_id }}">
         <span>
@@ -162,7 +163,7 @@ layout: default
         <i class="fas fa-chevron-down collapse-icon"></i>
       </h2>
 
-      <div class="collapse show date-group-collapse" id="{{ collapse_id }}">
+      <div class="collapse show date-group-collapse" data-date-group="{{ date_index }}" id="{{ collapse_id }}">
       {% assign last_date = post_date %}
       {% assign date_index = date_index | plus: 1 %}
     {% endif %}
@@ -248,12 +249,57 @@ layout: default
   {% if posts.size > 0 %}
     </div><!-- close last .collapse -->
   {% endif %}
+
+  <div id="load-more-wrapper" class="text-center mt-4 mb-4" style="display:none;">
+    <button id="load-more-btn" class="btn btn-outline-primary px-4">
+      <i class="fas fa-calendar-plus me-1"></i>
+      Load more days
+      <span id="load-more-count" class="date-group-badge ms-1"></span>
+    </button>
+  </div>
 </div>
 <!-- #post-list -->
 
 <script>
-  // Toggle collapsed class on date headers for chevron rotation
-  document.querySelectorAll('.post-date-header[data-bs-toggle="collapse"]').forEach(function(header) {
+(function() {
+  var DAYS_PER_PAGE = 10;
+  var visibleDays = DAYS_PER_PAGE;
+
+  // Collect all date groups (header + collapse div pairs)
+  var headers = document.querySelectorAll('.post-date-header[data-date-group]');
+  var totalDays = headers.length;
+
+  function updateVisibility() {
+    headers.forEach(function(header) {
+      var idx = parseInt(header.getAttribute('data-date-group'));
+      var collapseDiv = document.querySelector('.date-group-collapse[data-date-group="' + idx + '"]');
+      if (idx < visibleDays) {
+        header.style.display = '';
+        if (collapseDiv) collapseDiv.style.display = '';
+      } else {
+        header.style.display = 'none';
+        if (collapseDiv) collapseDiv.style.display = 'none';
+      }
+    });
+
+    var remaining = totalDays - visibleDays;
+    var wrapper = document.getElementById('load-more-wrapper');
+    var countBadge = document.getElementById('load-more-count');
+    if (remaining > 0) {
+      wrapper.style.display = '';
+      countBadge.textContent = remaining + ' more day' + (remaining !== 1 ? 's' : '');
+    } else {
+      wrapper.style.display = 'none';
+    }
+  }
+
+  document.getElementById('load-more-btn').addEventListener('click', function() {
+    visibleDays += DAYS_PER_PAGE;
+    updateVisibility();
+  });
+
+  // Chevron rotation for collapse toggle
+  headers.forEach(function(header) {
     var target = document.querySelector(header.getAttribute('data-bs-target'));
     if (target) {
       target.addEventListener('hide.bs.collapse', function() {
@@ -264,8 +310,10 @@ layout: default
       });
     }
   });
-</script>
 
-{% if paginator.total_pages > 1 %}
-  {% include post-paginator.html %}
-{% endif %}
+  // Initial visibility
+  if (totalDays > DAYS_PER_PAGE) {
+    updateVisibility();
+  }
+})();
+</script>
