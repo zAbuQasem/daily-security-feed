@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       max_articles:
-        description: "Max articles to process per run (default: 15)"
+        description: "Max articles to process per run (default: 30)"
         required: false
         default: "30"
 
