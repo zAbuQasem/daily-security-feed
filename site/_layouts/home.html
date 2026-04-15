@@ -57,6 +57,38 @@ layout: default
     border-left: 3px solid #7b68ee;
     padding-left: 0.6rem;
     text-align: left;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .post-date-header:hover {
+    opacity: 0.85;
+  }
+  .post-date-header .collapse-icon {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+    margin-left: 0.5rem;
+  }
+  .post-date-header.collapsed .collapse-icon {
+    transform: rotate(-90deg);
+  }
+  .date-group-collapse {
+    transition: height 0.3s ease;
+  }
+  .date-group-badge {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #7b68ee;
+    background: rgba(123, 104, 238, 0.1);
+    border-radius: 999px;
+    padding: 0.1em 0.5em;
+    margin-left: 0.5rem;
+  }
+  [data-mode="dark"] .date-group-badge {
+    color: #9b8afb;
+    background: rgba(155, 138, 251, 0.12);
   }
   [data-mode="dark"] .post-date-header {
     color: #9b8afb !important;
@@ -98,13 +130,41 @@ layout: default
 </style>
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
+  {% assign date_index = 0 %}
   {% for post in posts %}
     {% assign post_date = post.date | date: '%B %d, %Y' %}
     {% if post_date != last_date %}
-      <h2 class="post-date-header mt-4 mb-3">
-        <i class="far fa-calendar-alt fa-fw me-1"></i>{{ post_date }}
+      {% if last_date != '' %}
+        </div><!-- .collapse -->
+      {% endif %}
+
+      {% assign date_slug = post.date | date: '%Y-%m-%d' %}
+      {% assign collapse_id = 'date-group-' | append: date_slug %}
+
+      {% comment %} Count posts for this date {% endcomment %}
+      {% assign date_count = 0 %}
+      {% for p in posts %}
+        {% assign p_date = p.date | date: '%B %d, %Y' %}
+        {% if p_date == post_date %}
+          {% assign date_count = date_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+
+      <h2 class="post-date-header mt-4 mb-3"
+          data-bs-toggle="collapse"
+          data-bs-target="#{{ collapse_id }}"
+          aria-expanded="true"
+          aria-controls="{{ collapse_id }}">
+        <span>
+          <i class="far fa-calendar-alt fa-fw me-1"></i>{{ post_date }}
+          <span class="date-group-badge">{{ date_count }} article{% if date_count != 1 %}s{% endif %}</span>
+        </span>
+        <i class="fas fa-chevron-down collapse-icon"></i>
       </h2>
+
+      <div class="collapse show date-group-collapse" id="{{ collapse_id }}">
       {% assign last_date = post_date %}
+      {% assign date_index = date_index | plus: 1 %}
     {% endif %}
 
     <article class="card-wrapper card">
@@ -184,8 +244,27 @@ layout: default
       </a>
     </article>
   {% endfor %}
+
+  {% if posts.size > 0 %}
+    </div><!-- close last .collapse -->
+  {% endif %}
 </div>
 <!-- #post-list -->
+
+<script>
+  // Toggle collapsed class on date headers for chevron rotation
+  document.querySelectorAll('.post-date-header[data-bs-toggle="collapse"]').forEach(function(header) {
+    var target = document.querySelector(header.getAttribute('data-bs-target'));
+    if (target) {
+      target.addEventListener('hide.bs.collapse', function() {
+        header.classList.add('collapsed');
+      });
+      target.addEventListener('show.bs.collapse', function() {
+        header.classList.remove('collapsed');
+      });
+    }
+  });
+</script>
 
 {% if paginator.total_pages > 1 %}
   {% include post-paginator.html %}
