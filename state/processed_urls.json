@@ -1319,7 +1319,23 @@
     "https://decoder.cloud/2026/04/15/lmcompatibilitylevel-and-the-pdc-trap/": "2026-04-16",
     "https://redcanary.com/blog/security-operations/tdr-secops-recap/": "2026-04-16",
     "https://www.wiz.io/blog/github-actions-security-guide": "2026-04-16",
-    "https://www.blackhillsinfosec.com/proxy-execution-via-webview2/": "2026-04-16"
+    "https://www.blackhillsinfosec.com/proxy-execution-via-webview2/": "2026-04-16",
+    "http://antirez.com/news/163": "2026-04-17",
+    "https://outpost24.com/blog/outpost24-launches-ai-pentesting/": "2026-04-17",
+    "https://blog.talosintelligence.com/foxit-libraw-vulnerabilities/": "2026-04-17",
+    "https://blog.talosintelligence.com/the-q1-vulnerability-pulse/": "2026-04-17",
+    "https://blog.talosintelligence.com/powmix-botnet-targets-czech-workforce/": "2026-04-17",
+    "https://blog.talosintelligence.com/more-than-pretty-pictures-wendy-bishop-on-visual-storytelling-in-tech/": "2026-04-17",
+    "https://securitylabs.datadoghq.com/articles/dependency-cooldowns/": "2026-04-17",
+    "https://trustedsec.com/blog/dungeons-and-daemons": "2026-04-17",
+    "https://unit42.paloaltonetworks.com/exploitation-of-cve-2023-33538/": "2026-04-17",
+    "https://www.sentinelone.com/blog/frontier-ai-reinforces-the-future-of-modern-cyber-defense/": "2026-04-17",
+    "https://portswigger.net/blog/introducing-the-official-burp-ambassador-program": "2026-04-17",
+    "https://www.wiz.io/blog/securing-ai-application-from-inception-to-deployment": "2026-04-17",
+    "http://blog.quarkslab.com/obfuscation-vs-the-optimizer-an-llvm-middle-end-arms-race.html": "2026-04-17",
+    "https://www.datadoghq.com/blog/github-actions-iac-security/": "2026-04-17",
+    "https://www.datadoghq.com/blog/otel-ai-observability-pipelines-clickhouse/": "2026-04-17",
+    "https://www.datadoghq.com/blog/single-step-instrumentation-rules/": "2026-04-17"
   },
-  "last_updated": "2026-04-16T03:12:36.291631+00:00"
+  "last_updated": "2026-04-17T03:12:33.861618+00:00"
 }
