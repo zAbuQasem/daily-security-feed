@@ -148,3 +148,5 @@
 [2026-04-18] https://www.wiz.io/blog/wiz-iac-inventory
 [2026-04-18] https://www.datadoghq.com/blog/governance-console/
 [2026-04-18] https://falconforce.nl/northsec-may-2026/
+[2026-04-19] https://avi.im/blag/2026/etilqs/
+[2026-04-19] https://0xdf.gitlab.io/2026/04/18/htb-airtouch.html
