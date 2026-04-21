@@ -155,3 +155,14 @@
 [2026-04-20] https://starlabs.sg/blog/2026/01-8th-anniversary-embrace-the-new-but-dont-forget-the-old/
 [2026-04-20] https://starlabs.sg/blog/2025/12-2025-we-broke-things-we-built-things-we-broke-even-more-things/
 [2026-04-20] https://starlabs.sg/publications/ai-accelerated-exploiting-compromising-mte-enabled-pixel-from-dsp-coprocessor/
+[2026-04-21] https://dustri.org/b/swic-a-simple-web-interface-for-calibre.html
+[2026-04-21] https://outpost24.com/blog/ai-penetration-testing-protecting-llm-cyber-attacks/
+[2026-04-21] https://awssecuritydigest.com/past-issues/aws-security-digest-257
+[2026-04-21] https://detect.fyi/detection-visibility-metrics-577fa1d63696?source=rss----d5fd8f494f6a---4
+[2026-04-21] https://detect.fyi/threat-hunting-via-internetmessageid-kql-queries-240d32e6f330?source=rss----d5fd8f494f6a---4
+[2026-04-21] https://unit42.paloaltonetworks.com/ai-software-security-risks/
+[2026-04-21] https://www.sentinelone.com/blog/automation-at-machine-speed-rethinking-execution-in-modern-cybersecurity/
+[2026-04-21] https://www.wiz.io/blog/contextai-oauth-token-compromise
+[2026-04-21] https://www.wiz.io/blog/wiz-databricks-security-graph
+[2026-04-21] https://www.wiz.io/blog/from-code-to-pipeline-wiz-code-now-secures-your-build-environment
+[2026-04-21] https://www.datadoghq.com/blog/ab-testing/
