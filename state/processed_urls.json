@@ -1367,7 +1367,20 @@
     "https://www.wiz.io/blog/contextai-oauth-token-compromise": "2026-04-21",
     "https://www.wiz.io/blog/wiz-databricks-security-graph": "2026-04-21",
     "https://www.wiz.io/blog/from-code-to-pipeline-wiz-code-now-secures-your-build-environment": "2026-04-21",
-    "https://www.datadoghq.com/blog/ab-testing/": "2026-04-21"
+    "https://www.datadoghq.com/blog/ab-testing/": "2026-04-21",
+    "https://blog.scrt.ch/2026/04/21/from-a-regular-red-team-exercise-to-developing-a-custom-c2-channel-over-ms-teams/": "2026-04-22",
+    "https://a13xp0p0v.tech/2026/04/20/pipe-buffer-experiments.html": "2026-04-22",
+    "https://outpost24.com/blog/anthropic-mythos-security/": "2026-04-22",
+    "https://thalpius.com/2026/04/21/microsoft-entra-id-understanding-oauth-app-consent-and-permissions/": "2026-04-22",
+    "https://www.praetorian.com/blog/exploit-chain-analysis/": "2026-04-22",
+    "https://blog.talosintelligence.com/podcast-its-not-you-its-your-printer-state-sponsored-and-phishing-threats-in-2025/": "2026-04-22",
+    "https://blog.talosintelligence.com/phishing-and-mfa-exploitation-targeting-the-keys-to-the-kingdom/": "2026-04-22",
+    "https://blog.talosintelligence.com/bad-apples-weaponizing-native-macos-primitives-for-movement-and-execution/": "2026-04-22",
+    "https://detect.fyi/inside-an-aws-cloud-threat-detection-soc-lab-simulating-and-detecting-real-cloud-attacks-a11e0ea98430?source=rss----d5fd8f494f6a---4": "2026-04-22",
+    "https://www.wiz.io/blog/securing-software-age-of-agentic-coding": "2026-04-22",
+    "https://www.wiz.io/blog/wiz-apigee-integration-for-api-discovery": "2026-04-22",
+    "https://www.datadoghq.com/blog/azure-devops-source-code-integration/": "2026-04-22",
+    "https://www.datadoghq.com/blog/observability-data-hosting-uk-aws/": "2026-04-22"
   },
-  "last_updated": "2026-04-21T03:12:43.504348+00:00"
+  "last_updated": "2026-04-22T03:12:40.191108+00:00"
 }
