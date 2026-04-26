@@ -213,3 +213,6 @@
 [2026-04-25] https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/
 [2026-04-25] https://unit42.paloaltonetworks.com/new-activity-central-south-america/
 [2026-04-25] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-17-7/
+[2026-04-26] https://www.uncommonengineer.com/docs/engineer/Misc/beehiiv-dns
+[2026-04-26] https://0xdf.gitlab.io/2026/04/25/htb-sorcery.html
+[2026-04-26] https://rastamouse.me/atomic-bofs/
