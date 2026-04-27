@@ -9,6 +9,7 @@ Step 2 of the pipeline:
 
 import json
 import os
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -38,13 +39,20 @@ def _get_prompt() -> str:
     return _cached_prompt
 
 
+def _sanitize_field(value: str) -> str:
+    """Strip newlines and control characters from a field before prompt interpolation."""
+    return re.sub(r"[\r\n\t]", " ", value).strip()
+
+
 def classify_article(article: dict) -> dict | None:
+    published_at = _sanitize_field(article.get("published_at") or "unknown")
     prompt = (
         f"{_get_prompt()}\n\n"
         f"---\n\n"
         f"Title: {article['title']}\n"
         f"URL: {article['url']}\n"
-        f"Feed: {article['feed']}\n\n"
+        f"Feed: {article['feed']}\n"
+        f"Published: {published_at}\n\n"
         f"{article['content']}"
     )
 
@@ -126,6 +134,7 @@ def main() -> None:
                     "url": article["url"],
                     "title": article["title"],
                     "feed": article["feed"],
+                    "published_at": article.get("published_at"),
                     "fetched_at": article["fetched_at"],
                     "classified_at": datetime.now(timezone.utc).isoformat(),
                     "category": "research",
@@ -137,14 +146,13 @@ def main() -> None:
             counts["research"] = counts.get("research", 0) + 1
             continue
 
-        # --- Prompt-injection pre-filter ---
-        hits_content = [
-            f"[content] {h}" for h in scan_for_injection(article.get("content", ""))
-        ]
-        hits_title = [
-            f"[title]   {h}" for h in scan_for_injection(article.get("title", ""))
-        ]
-        injection_hits = list(dict.fromkeys(hits_content + hits_title))
+        # --- Prompt-injection pre-filter (scan all fields interpolated into the prompt) ---
+        injection_hits: list[str] = []
+        for field_name in ("content", "title", "url", "feed", "published_at"):
+            value = article.get(field_name, "") or ""
+            hits = [f"[{field_name}] {h}" for h in scan_for_injection(value)]
+            injection_hits.extend(hits)
+        injection_hits = list(dict.fromkeys(injection_hits))
         if injection_hits:
             print(
                 f"  ⚠ Prompt-injection detected — {len(injection_hits)} pattern(s) matched, "
@@ -158,6 +166,7 @@ def main() -> None:
                     "url": article["url"],
                     "title": article["title"],
                     "feed": article["feed"],
+                    "published_at": article.get("published_at"),
                     "fetched_at": article["fetched_at"],
                     "classified_at": datetime.now(timezone.utc).isoformat(),
                     "category": "noise",
@@ -181,6 +190,7 @@ def main() -> None:
                 "url": article["url"],
                 "title": article["title"],
                 "feed": article["feed"],
+                "published_at": article.get("published_at"),
                 "fetched_at": article["fetched_at"],
                 "classified_at": datetime.now(timezone.utc).isoformat(),
                 "category": category,

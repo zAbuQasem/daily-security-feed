@@ -10,12 +10,13 @@ Step 1 of the pipeline:
 - Update state/processed_urls.json (all seen URLs, including failed extractions)
 """
 
+import calendar
 import json
 import os
 import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 import feedparser
 import yaml
@@ -24,6 +25,7 @@ from config import FEEDS_FILE, PROCESSED_URLS_FILE, STAGING_FILE, URL_LOG_FILE
 
 MAX_ARTICLES = int(os.environ.get("MAX_ARTICLES", 100))
 ENTRIES_PER_FEED = int(os.environ.get("ENTRIES_PER_FEED", 5))
+MAX_ARTICLE_AGE_DAYS = int(os.environ.get("MAX_ARTICLE_AGE_DAYS", 7))
 FEED_FETCH_WORKERS = 30
 DEFUDDLE_TIMEOUT = 30
 MIN_CONTENT_LENGTH = 200
@@ -56,19 +58,43 @@ def load_feed_urls() -> list[str]:
     ]
 
 
-def fetch_feed(feed_url: str) -> list[dict]:
+def _parse_entry_date(entry) -> datetime | None:
+    """Extract published/updated date from a feedparser entry."""
+    for attr in ("published_parsed", "updated_parsed"):
+        parsed = getattr(entry, attr, None)
+        if parsed:
+            try:
+                return datetime.fromtimestamp(calendar.timegm(parsed), tz=timezone.utc)
+            except (ValueError, OverflowError, OSError):
+                continue
+    return None
+
+
+def fetch_feed(feed_url: str, cutoff: datetime) -> list[dict]:
     try:
         d = feedparser.parse(
             feed_url,
             request_headers={"User-Agent": "Mozilla/5.0 (security-feed-bot)"},
         )
         entries = []
-        for entry in d.entries[:ENTRIES_PER_FEED]:
+        for entry in d.entries:
             link = entry.get("link", "").strip()
             title = entry.get("title", "").strip()
             if not (link and title and link.startswith("http")):
                 continue
-            entries.append({"url": link, "title": title, "feed": feed_url})
+            published_at = _parse_entry_date(entry)
+            if published_at and published_at < cutoff:
+                continue
+            entries.append(
+                {
+                    "url": link,
+                    "title": title,
+                    "feed": feed_url,
+                    "published_at": published_at.isoformat() if published_at else None,
+                }
+            )
+            if len(entries) >= ENTRIES_PER_FEED:
+                break
         return entries
     except Exception as e:
         print(f"  [feed error] {feed_url}: {e}", file=sys.stderr)
@@ -104,9 +130,10 @@ def main() -> None:
     print(f"Loaded {len(feed_urls)} feeds | {len(seen_urls)} already-seen URLs")
 
     # --- Step 1: Fetch all feeds concurrently ---
+    cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_ARTICLE_AGE_DAYS)
     candidates: list[dict] = []
     with ThreadPoolExecutor(max_workers=FEED_FETCH_WORKERS) as executor:
-        futures = {executor.submit(fetch_feed, url): url for url in feed_urls}
+        futures = {executor.submit(fetch_feed, url, cutoff): url for url in feed_urls}
         for i, future in enumerate(as_completed(futures), 1):
             entries = future.result()
             for entry in entries:
@@ -132,6 +159,7 @@ def main() -> None:
                     "url": candidate["url"],
                     "title": candidate["title"],
                     "feed": candidate["feed"],
+                    "published_at": candidate.get("published_at"),
                     "content": content[:MAX_CONTENT_LENGTH],
                     "fetched_at": datetime.now(timezone.utc).isoformat(),
                 }

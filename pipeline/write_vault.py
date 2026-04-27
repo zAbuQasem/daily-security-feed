@@ -12,6 +12,7 @@ import json
 import re
 import sys
 from datetime import datetime, timezone
+from pathlib import Path
 
 from common import creator_tags
 from config import CLASSIFIED_FILE, VAULT_DIR
@@ -25,19 +26,36 @@ def slugify(title: str) -> str:
     return slug[:60].strip("-")
 
 
-def note_path(article: dict):
-    date = (article.get("fetched_at") or datetime.now(timezone.utc).isoformat())[:10]
+_DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
+
+
+def _article_date(article: dict) -> str:
+    """Return the best date string for an article: published_at if valid, else fetched_at."""
+    for field in ("published_at", "fetched_at"):
+        value = article.get(field) or ""
+        if _DATE_RE.match(value):
+            return value
+    return datetime.now(timezone.utc).isoformat()
+
+
+def note_path(article: dict) -> Path:
+    date = _article_date(article)[:10]
     slug = slugify(article.get("title", "untitled")) or "untitled"
-    return VAULT_DIR / f"{date}-{slug}.md"
+    path = VAULT_DIR / f"{date}-{slug}.md"
+    if not path.resolve().is_relative_to(VAULT_DIR.resolve()):
+        raise ValueError(f"Resolved path escapes VAULT_DIR: {path}")
+    return path
 
 
 def build_note(article: dict) -> str:
     title = article.get("title", "Untitled")
     url = article.get("url", "")
-    category = article.get("category", "research")
-    tags = [t for t in (article.get("tags") or []) + creator_tags()
-            if not t.startswith("github-") and not t.startswith("linkedin-")]
-    date = (article.get("fetched_at") or "")[:19]  # YYYY-MM-DDTHH:MM:SS
+    tags = [
+        t
+        for t in (article.get("tags") or []) + creator_tags()
+        if not t.startswith("github-") and not t.startswith("linkedin-")
+    ]
+    date = _article_date(article)[:19]  # YYYY-MM-DDTHH:MM:SS
     if len(date) == 10:
         date += " 00:00:00"
     else:
@@ -50,7 +68,7 @@ def build_note(article: dict) -> str:
     cat_yaml = "[RSS]"
 
     # Escape title for YAML
-    safe_title = title.replace('"', '\\"').replace('\n', ' ').replace('\r', ' ')
+    safe_title = title.replace('"', '\\"').replace("\n", " ").replace("\r", " ")
 
     frontmatter = (
         "---\n"

@@ -67,6 +67,7 @@ Feed content is treated as **untrusted input**. Malicious RSS items can contain 
 | Feed list | `feeds/feeds.yaml` |
 | Articles per run cap | `MAX_ARTICLES` env var (code default: 100; workflow default: 30) |
 | Entries per source | `ENTRIES_PER_FEED` env var (code default: 5) |
+| Max article age | `MAX_ARTICLE_AGE_DAYS` env var (code default: 7) — skip feed entries older than this |
 | Seen URLs | `state/processed_urls.json` — delete entries to reprocess |
 | Classifier prompt | `prompts/classify.md` |
 | Copilot auth | `COPILOT_TOKEN` secret (fine-grained PAT, Copilot Requests: Read) |

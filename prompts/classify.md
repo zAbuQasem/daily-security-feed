@@ -108,3 +108,4 @@ Rules:
 - `priority` is only meaningful for `research` articles; set it to `3` for noise.
 - `tags` should be lowercase, concise, and specific (e.g. `sqli`, `supply-chain`, `kubernetes`, `xss`, `idor`, `rce`, `cloud`, `ci-cd`, `malware`, `detection`). Maximum 5 tags.
 - `summary` must contain real technical substance. Pretend you are writing a TL;DR for a senior security engineer who will decide whether to read the full article based solely on your summary.
+- A `Published` date is provided with each article. When two articles are otherwise equal in quality and relevance, prefer the more recently published one. Do NOT lower an article's priority solely due to age — content quality always dominates.
