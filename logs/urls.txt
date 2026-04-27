@@ -216,3 +216,5 @@
 [2026-04-26] https://www.uncommonengineer.com/docs/engineer/Misc/beehiiv-dns
 [2026-04-26] https://0xdf.gitlab.io/2026/04/25/htb-sorcery.html
 [2026-04-26] https://rastamouse.me/atomic-bofs/
+[2026-04-27] https://computer.rip/2026-04-26-voice-modems.html
+[2026-04-27] https://shellsharks.com/notes/2026/04/26/adventure-iwc
