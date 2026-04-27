@@ -3,7 +3,7 @@ classify.py
 
 Step 2 of the pipeline:
 - Reads state/staged_articles.json from fetch_feeds.py
-- Sends each article to the Copilot CLI with a structured classification prompt
+- Classifies each article using Copilot CLI or Claude API (configurable via CLASSIFIER_BACKEND)
 - Writes state/classified_articles.json for downstream notification and state persistence
 """
 
@@ -18,6 +18,9 @@ from config import CLASSIFIED_FILE, PROMPTS_DIR, STAGING_FILE
 from injection_scanner import scan_for_injection
 
 COPILOT_TIMEOUT = 120
+CLAUDE_TIMEOUT = 120
+CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-20250514")
+CLASSIFIER_BACKEND = os.environ.get("CLASSIFIER_BACKEND", "copilot").lower()
 
 
 def _load_prompt() -> str:
@@ -25,7 +28,9 @@ def _load_prompt() -> str:
     text = path.read_text(encoding="utf-8")
     # Strip the H1 title line (first non-empty line starting with #) — it's for humans, not the model
     lines = text.splitlines()
-    body_lines = [l for i, l in enumerate(lines) if not (i == 0 and l.startswith("#"))]
+    body_lines = [
+        line for i, line in enumerate(lines) if not (i == 0 and line.startswith("#"))
+    ]
     return "\n".join(body_lines).lstrip("\n")
 
 
@@ -44,11 +49,10 @@ def _sanitize_field(value: str) -> str:
     return re.sub(r"[\r\n\t]", " ", value).strip()
 
 
-def classify_article(article: dict) -> dict | None:
+def _build_article_text(article: dict) -> str:
+    """Build the article portion of the prompt (shared across backends)."""
     published_at = _sanitize_field(article.get("published_at") or "unknown")
-    prompt = (
-        f"{_get_prompt()}\n\n"
-        f"---\n\n"
+    return (
         f"Title: {article['title']}\n"
         f"URL: {article['url']}\n"
         f"Feed: {article['feed']}\n"
@@ -56,6 +60,24 @@ def classify_article(article: dict) -> dict | None:
         f"{article['content']}"
     )
 
+
+def _extract_json(text: str) -> dict | None:
+    """Extract a JSON object from text that may contain preamble."""
+    start = text.find("{")
+    end = text.rfind("}")
+    if start == -1 or end == -1:
+        print("  → no JSON object found in output", file=sys.stderr)
+        print(f"  → text: {text[:300]!r}", file=sys.stderr)
+        return None
+    try:
+        return json.loads(text[start : end + 1])
+    except json.JSONDecodeError as e:
+        print(f"  → JSON parse error: {e}", file=sys.stderr)
+        return None
+
+
+def _classify_with_copilot(article: dict) -> dict | None:
+    prompt = f"{_get_prompt()}\n\n---\n\n{_build_article_text(article)}"
     env = {
         **os.environ,
         "COPILOT_GITHUB_TOKEN": os.environ.get("COPILOT_GITHUB_TOKEN", ""),
@@ -76,23 +98,9 @@ def classify_article(article: dict) -> dict | None:
                 file=sys.stderr,
             )
             return None
-
-        # The CLI may emit a preamble before the JSON fence — extract the JSON object directly
-        text = result.stdout
-        start = text.find("{")
-        end = text.rfind("}")
-        if start == -1 or end == -1:
-            print("  → no JSON object found in output", file=sys.stderr)
-            print(f"  → stdout: {text[:300]!r}", file=sys.stderr)
-            return None
-
-        parsed = json.loads(text[start : end + 1])
-        return parsed
+        return _extract_json(result.stdout)
     except subprocess.TimeoutExpired:
         print("  → timeout", file=sys.stderr)
-        return None
-    except json.JSONDecodeError as e:
-        print(f"  → JSON parse error: {e}", file=sys.stderr)
         return None
     except FileNotFoundError:
         print(
@@ -103,6 +111,54 @@ def classify_article(article: dict) -> dict | None:
     except Exception as e:
         print(f"  → Error: {e}", file=sys.stderr)
         return None
+
+
+def _classify_with_claude(article: dict) -> dict | None:
+    try:
+        import anthropic
+    except ImportError:
+        print(
+            "  → 'anthropic' package not found — install with: uv add anthropic",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not api_key:
+        print("  → ANTHROPIC_API_KEY not set", file=sys.stderr)
+        sys.exit(1)
+
+    client = anthropic.Anthropic(api_key=api_key)
+    article_text = _build_article_text(article)
+
+    try:
+        message = client.messages.create(
+            model=CLAUDE_MODEL,
+            max_tokens=512,
+            messages=[
+                {
+                    "role": "user",
+                    "content": f"{_get_prompt()}\n\n---\n\n{article_text}",
+                }
+            ],
+        )
+        response_text = message.content[0].text
+        return _extract_json(response_text)
+    except anthropic.APITimeoutError:
+        print("  → Claude API timeout", file=sys.stderr)
+        return None
+    except anthropic.APIError as e:
+        print(f"  → Claude API error: {e}", file=sys.stderr)
+        return None
+    except Exception as e:
+        print(f"  → Error: {e}", file=sys.stderr)
+        return None
+
+
+def classify_article(article: dict) -> dict | None:
+    if CLASSIFIER_BACKEND == "claude":
+        return _classify_with_claude(article)
+    return _classify_with_copilot(article)
 
 
 def main() -> None:
@@ -156,7 +212,7 @@ def main() -> None:
         if injection_hits:
             print(
                 f"  ⚠ Prompt-injection detected — {len(injection_hits)} pattern(s) matched, "
-                "skipping Copilot call",
+                "skipping AI call",
                 file=sys.stderr,
             )
             for h in injection_hits:

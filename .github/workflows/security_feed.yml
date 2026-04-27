@@ -52,15 +52,19 @@ jobs:
         run: uv sync
 
       - name: Install Copilot CLI
-        if: vars.SKIP_CLASSIFY != 'true'
+        if: vars.SKIP_CLASSIFY != 'true' && vars.CLASSIFIER_BACKEND != 'claude'
         run: npm i -g @github/copilot
 
       - name: Cache Copilot CLI tokens
-        if: vars.SKIP_CLASSIFY != 'true'
+        if: vars.SKIP_CLASSIFY != 'true' && vars.CLASSIFIER_BACKEND != 'claude'
         uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830  # v4
         with:
           path: ~/.config/github-copilot
           key: copilot-cli-${{ runner.os }}
+
+      - name: Install anthropic SDK
+        if: vars.SKIP_CLASSIFY != 'true' && vars.CLASSIFIER_BACKEND == 'claude'
+        run: uv sync --extra claude
 
       - name: Init state dirs
         run: |
@@ -74,12 +78,14 @@ jobs:
         env:
           MAX_ARTICLES: ${{ github.event.inputs.max_articles || '30' }}
 
-      - name: Step 2 — Classify with Copilot
+      - name: Step 2 — Classify articles
         timeout-minutes: 50
         run: uv run python pipeline/classify.py
         env:
+          CLASSIFIER_BACKEND: ${{ vars.CLASSIFIER_BACKEND || 'copilot' }}
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_TOKEN }}
-          AI_MODEL: ${{ vars.AI_MODEL }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL || '' }}
           SKIP_CLASSIFY: ${{ vars.SKIP_CLASSIFY || 'false' }}
 
       - name: Step 3 — Write vault notes

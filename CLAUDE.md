@@ -12,7 +12,10 @@ npm install -g @github/copilot   # required by classify.py
 
 # Run each pipeline step individually
 MAX_ARTICLES=5 uv run python pipeline/fetch_feeds.py
+# Classify with Copilot (default)
 COPILOT_GITHUB_TOKEN=<fine-grained-pat> uv run python pipeline/classify.py
+# Classify with Claude
+CLASSIFIER_BACKEND=claude ANTHROPIC_API_KEY=<key> uv run python pipeline/classify.py
 uv run python pipeline/write_vault.py
 uv run python pipeline/persist_state.py
 
@@ -44,7 +47,11 @@ notify_discord.py / notify_slack.py  →  webhooks
 
 **fetch_feeds.py** — Parses `feeds/feeds.yaml`, fetches up to `ENTRIES_PER_FEED` entries per feed via `feedparser` with 30 concurrent workers, skips URLs in `state/processed_urls.json`, then calls `defuddle parse --json --md <url>` as a subprocess. All candidate URLs are marked seen immediately (including capped/failed). Content capped at 8000 chars; articles <200 chars discarded but still marked seen. Appends URLs to `logs/urls.txt` with `[YYYY-MM-DD]` prefix.
 
-**classify.py** — Calls `@github/copilot` npm CLI as a subprocess per article (120s timeout). Auth via `COPILOT_GITHUB_TOKEN` env var — must be a **fine-grained PAT with Copilot Requests: Read** (classic `ghp_` tokens are rejected). Prompt is loaded from `prompts/classify.md`. JSON is extracted by finding the first `{` and last `}` in stdout (Copilot CLI emits preamble text before JSON). Returns `category`, `tags`, `priority` (1–3), `summary`. When `SKIP_CLASSIFY=true`, all articles are published as research/priority-2 with no tags or summary.
+**classify.py** — Classifies articles using one of two backends selected by `CLASSIFIER_BACKEND` env var:
+- **`copilot`** (default) — Calls `@github/copilot` npm CLI as a subprocess per article (120s timeout). Auth via `COPILOT_GITHUB_TOKEN` env var — must be a **fine-grained PAT with Copilot Requests: Read** (classic `ghp_` tokens are rejected).
+- **`claude`** — Calls the Anthropic API via the `anthropic` Python SDK. Auth via `ANTHROPIC_API_KEY` env var. Model configurable via `CLAUDE_MODEL` (default: `claude-sonnet-4-20250514`). Requires `uv sync --extra claude`.
+
+Prompt is loaded from `prompts/classify.md`. JSON is extracted by finding the first `{` and last `}` in the response. Returns `category`, `tags`, `priority` (1–3), `summary`. When `SKIP_CLASSIFY=true`, all articles are published as research/priority-2 with no tags or summary.
 
 **write_vault.py** — Writes Jekyll markdown posts with frontmatter. Uses `source_url` (not `url`) to avoid collision with Jekyll's reserved `page.url` permalink variable.
 
@@ -70,7 +77,10 @@ Feed content is treated as **untrusted input**. Malicious RSS items can contain 
 | Max article age | `MAX_ARTICLE_AGE_DAYS` env var (code default: 7) — skip feed entries older than this |
 | Seen URLs | `state/processed_urls.json` — delete entries to reprocess |
 | Classifier prompt | `prompts/classify.md` |
+| Classifier backend | `CLASSIFIER_BACKEND` repo variable: `copilot` (default) or `claude` |
 | Copilot auth | `COPILOT_TOKEN` secret (fine-grained PAT, Copilot Requests: Read) |
+| Claude auth | `ANTHROPIC_API_KEY` secret (required when backend is `claude`) |
+| Claude model | `CLAUDE_MODEL` repo variable (default: `claude-sonnet-4-20250514`) |
 | Skip AI classification | `SKIP_CLASSIFY=true` repo variable |
 | Notification channels | `NOTIFY_CHANNELS`: `both`, `discord`, or `slack` |
 | Pages URL | `PAGES_URL` repo variable (used in Discord/Slack "Browse feed" links) |
