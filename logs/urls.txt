@@ -218,3 +218,7 @@
 [2026-04-26] https://rastamouse.me/atomic-bofs/
 [2026-04-27] https://computer.rip/2026-04-26-voice-modems.html
 [2026-04-27] https://shellsharks.com/notes/2026/04/26/adventure-iwc
+[2026-04-28] https://outpost24.com/blog/defending-critical-infrastructure-hyperconnected-society/
+[2026-04-28] https://projectdiscovery.io/blog/neo-black-box-dast-capabilities
+[2026-04-28] https://www.wiz.io/blog/nist-nvd-update
+[2026-04-28] https://lab.ctbb.show/research/figma-desktop-zero-click-rce/
