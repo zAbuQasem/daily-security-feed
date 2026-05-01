@@ -1451,7 +1451,16 @@
     "https://www.wiz.io/blog/mini-shai-hulud-supply-chain-sap-npm": "2026-04-30",
     "https://www.wiz.io/blog/wiz-code-week-recap": "2026-04-30",
     "https://www.wiz.io/blog/modern-defensible-architecture-australian-federal-government": "2026-04-30",
-    "https://www.blackhillsinfosec.com/bloodhound-data-collection/": "2026-04-30"
+    "https://www.blackhillsinfosec.com/bloodhound-data-collection/": "2026-04-30",
+    "http://lockboxx.blogspot.com/2026/04/book-review-infosec-survival-guides.html": "2026-05-01",
+    "https://dustri.org/b/follow-up-to-carrot-disclosure-forgejo.html": "2026-05-01",
+    "https://starlabs.sg/advisories/26/26-41873/": "2026-05-01",
+    "https://blog.talosintelligence.com/great-responsibility-without-great-power/": "2026-05-01",
+    "https://trustedsec.com/blog/arp-around-and-find-out-hijacking-gpo-unc-paths-for-code-execution-and-ntlm-relay": "2026-05-01",
+    "https://unit42.paloaltonetworks.com/high-risk-gen-ai-browser-extensions/": "2026-05-01",
+    "https://www.wiz.io/blog/red-agent-claude-opus": "2026-05-01",
+    "https://www.wiz.io/blog/github-actions-security-ai-powered-actions-vulnerabilities": "2026-05-01",
+    "http://blog.quarkslab.com/auditing-application-permissions-in-microsoft-entra-id-hidden-risks-pitfalls-and-quarkslabs-qazpt-tool.html": "2026-05-01"
   },
-  "last_updated": "2026-04-30T03:14:35.977418+00:00"
+  "last_updated": "2026-05-01T03:14:30.972139+00:00"
 }
