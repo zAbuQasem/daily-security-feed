@@ -251,3 +251,12 @@
 [2026-05-01] https://www.wiz.io/blog/red-agent-claude-opus
 [2026-05-01] https://www.wiz.io/blog/github-actions-security-ai-powered-actions-vulnerabilities
 [2026-05-01] http://blog.quarkslab.com/auditing-application-permissions-in-microsoft-entra-id-hidden-risks-pitfalls-and-quarkslabs-qazpt-tool.html
+[2026-05-02] https://spaceraccoon.dev/discovering-vulnerabilities-enterprise-audiovisual-hardware/
+[2026-05-02] https://shellsharks.com/mt-rushmore-of-branded-bugs
+[2026-05-02] https://shellsharks.com/scrolls/scroll/2026-05-01
+[2026-05-02] https://detect.fyi/the-life-dinner-principle-in-detection-822169d9da2c?source=rss----d5fd8f494f6a---4
+[2026-05-02] https://unit42.paloaltonetworks.com/detection-beyond-the-endpoint/
+[2026-05-02] https://portswigger.net/blog/3-ways-custom-scan-checks-turn-practitioner-knowledge-into-scalable-automation
+[2026-05-02] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-18-7/
+[2026-05-02] https://www.wiz.io/blog/copyfail-cve-2026-31431-linux-privilege-escalation-vulnerability
+[2026-05-02] https://www.datadoghq.com/blog/observability-pipelines-reference-tables-log-enrichment/
