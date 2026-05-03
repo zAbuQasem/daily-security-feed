@@ -260,3 +260,7 @@
 [2026-05-02] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-18-7/
 [2026-05-02] https://www.wiz.io/blog/copyfail-cve-2026-31431-linux-privilege-escalation-vulnerability
 [2026-05-02] https://www.datadoghq.com/blog/observability-pipelines-reference-tables-log-enrichment/
+[2026-05-03] https://www.uncommonengineer.com/docs/engineer/Projects/data-driven-tier-thresholds
+[2026-05-03] https://www.uncommonengineer.com/docs/engineer/AI/claude-code-cost-tracking-bedrock-vs-pro-max
+[2026-05-03] https://shells.systems/chaining-isc-dhcp-server-features-for-unauthenticated-root-remote-code-execution/
+[2026-05-03] https://detect.fyi/tuned-by-design-why-detection-engineering-needs-its-own-development-lifecycle-63a1118cb41d?source=rss----d5fd8f494f6a---4
