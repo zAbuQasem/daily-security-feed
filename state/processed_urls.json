@@ -1494,7 +1494,12 @@
     "https://www.datadoghq.com/blog/cloud-siem-cases/": "2026-05-05",
     "https://www.datadoghq.com/blog/dbm-supabase/": "2026-05-05",
     "https://www.datadoghq.com/blog/this-month-in-datadog-april-2026/": "2026-05-05",
-    "http://blog.quarkslab.com/paramiko-security-audit.html": "2026-05-05"
+    "http://blog.quarkslab.com/paramiko-security-audit.html": "2026-05-05",
+    "https://hackingthe.cloud/ai-llm/deprecated/claude_magic_string_denial_of_service/": "2026-05-06",
+    "https://shellsharks.com/hello-vulnerability-garden": "2026-05-06",
+    "https://shellsharks.com/devlog/planting-a-website-on-codeberg-pages": "2026-05-06",
+    "https://unit42.paloaltonetworks.com/cve-2026-31431-copy-fail/": "2026-05-06",
+    "https://www.datadoghq.com/blog/pup-culture/datadog-ai-research-lab-phd-program/": "2026-05-06"
   },
-  "last_updated": "2026-05-05T17:04:19.843628+00:00"
+  "last_updated": "2026-05-06T03:14:35.590310+00:00"
 }
