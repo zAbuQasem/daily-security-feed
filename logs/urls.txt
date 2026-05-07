@@ -299,3 +299,12 @@
 [2026-05-06] https://shellsharks.com/devlog/planting-a-website-on-codeberg-pages
 [2026-05-06] https://unit42.paloaltonetworks.com/cve-2026-31431-copy-fail/
 [2026-05-06] https://www.datadoghq.com/blog/pup-culture/datadog-ai-research-lab-phd-program/
+[2026-05-07] https://medium.com/@delivrto/open-sourcing-140-weaponisable-file-type-samples-test-what-your-defences-actually-block-f682e345af3c?source=rss-1242be189bc------2
+[2026-05-07] https://blog.talosintelligence.com/insights-into-the-clustering-and-reuse-of-phone-numbers-in-scam-emails/
+[2026-05-07] https://unit42.paloaltonetworks.com/captive-portal-zero-day/
+[2026-05-07] https://www.datadoghq.com/blog/flexible-sheets-cloud-cost-management/
+[2026-05-07] https://www.datadoghq.com/blog/datadog-achieves-fedramp-high-certification/
+[2026-05-07] https://www.wiz.io/blog/jenkins-threat-risk-insights
+[2026-05-07] https://www.wiz.io/blog/critical-vulnerability-in-pan-os-exploited-in-the-wild-cve-2026-0300
+[2026-05-07] https://www.blackhillsinfosec.com/swapper/
+[2026-05-07] https://lab.ctbb.show/writeups/breaking-samesite-strict-in-chrome
