@@ -308,3 +308,13 @@
 [2026-05-07] https://www.wiz.io/blog/critical-vulnerability-in-pan-os-exploited-in-the-wild-cve-2026-0300
 [2026-05-07] https://www.blackhillsinfosec.com/swapper/
 [2026-05-07] https://lab.ctbb.show/writeups/breaking-samesite-strict-in-chrome
+[2026-05-08] https://www.uncommonengineer.com/docs/engineer/AI/claude-code-cost-tracking-bedrock-vs-pro-max-part-2
+[2026-05-08] https://projectblack.io/blog/gibbon-v30-authenticated-sql-injection-and-rce/
+[2026-05-08] https://certitude.consulting/blog/en/the-new-reality-in-cybersecurity-ai-agents-acceleration-and-asymmetry/
+[2026-05-08] https://redcanary.com/blog/security-operations/spring-cleaning-your-browser/
+[2026-05-08] https://www.aquasec.com/blog/known-techniques-unknown-speed-how-ai-changes-the-attack-chain/
+[2026-05-08] https://blog.talosintelligence.com/unplug-your-way-to-better-code/
+[2026-05-08] https://trustedsec.com/blog/grc-in-an-ai-world
+[2026-05-08] https://www.wiz.io/blog/introducing-wiz-lovable-integration
+[2026-05-08] https://www.wiz.io/blog/wiz-zero-code-criticals-challenge
+[2026-05-08] http://blog.quarkslab.com/the-igvm-file-format.html
