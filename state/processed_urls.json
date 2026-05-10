@@ -1531,7 +1531,12 @@
     "https://www.wiz.io/blog/ai-threat-readiness-framework": "2026-05-09",
     "https://www.wiz.io/blog/introducing-wiz-akamai-integration": "2026-05-09",
     "https://www.wiz.io/blog/dirty-frag-linux-kernel-local-privilege-escalation-via-esp-and-rxrpc": "2026-05-09",
-    "https://www.datadoghq.com/blog/database-investigator/": "2026-05-09"
+    "https://www.datadoghq.com/blog/database-investigator/": "2026-05-09",
+    "http://lockboxx.blogspot.com/2026/05/red-teaming-at-nccdc-2026.html": "2026-05-10",
+    "https://blog.xpnsec.com/accidental-c2/": "2026-05-10",
+    "https://computer.rip/2026-05-09-extremely-low-frequencies.html": "2026-05-10",
+    "https://dustri.org/b/fortify-headers-302.html": "2026-05-10",
+    "https://0xdf.gitlab.io/2026/05/09/htb-overwatch.html": "2026-05-10"
   },
-  "last_updated": "2026-05-09T03:14:20.193192+00:00"
+  "last_updated": "2026-05-10T03:14:40.323958+00:00"
 }

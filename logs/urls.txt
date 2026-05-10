@@ -329,3 +329,7 @@
 [2026-05-09] https://www.wiz.io/blog/introducing-wiz-akamai-integration
 [2026-05-09] https://www.wiz.io/blog/dirty-frag-linux-kernel-local-privilege-escalation-via-esp-and-rxrpc
 [2026-05-09] https://www.datadoghq.com/blog/database-investigator/
+[2026-05-10] https://blog.xpnsec.com/accidental-c2/
+[2026-05-10] https://computer.rip/2026-05-09-extremely-low-frequencies.html
+[2026-05-10] https://dustri.org/b/fortify-headers-302.html
+[2026-05-10] https://0xdf.gitlab.io/2026/05/09/htb-overwatch.html
