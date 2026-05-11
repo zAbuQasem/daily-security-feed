@@ -333,3 +333,4 @@
 [2026-05-10] https://computer.rip/2026-05-09-extremely-low-frequencies.html
 [2026-05-10] https://dustri.org/b/fortify-headers-302.html
 [2026-05-10] https://0xdf.gitlab.io/2026/05/09/htb-overwatch.html
+[2026-05-11] https://raesene.github.io/blog/2026/05/10/personal-software-and-baremetalvmm/
