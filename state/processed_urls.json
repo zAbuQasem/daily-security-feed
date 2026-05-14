@@ -1558,7 +1558,22 @@
     "https://portswigger.net/blog/the-beast-needs-a-cage-whats-next-for-appsec-post-mythos": "2026-05-13",
     "https://trustedsec.com/blog/slamming-the-door-on-quick-assist-tech-support-scams-and-abuse": "2026-05-13",
     "https://www.wiz.io/blog/introducing-audit-history": "2026-05-13",
-    "https://www.wiz.io/blog/mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised": "2026-05-13"
+    "https://www.wiz.io/blog/mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised": "2026-05-13",
+    "http://blog.lockboxx.org/2026/05/red-teaming-at-nccdc-2026.html": "2026-05-14",
+    "https://outpost24.com/blog/outpost24-launches-ai-powered-authentication-remove-configuration-barriers-dast/": "2026-05-14",
+    "https://taggart-tech.com/20260513-teachable-disclosure/": "2026-05-14",
+    "https://www.praetorian.com/blog/spa-frontend-security/": "2026-05-14",
+    "https://shellsharks.com/outside": "2026-05-14",
+    "https://sansec.io/research/composer-github-token-leak": "2026-05-14",
+    "https://redcanary.com/blog/threat-detection/linux-cgroups/": "2026-05-14",
+    "https://securitylabs.datadoghq.com/articles/shai-hulud-open-source-framework-static-analysis/": "2026-05-14",
+    "https://blog.talosintelligence.com/breaking-things-to-keep-them-safe-with-philippe-laulheret/": "2026-05-14",
+    "https://salt.security/blog/your-ai-agents-are-already-acting-the-question-is-whether-you-can-see-what-theyre-doing": "2026-05-14",
+    "https://www.sentinelone.com/blog/the-convergence-of-cloud-secrets-and-ai-risk/": "2026-05-14",
+    "https://www.wiz.io/blog/wiz-hackerone-integration": "2026-05-14",
+    "https://www.wiz.io/blog/fragnesia-linux-kernel-local-privilege-escalation-via-esp-in-tcp": "2026-05-14",
+    "https://www.blackhillsinfosec.com/how-to-identify-and-exploit-new-vulnerabilities/": "2026-05-14",
+    "https://projectzero.google/2026/05/pixel-10-exploit.html": "2026-05-14"
   },
-  "last_updated": "2026-05-13T03:16:03.357035+00:00"
+  "last_updated": "2026-05-14T03:14:48.951656+00:00"
 }
