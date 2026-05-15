@@ -366,3 +366,16 @@
 [2026-05-14] https://www.wiz.io/blog/fragnesia-linux-kernel-local-privilege-escalation-via-esp-in-tcp
 [2026-05-14] https://www.blackhillsinfosec.com/how-to-identify-and-exploit-new-vulnerabilities/
 [2026-05-14] https://projectzero.google/2026/05/pixel-10-exploit.html
+[2026-05-15] http://antirez.com/news/165
+[2026-05-15] https://sansec.io/research/funnelkit-woocommerce-vulnerability-exploited
+[2026-05-15] https://permiso.io/blog/why-we-built-identity-runtime-attribution-for-ai-agents
+[2026-05-15] https://permiso.io/blog/ai-agent-runtime-security
+[2026-05-15] https://blog.talosintelligence.com/the-time-of-much-patching-is-coming/
+[2026-05-15] https://blog.talosintelligence.com/sd-wan-ongoing-exploitation/
+[2026-05-15] https://securitylabs.datadoghq.com/articles/node-ipc-npm-malware-analysis/
+[2026-05-15] https://securitylabs.datadoghq.com/articles/backdoored-cemu-release-teampcp-supply-chain-campaign/
+[2026-05-15] https://trustedsec.com/blog/finding-your-way-on-the-passkey-path
+[2026-05-15] https://www.datadoghq.com/blog/simplify-micro-frontend-observability-with-datadog-rum/
+[2026-05-15] https://www.datadoghq.com/blog/ai/toto-2/
+[2026-05-15] https://www.datadoghq.com/blog/cloud-cost-management-ai-costs/
+[2026-05-15] https://redhuntlabs.com/blog/the-mythos-effect-why-exposure-intelligence-matters-more-than-ever/
