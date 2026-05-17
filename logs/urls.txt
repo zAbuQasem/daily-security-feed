@@ -384,3 +384,5 @@
 [2026-05-16] https://unit42.paloaltonetworks.com/gremlin-stealer-evolution/
 [2026-05-16] https://www.sentinelone.com/blog/living-off-the-pipeline-defending-against-ci-cd-subversion/
 [2026-05-16] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-20-7/
+[2026-05-17] https://0xdf.gitlab.io/2026/05/16/htb-pterodactyl.html
+[2026-05-17] https://neil.computer/notes/baremetal-vs-proxmox-vs-esxi-performance-geekbench-scores/
