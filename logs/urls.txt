@@ -386,3 +386,15 @@
 [2026-05-16] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-20-7/
 [2026-05-17] https://0xdf.gitlab.io/2026/05/16/htb-pterodactyl.html
 [2026-05-17] https://neil.computer/notes/baremetal-vs-proxmox-vs-esxi-performance-geekbench-scores/
+[2026-05-19] https://fortbridge.co.uk/pentesting/black-box-vs-white-box-vs-grey-box-penetration-testing/
+[2026-05-19] https://shellsharks.com/gardenlog-3
+[2026-05-19] https://awssecuritydigest.com/past-issues/aws-security-digest-261
+[2026-05-19] https://comsec.ethz.ch/distinguished-paper-award-for-phoenix/
+[2026-05-19] https://securitylabs.datadoghq.com/articles/introducing-pathfinding-labs/
+[2026-05-19] https://www.sentinelone.com/blog/shub-reaper-macos-stealer-spoofs-apple-google-and-microsoft-in-a-single-attack-chain/
+[2026-05-19] https://www.sentinelone.com/blog/red-teaming-a-government-edubot/
+[2026-05-19] https://www.sygnia.co/blog/incident-response-plan-mistakes/
+[2026-05-19] https://www.sygnia.co/blog/cyber-risk-private-equity-threat-intelligence/
+[2026-05-19] https://www.wiz.io/blog/wiz-for-pqc-readiness
+[2026-05-19] https://falconforce.nl/northsec-2026/
+[2026-05-19] https://falconforce.nl/so-con-2026/
