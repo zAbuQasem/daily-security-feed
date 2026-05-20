@@ -398,3 +398,17 @@
 [2026-05-19] https://www.wiz.io/blog/wiz-for-pqc-readiness
 [2026-05-19] https://falconforce.nl/northsec-2026/
 [2026-05-19] https://falconforce.nl/so-con-2026/
+[2026-05-20] https://gynvael.coldwind.pl/?id=808
+[2026-05-20] http://antirez.com/news/166
+[2026-05-20] https://blog.doyensec.com/2026/05/19/cfitsio-weaponized-filenames.html
+[2026-05-20] https://trustedsec.com/blog/coverage-driven-sustained-testing-cdst-agentic-workflows
+[2026-05-20] https://blog.talosintelligence.com/tp-link-photoshop-openvpn-norton-vpn-vulnerabilities/
+[2026-05-20] https://blog.talosintelligence.com/from-pdb-strings-to-maas-tracking-a-commodity-badiis-ecosystem/
+[2026-05-20] https://www.sygnia.co/press-release/sygnia-appoints-ran-buck-as-chief-revenue-officer/
+[2026-05-20] https://www.wiz.io/blog/durabletask-teampcp-supply-chain-attack
+[2026-05-20] https://www.wiz.io/blog/introducing-runtime-threat-detection-for-google-cloud-run
+[2026-05-20] https://www.wiz.io/blog/mini-shai-hulud-teampcp-hits-antv-supply-chain
+[2026-05-20] https://www.datadoghq.com/blog/map-postgresql-explain-plan-nodes-to-sql-with-datadog/
+[2026-05-20] https://www.datadoghq.com/blog/metrics-natural-language-queries/
+[2026-05-20] https://www.sentinelone.com/blog/prompt-security-for-agentic-ai/
+[2026-05-20] http://blog.quarkslab.com/how-olts-may-have-exposed-entire-isp-networks.html
