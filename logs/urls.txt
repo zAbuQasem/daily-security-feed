@@ -412,3 +412,15 @@
 [2026-05-20] https://www.datadoghq.com/blog/metrics-natural-language-queries/
 [2026-05-20] https://www.sentinelone.com/blog/prompt-security-for-agentic-ai/
 [2026-05-20] http://blog.quarkslab.com/how-olts-may-have-exposed-entire-isp-networks.html
+[2026-05-21] https://advisory.splunk.com//advisories/SVD-2026-0516
+[2026-05-21] https://advisory.splunk.com//advisories/SVD-2026-0515
+[2026-05-21] https://advisory.splunk.com//advisories/SVD-2026-0514
+[2026-05-21] https://advisory.splunk.com//advisories/SVD-2026-0513
+[2026-05-21] https://advisory.splunk.com//advisories/SVD-2026-0512
+[2026-05-21] https://unit42.paloaltonetworks.com/tracking-tampered-chef-clusters/
+[2026-05-21] https://www.sentinelone.com/blog/sentinels-league-2026-live-rankings-for-the-threat-hunting-world-championship/
+[2026-05-21] https://www.cisa.gov/news-events/news/securing-american-experience
+[2026-05-21] https://www.datadoghq.com/blog/llm-experimentation-autoresearch/
+[2026-05-21] https://www.datadoghq.com/blog/how-to-audit-and-clean-up-monitors/
+[2026-05-21] https://www.datadoghq.com/blog/datadog-public-artifact-vulnerabilities-openvex/
+[2026-05-21] https://www.blackhillsinfosec.com/same-problem-different-angles/
