@@ -424,3 +424,11 @@
 [2026-05-21] https://www.datadoghq.com/blog/how-to-audit-and-clean-up-monitors/
 [2026-05-21] https://www.datadoghq.com/blog/datadog-public-artifact-vulnerabilities-openvex/
 [2026-05-21] https://www.blackhillsinfosec.com/same-problem-different-angles/
+[2026-05-22] https://jackson-t.com/parallel-intelligence-and-cognitive-warfare/
+[2026-05-22] https://projectdiscovery.io/blog/red-teaming-cloud-infrastructure-with-neo
+[2026-05-22] https://blog.talosintelligence.com/the-art-of-being-ungovernable/
+[2026-05-22] https://trustedsec.com/blog/shai-hulud-is-back
+[2026-05-22] https://securitylabs.datadoghq.com/articles/unpatchable-kubernetes-vulnerabilities-cve-2021-25740/
+[2026-05-22] https://www.datadoghq.com/blog/cloud-cost-management-budget-forecasting/
+[2026-05-22] https://www.wiz.io/blog/claude-wiz-integration
+[2026-05-22] https://secret.club/2026/05/21/striga.html
