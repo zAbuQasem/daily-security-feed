@@ -432,3 +432,15 @@
 [2026-05-22] https://www.datadoghq.com/blog/cloud-cost-management-budget-forecasting/
 [2026-05-22] https://www.wiz.io/blog/claude-wiz-integration
 [2026-05-22] https://secret.club/2026/05/21/striga.html
+[2026-05-23] https://outpost24.com/blog/combining-easm-and-pentesting/
+[2026-05-23] https://shellsharks.com/scrolls/scroll/2026-05-22
+[2026-05-23] https://blog.nviso.eu/2026/05/22/securing-ai-systems-without-overconfidence-or-fear-part-2-attack-surfaces-and-the-checkpoint-flow/
+[2026-05-23] https://blog.fox-it.com/2026/05/22/remotepe-the-lazarus-rat-that-lives-in-memory/
+[2026-05-23] https://blog.trailofbits.com/2026/05/22/we-hardened-zizmors-github-actions-static-analyzer/
+[2026-05-23] https://unit42.paloaltonetworks.com/tracking-iran-apt-screening-serpens/
+[2026-05-23] https://unit42.paloaltonetworks.com/roadtools-cloud-attacks/
+[2026-05-23] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-21-7/
+[2026-05-23] https://www.sentinelone.com/blog/sentinels-league-live-rankings/
+[2026-05-23] https://www.datadoghq.com/blog/securing-ai-agents-guardrail-placement/
+[2026-05-23] https://www.datadoghq.com/blog/improve-api-authentication-detection-with-datadog/
+[2026-05-23] https://www.datadoghq.com/blog/how-to-measure-developer-experience-in-the-ai-era/
