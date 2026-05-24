@@ -444,3 +444,5 @@
 [2026-05-23] https://www.datadoghq.com/blog/securing-ai-agents-guardrail-placement/
 [2026-05-23] https://www.datadoghq.com/blog/improve-api-authentication-detection-with-datadog/
 [2026-05-23] https://www.datadoghq.com/blog/how-to-measure-developer-experience-in-the-ai-era/
+[2026-05-24] https://0xdf.gitlab.io/2026/05/23/htb-monitorsfour.html
+[2026-05-24] https://fortbridge.co.uk/pentesting/how-to-secure-enterprise-llm-deployment/
