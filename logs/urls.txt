@@ -446,3 +446,5 @@
 [2026-05-23] https://www.datadoghq.com/blog/how-to-measure-developer-experience-in-the-ai-era/
 [2026-05-24] https://0xdf.gitlab.io/2026/05/23/htb-monitorsfour.html
 [2026-05-24] https://fortbridge.co.uk/pentesting/how-to-secure-enterprise-llm-deployment/
+[2026-05-25] https://projectblack.io/blog/remove-spn-fix-kerberoasting/
+[2026-05-25] https://spaceraccoon.dev/negative-days-vulnerability-spoiler-alert/
