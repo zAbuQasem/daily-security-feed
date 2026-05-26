@@ -1663,7 +1663,13 @@
     "https://fortbridge.co.uk/pentesting/how-to-secure-enterprise-llm-deployment/": "2026-05-24",
     "https://detect.fyi/detection-logic-bugs-developing-context-to-bypass-miniplasma-rules-903f1d7c68e8?source=rss----d5fd8f494f6a---4": "2026-05-24",
     "https://projectblack.io/blog/remove-spn-fix-kerberoasting/": "2026-05-25",
-    "https://spaceraccoon.dev/negative-days-vulnerability-spoiler-alert/": "2026-05-25"
+    "https://spaceraccoon.dev/negative-days-vulnerability-spoiler-alert/": "2026-05-25",
+    "http://antirez.com/news/167": "2026-05-26",
+    "https://jakewnuk.com/posts/the-internet-is-not-real/": "2026-05-26",
+    "https://labs.cognisys.group/posts/Breaking-Tenant-Boundaries-When-Path-Traversal-Isn't-About-the-Filesystem/": "2026-05-26",
+    "https://blog.doyensec.com/2026/05/25/cloudsectidbits-elbaph-alb.html": "2026-05-26",
+    "https://research.aurainfosec.io/pentest/exploring-agent-based-cloud-review-capabilities/": "2026-05-26",
+    "https://awssecuritydigest.com/past-issues/aws-security-digest-262": "2026-05-26"
   },
-  "last_updated": "2026-05-25T03:17:47.184126+00:00"
+  "last_updated": "2026-05-26T03:16:15.099846+00:00"
 }
