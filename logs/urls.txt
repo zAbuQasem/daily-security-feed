@@ -454,3 +454,12 @@
 [2026-05-26] https://blog.doyensec.com/2026/05/25/cloudsectidbits-elbaph-alb.html
 [2026-05-26] https://research.aurainfosec.io/pentest/exploring-agent-based-cloud-review-capabilities/
 [2026-05-26] https://awssecuritydigest.com/past-issues/aws-security-digest-262
+[2026-05-27] https://rastamouse.me/module-stomping-pic/
+[2026-05-27] https://sansec.io/research/mirasvit-cache-warmer-object-injection
+[2026-05-27] https://shellsharks.com/gardenlog-4
+[2026-05-27] https://thecontractor.io/cve-2026-34910/
+[2026-05-27] https://trustedsec.com/blog/pci-dss-telephone-payments-and-the-problems-with-voip
+[2026-05-27] https://redcanary.com/blog/threat-intelligence/intelligence-insights-may-2026/
+[2026-05-27] https://www.datadoghq.com/blog/ai-impact/
+[2026-05-27] https://www.datadoghq.com/blog/ambassadors-champions-2026/
+[2026-05-27] https://www.wiz.io/blog/sdlc-security-report-2026-key-takeaways
