@@ -492,3 +492,9 @@
 [2026-05-29] https://www.datadoghq.com/blog/azure-managed-redis-integration/
 [2026-05-29] https://www.datadoghq.com/blog/langgraph-agent-monitoring/
 [2026-05-29] https://www.wiz.io/blog/state-of-post-quantum-cryptography
+[2026-05-30] https://blog.cryptographyengineering.com/2026/05/29/fooling-around-with-encrypted-reasoning-blobs/
+[2026-05-30] https://outpost24.com/blog/easm-buyers-guide-2026/
+[2026-05-30] https://shellsharks.com/scrolls/scroll/2026-05-29
+[2026-05-30] https://starlabs.sg/blog/2026/05-race-against-the-patch-the-evolution-of-four-exploit-chains-in-litellm/
+[2026-05-30] https://permiso.io/blog/chatgpt-markdown-rendering-vulnerability
+[2026-05-30] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-22-7/
