@@ -11,7 +11,7 @@ Usage:
     python pipeline/notify_discord.py failure --step "Step 2 — Classify with Copilot"
 
 Environment variables:
-    DISCORD_WEBHOOK_URL   Discord webhook URL (repo secret)
+    DISCORD_WEBHOOK_URL   Discord webhook URL, or comma/newline-separated list for fan-out (repo secret)
     RUN_URL               GitHub Actions run URL (set in workflow)
     RUN_DATE              ISO date string (optional, defaults to today UTC)
     NOTIFY_CHANNELS       Notification targets: discord, slack, both, or comma-separated list
@@ -109,35 +109,52 @@ def build_failure_embed(step: str) -> dict:
     return embed
 
 
+def _parse_webhook_urls(raw: str) -> list[str]:
+    # Split on comma or newline so secrets can hold multiple URLs.
+    return [u.strip() for u in raw.replace("\n", ",").split(",") if u.strip()]
+
+
 def send(embeds: list[dict]) -> None:
     if not channel_enabled("discord"):
         print("Discord notifications disabled by NOTIFY_CHANNELS")
         return
 
-    webhook_url = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
-    if not webhook_url:
+    webhook_urls = _parse_webhook_urls(os.environ.get("DISCORD_WEBHOOK_URL", ""))
+    if not webhook_urls:
         print("DISCORD_WEBHOOK_URL not set — skipping notification")
         return
 
     # Discord allows up to 10 embeds per message
     payload = json.dumps({"embeds": embeds[:10]}).encode()
-    req = urllib.request.Request(
-        webhook_url,
-        data=payload,
-        headers={
-            "Content-Type": "application/json",
-            "User-Agent": USER_AGENT,
-        },
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            if resp.status == 204:
-                print("Discord notification sent")
-            else:
-                print(f"Discord responded with {resp.status}", file=sys.stderr)
-    except urllib.error.HTTPError as e:
-        print(f"Discord webhook error: {e.code} {e.reason}", file=sys.stderr)
+    failures = 0
+    for i, webhook_url in enumerate(webhook_urls, 1):
+        label = f"[{i}/{len(webhook_urls)}]" if len(webhook_urls) > 1 else ""
+        req = urllib.request.Request(
+            webhook_url,
+            data=payload,
+            headers={
+                "Content-Type": "application/json",
+                "User-Agent": USER_AGENT,
+            },
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                if resp.status == 204:
+                    print(f"Discord notification sent {label}".rstrip())
+                else:
+                    print(
+                        f"Discord responded with {resp.status} {label}".rstrip(),
+                        file=sys.stderr,
+                    )
+        except urllib.error.HTTPError as e:
+            failures += 1
+            print(
+                f"Discord webhook error {label}: {e.code} {e.reason}".rstrip(),
+                file=sys.stderr,
+            )
+
+    if failures:
         sys.exit(1)
 
 

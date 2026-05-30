@@ -59,7 +59,7 @@ flowchart TD
 | --- | --- | --- |
 | `COPILOT_TOKEN` | If using Copilot | Fine-grained PAT with **Copilot Requests: Read** permission |
 | `ANTHROPIC_API_KEY` | If using Claude | Anthropic API key |
-| `DISCORD_WEBHOOK_URL` | No | Discord channel webhook for notifications |
+| `DISCORD_WEBHOOK_URL` | No | Discord channel webhook for notifications. Comma- or newline-separated for multi-channel fan-out |
 | `SLACK_WEBHOOK_URL` | No | Slack incoming webhook for notifications |
 
 **Variables** (`Settings → Secrets and variables → Actions → Variables`):

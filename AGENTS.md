@@ -76,7 +76,7 @@ Priority controls sort order within each section in the Discord feed embed.
 | URL audit log | `logs/urls.txt` — append-only, grep by `[YYYY-MM-DD]` to filter by date |
 | Prompt template | `prompts/classify.md` |
 | Copilot auth | `COPILOT_TOKEN` secret — fine-grained PAT with **Copilot Requests: Read** permission |
-| Discord webhook | `DISCORD_WEBHOOK_URL` secret |
+| Discord webhook | `DISCORD_WEBHOOK_URL` secret — comma- or newline-separated for multi-channel fan-out |
 | Slack webhook | `SLACK_WEBHOOK_URL` secret |
 | AI model | `AI_MODEL` repo variable (e.g. `claude-sonnet-4-6`) |
 | Skip classification | `SKIP_CLASSIFY` repo variable (`true` to bypass AI and publish all articles unfiltered) |
