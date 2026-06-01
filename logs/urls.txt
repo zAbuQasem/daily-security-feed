@@ -502,3 +502,5 @@
 [2026-05-31] https://0xdf.gitlab.io/2026/05/30/htb-interpreter.html
 [2026-05-31] https://www.datadoghq.com/blog/platform-depth-product-signals/
 [2026-05-31] https://www.datadoghq.com/blog/llm-routing-kubernetes-inference-extension/
+[2026-06-01] https://computer.rip/2026-05-31-totalisator.html
+[2026-06-01] https://thalpius.com/2026/05/31/blocking-generative-ai-with-microsoft-defender-for-cloud-apps-and-microsoft-defender-for-endpoint/
