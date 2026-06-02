@@ -1724,7 +1724,18 @@
     "https://www.datadoghq.com/blog/platform-depth-product-signals/": "2026-05-31",
     "https://www.datadoghq.com/blog/llm-routing-kubernetes-inference-extension/": "2026-05-31",
     "https://computer.rip/2026-05-31-totalisator.html": "2026-06-01",
-    "https://thalpius.com/2026/05/31/blocking-generative-ai-with-microsoft-defender-for-cloud-apps-and-microsoft-defender-for-endpoint/": "2026-06-01"
+    "https://thalpius.com/2026/05/31/blocking-generative-ai-with-microsoft-defender-for-cloud-apps-and-microsoft-defender-for-endpoint/": "2026-06-01",
+    "https://sansec.io/research/ecomscan-sylius": "2026-06-02",
+    "https://awssecuritydigest.com/past-issues/aws-security-digest-263": "2026-06-02",
+    "https://blog.exodusintel.com/2026/06/01/adobe-acrobat-reader-escript-api-use-after-free-remote-code-execution/": "2026-06-02",
+    "https://detect.fyi/deep-kql-analysis-with-kustology-f07de9b02829?source=rss----d5fd8f494f6a---4": "2026-06-02",
+    "https://redcanary.com/blog/news-events/red-canary-cfp-tracker-june-2026/": "2026-06-02",
+    "https://redcanary.com/blog/threat-detection/entra-id-ai-workflows-teams/": "2026-06-02",
+    "https://projectdiscovery.io/blog/neo-agent-architecture": "2026-06-02",
+    "http://blog.quarkslab.com/scala-security-audit.html": "2026-06-02",
+    "https://www.wiz.io/blog/introducing-wiz-api-spm": "2026-06-02",
+    "https://www.wiz.io/blog/miasma-supply-chain-attack-targeting-redhat-npm-packages": "2026-06-02",
+    "https://lab.ctbb.show/research/h2-WAF-Bypasses": "2026-06-02"
   },
-  "last_updated": "2026-06-01T03:18:46.925706+00:00"
+  "last_updated": "2026-06-02T03:19:05.962415+00:00"
 }

@@ -504,3 +504,13 @@
 [2026-05-31] https://www.datadoghq.com/blog/llm-routing-kubernetes-inference-extension/
 [2026-06-01] https://computer.rip/2026-05-31-totalisator.html
 [2026-06-01] https://thalpius.com/2026/05/31/blocking-generative-ai-with-microsoft-defender-for-cloud-apps-and-microsoft-defender-for-endpoint/
+[2026-06-02] https://sansec.io/research/ecomscan-sylius
+[2026-06-02] https://awssecuritydigest.com/past-issues/aws-security-digest-263
+[2026-06-02] https://blog.exodusintel.com/2026/06/01/adobe-acrobat-reader-escript-api-use-after-free-remote-code-execution/
+[2026-06-02] https://redcanary.com/blog/news-events/red-canary-cfp-tracker-june-2026/
+[2026-06-02] https://redcanary.com/blog/threat-detection/entra-id-ai-workflows-teams/
+[2026-06-02] https://projectdiscovery.io/blog/neo-agent-architecture
+[2026-06-02] http://blog.quarkslab.com/scala-security-audit.html
+[2026-06-02] https://www.wiz.io/blog/introducing-wiz-api-spm
+[2026-06-02] https://www.wiz.io/blog/miasma-supply-chain-attack-targeting-redhat-npm-packages
+[2026-06-02] https://lab.ctbb.show/research/h2-WAF-Bypasses
