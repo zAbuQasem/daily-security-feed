@@ -1735,7 +1735,18 @@
     "http://blog.quarkslab.com/scala-security-audit.html": "2026-06-02",
     "https://www.wiz.io/blog/introducing-wiz-api-spm": "2026-06-02",
     "https://www.wiz.io/blog/miasma-supply-chain-attack-targeting-redhat-npm-packages": "2026-06-02",
-    "https://lab.ctbb.show/research/h2-WAF-Bypasses": "2026-06-02"
+    "https://lab.ctbb.show/research/h2-WAF-Bypasses": "2026-06-02",
+    "https://0xsp.com/security%20research%20%20development%20srd/aether-memory-forensics-and-threat-hunting-tool/?utm_source=rss&utm_medium=rss&utm_campaign=aether-memory-forensics-and-threat-hunting-tool": "2026-06-03",
+    "https://sansec.io/research/gorgonagora-fake-storefront-skimming-network": "2026-06-03",
+    "https://fortbridge.co.uk/dast-vs-penetration-testing/": "2026-06-03",
+    "https://tierzerosecurity.co.nz/2026/06/02/nuget-code-execution.html": "2026-06-03",
+    "https://trustedsec.com/blog/cmmc-conditional-status": "2026-06-03",
+    "https://securitylabs.datadoghq.com/articles/case-for-github-actions-security/": "2026-06-03",
+    "https://unit42.paloaltonetworks.com/flutterbridge-new-fluttershell-backdoor/": "2026-06-03",
+    "https://www.datadoghq.com/blog/azure-managed-redis-migration-datadog-eden/": "2026-06-03",
+    "https://www.datadoghq.com/blog/using-agentic-ai-with-jobs-monitoring/": "2026-06-03",
+    "https://www.datadoghq.com/blog/aws-data-perimeters/": "2026-06-03",
+    "https://www.sentinelone.com/blog/sentinelone-and-claude-integrations-for-ai-visibility-governance-and-defense/": "2026-06-03"
   },
-  "last_updated": "2026-06-02T03:19:05.962415+00:00"
+  "last_updated": "2026-06-03T03:18:32.055308+00:00"
 }
