@@ -524,3 +524,10 @@
 [2026-06-03] https://www.datadoghq.com/blog/using-agentic-ai-with-jobs-monitoring/
 [2026-06-03] https://www.datadoghq.com/blog/aws-data-perimeters/
 [2026-06-03] https://www.sentinelone.com/blog/sentinelone-and-claude-integrations-for-ai-visibility-governance-and-defense/
+[2026-06-04] https://raesene.github.io/blog/2026/06/03/do-containers-still-contain/
+[2026-06-04] https://certitude.consulting/blog/en/conference-talk-the-human-factor-cybersecuritys-weakest-link-or-most-adaptive-defense/
+[2026-06-04] https://salt.security/blog/your-ai-coding-assistant-has-never-read-your-security-wiki-now-it-writes-half-your-code
+[2026-06-04] https://www.sygnia.co/webinars/the-anatomy-of-cyber-attacks-affecting-ot-organizations/
+[2026-06-04] https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/
+[2026-06-04] https://www.datadoghq.com/blog/engineering/scaling-malicious-code-detection/
+[2026-06-04] https://www.blackhillsinfosec.com/auditing-gitlab-the-ci-cd-kill-chain/
