@@ -1754,7 +1754,18 @@
     "https://www.sygnia.co/webinars/the-anatomy-of-cyber-attacks-affecting-ot-organizations/": "2026-06-04",
     "https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/": "2026-06-04",
     "https://www.datadoghq.com/blog/engineering/scaling-malicious-code-detection/": "2026-06-04",
-    "https://www.blackhillsinfosec.com/auditing-gitlab-the-ci-cd-kill-chain/": "2026-06-04"
+    "https://www.blackhillsinfosec.com/auditing-gitlab-the-ci-cd-kill-chain/": "2026-06-04",
+    "https://clearbluejar.github.io/posts/system-over-model-tested-mythos-freebsd-local-openweight/": "2026-06-05",
+    "https://sansec.io/research/stripe-api-skimmer-infrastructure": "2026-06-05",
+    "https://sensepost.com/blog/2026/mobile-device-interception-with-mikrotik/": "2026-06-05",
+    "https://www.praetorian.com/blog/wasmforge-sliver-webassembly/": "2026-06-05",
+    "https://blog.talosintelligence.com/reporting-from-vegas-networking-ai-and-good-boys/": "2026-06-05",
+    "https://blog.talosintelligence.com/winning-the-cyber-marathon-with-tony-giandomenico/": "2026-06-05",
+    "https://blog.talosintelligence.com/hypotheses-telemetry-and-human-judgment-inside-cisco-talos-threat-hunting/": "2026-06-05",
+    "https://blog.nviso.eu/2026/06/04/the-detection-response-chronicles-covert-operations-through-qemu/": "2026-06-05",
+    "https://trustedsec.com/blog/the-privileged-roles-nobody-talks-about": "2026-06-05",
+    "https://www.wiz.io/blog/ai-threat-readiness-pillar-1": "2026-06-05",
+    "http://blog.quarkslab.com/practical-android-software-protection-in-the-wild-an-appetizer.html": "2026-06-05"
   },
-  "last_updated": "2026-06-04T03:18:17.693176+00:00"
+  "last_updated": "2026-06-05T03:17:50.981316+00:00"
 }
