@@ -542,3 +542,15 @@
 [2026-06-05] https://trustedsec.com/blog/the-privileged-roles-nobody-talks-about
 [2026-06-05] https://www.wiz.io/blog/ai-threat-readiness-pillar-1
 [2026-06-05] http://blog.quarkslab.com/practical-android-software-protection-in-the-wild-an-appetizer.html
+[2026-06-06] https://0xdf.gitlab.io/cheatsheets/ai
+[2026-06-06] https://outpost24.com/blog/owasp-top-10-2025-what-changed/
+[2026-06-06] https://rastamouse.me/bof-cocktails-in-cobalt-strike/
+[2026-06-06] https://taggart-tech.com/ai-debate/
+[2026-06-06] https://shellsharks.com/scrolls/scroll/2026-06-05
+[2026-06-06] https://blog.includesecurity.com/2026/06/the-smart-tv-in-your-livingroom-is-a-node-in-the-aiscraping-economy/
+[2026-06-06] https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/
+[2026-06-06] https://www.datadoghq.com/blog/engineering/postgresql-ha-kubernetes/
+[2026-06-06] https://www.datadoghq.com/blog/bits-agent-builder/
+[2026-06-06] https://blog.thinkst.com/2026/06/introducing-package-proxy-supply-chain-safety-checks-without-client-side-software.html
+[2026-06-06] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-23-7/
+[2026-06-06] http://blog.quarkslab.com/from-prompt-to-pwned-chaining-llm-and-web-bugs-to-admin.html
