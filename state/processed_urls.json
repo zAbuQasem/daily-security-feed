@@ -1782,7 +1782,15 @@
     "http://blog.quarkslab.com/from-prompt-to-pwned-chaining-llm-and-web-bugs-to-admin.html": "2026-06-06",
     "https://0xdf.gitlab.io/2026/06/06/htb-facts.html": "2026-06-07",
     "https://www.datadoghq.com/blog/give-your-ai-agents-live-datadog-access-from-the-command-line/": "2026-06-07",
-    "http://antirez.com/news/168": "2026-06-08"
+    "http://antirez.com/news/168": "2026-06-08",
+    "https://fortbridge.co.uk/red-teaming-vs-penetration-testing/": "2026-06-09",
+    "https://starlabs.sg/advisories/26/26-20147/": "2026-06-09",
+    "https://blog.exodusintel.com/2026/06/08/off-by-exploiting-a-use-after-free-in-the-linux-kernel/": "2026-06-09",
+    "https://redcanary.com/blog/threat-detection/entra-id-ai-workflows-assistive-agents/": "2026-06-09",
+    "https://unit42.paloaltonetworks.com/microsoft-teams-phishing/": "2026-06-09",
+    "https://salt.security/blog/everyone-is-buying-ai-guardrails-but-agents-have-the-keys-to-the-car": "2026-06-09",
+    "https://www.cisa.gov/news-events/news/cisa-highlights-vital-resources-help-event-attendees-stay-safe": "2026-06-09",
+    "https://www.wiz.io/blog/introducing-wiz-cloud-cost": "2026-06-09"
   },
-  "last_updated": "2026-06-08T03:18:41.326908+00:00"
+  "last_updated": "2026-06-09T03:16:00.671555+00:00"
 }
