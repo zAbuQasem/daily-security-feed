@@ -1809,7 +1809,24 @@
     "https://www.datadoghq.com/blog/cloud-siem-claude-compliance-api-integration/": "2026-06-10",
     "https://www.wiz.io/blog/ai-threat-readiness-pillar-2": "2026-06-10",
     "https://www.cisa.gov/news-events/news/ncswic-releases-additional-content-its-ncswic-video-series": "2026-06-10",
-    "http://blog.quarkslab.com/extending-llvms-bolt-based-binary-analyser-to-validate-stack-variable-initialisation.html": "2026-06-10"
+    "http://blog.quarkslab.com/extending-llvms-bolt-based-binary-analyser-to-validate-stack-variable-initialisation.html": "2026-06-10",
+    "https://jakewnuk.com/posts/creating-agentic-infra-3-the-digital-context-gap/": "2026-06-11",
+    "http://localhost:4000/2026/06/10/lipcenum.html": "2026-06-11",
+    "https://ii4gsp.github.io/cve-2026-49413/": "2026-06-11",
+    "https://advisory.splunk.com//advisories/SVD-2026-0612": "2026-06-11",
+    "https://advisory.splunk.com//advisories/SVD-2026-0611": "2026-06-11",
+    "https://advisory.splunk.com//advisories/SVD-2026-0610": "2026-06-11",
+    "https://advisory.splunk.com//advisories/SVD-2026-0609": "2026-06-11",
+    "https://advisory.splunk.com//advisories/SVD-2026-0608": "2026-06-11",
+    "https://shellsharks.com/sharkweek/2026": "2026-06-11",
+    "https://detect.fyi/identify-shebang-files-via-threat-hunting-kql-queries-45fa739571ad?source=rss----d5fd8f494f6a---4": "2026-06-11",
+    "https://www.datadoghq.com/blog/datadog-mcp-apps/": "2026-06-11",
+    "https://www.datadoghq.com/blog/bits-threat-hunting/": "2026-06-11",
+    "https://www.datadoghq.com/blog/service-remapping/": "2026-06-11",
+    "https://www.datadoghq.com/blog/internal-applications-datadog-apps/": "2026-06-11",
+    "https://www.datadoghq.com/blog/bits-release/": "2026-06-11",
+    "https://www.cisa.gov/news-events/news/patch-smarter-not-harder": "2026-06-11",
+    "https://www.blackhillsinfosec.com/the-art-of-the-badge/": "2026-06-11"
   },
-  "last_updated": "2026-06-10T03:16:14.944464+00:00"
+  "last_updated": "2026-06-11T03:15:10.988617+00:00"
 }
