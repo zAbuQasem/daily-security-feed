@@ -597,3 +597,14 @@
 [2026-06-11] https://www.datadoghq.com/blog/bits-release/
 [2026-06-11] https://www.cisa.gov/news-events/news/patch-smarter-not-harder
 [2026-06-11] https://www.blackhillsinfosec.com/the-art-of-the-badge/
+[2026-06-12] https://mrbruh.com/amd2/
+[2026-06-12] https://blog.talosintelligence.com/a-tale-of-two-eras/
+[2026-06-12] https://redcanary.com/blog/threat-detection/threat-hunting-scaled/
+[2026-06-12] https://securitylabs.datadoghq.com/articles/agent-id-blueprint-blast-radius/
+[2026-06-12] https://trustedsec.com/blog/hardening-intune-the-implementation-guide
+[2026-06-12] https://unit42.paloaltonetworks.com/ai-agent-supply-chain-risks/
+[2026-06-12] https://permiso.io/blog/best-itdr-platform-hacker-news-cybersecurity-stars-2026
+[2026-06-12] https://salt.security/blog/deconstructing-the-agentic-stack-why-api-visibility-is-the-ultimate-defense-for-ai-agents
+[2026-06-12] https://www.sygnia.co/blog/operation-highland-velvet-ant/
+[2026-06-12] https://www.cisa.gov/news-events/news/cisa-offers-vital-resources-venues-prepare-key-2026-events
+[2026-06-12] https://www.datadoghq.com/blog/datadog-clickhouse-log-management/
