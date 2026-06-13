@@ -608,3 +608,13 @@
 [2026-06-12] https://www.sygnia.co/blog/operation-highland-velvet-ant/
 [2026-06-12] https://www.cisa.gov/news-events/news/cisa-offers-vital-resources-venues-prepare-key-2026-events
 [2026-06-12] https://www.datadoghq.com/blog/datadog-clickhouse-log-management/
+[2026-06-13] https://labs.watchtowr.com/why-use-app-level-auth-when-every-database-has-auth-splunk-enterprise-cve-2026-20253-pre-auth-rce/
+[2026-06-13] https://labs.watchtowr.com/marking-your-own-homework-check-point-remote-access-vpn-ikev1-authentication-bypass-cve-2026-50751/
+[2026-06-13] https://sansec.io/research/amasty-order-attributes-file-upload
+[2026-06-13] https://shellsharks.com/scrolls/scroll/2026-06-12
+[2026-06-13] https://trustedsec.com/blog/js-tap-v3-endpoint-post-exploitation-with-javascript-implants
+[2026-06-13] https://unit42.paloaltonetworks.com/new-macos-artifact-discovered/
+[2026-06-13] https://blog.trailofbits.com/2026/06/12/factoring-short-sleeve-rsa-keys-with-polynomials/
+[2026-06-13] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-24-7/
+[2026-06-13] https://www.wiz.io/blog/navigating-the-new-federal-logging-mandate-or-omb-memorandum-m-26-14
+[2026-06-13] https://www.wiz.io/blog/ai-threat-readiness-pillar-3
