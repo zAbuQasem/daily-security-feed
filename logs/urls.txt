@@ -624,3 +624,5 @@
 [2026-06-14] https://projectblack.io/blog/librenms-authenticated-rce-26-5-0/
 [2026-06-14] https://sansec.io/research/optinmonster-supply-chain-attack
 [2026-06-14] https://awssecuritydigest.com/past-issues/aws-security-digest-264
+[2026-06-15] https://computer.rip/2026-06-14-hookswitch-to-grave.html
+[2026-06-15] https://malacupa.com/2026/06/14/frida-named-pipes-hooks-syscalls.html
