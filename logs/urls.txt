@@ -654,3 +654,14 @@
 [2026-06-17] https://www.wiz.io/blog/exposure-management-dashboard
 [2026-06-17] https://www.sonarsource.com/blog/develop-with-ai/
 [2026-06-17] https://www.sonarsource.com/blog/sonarqube-cli-brings-multilayered-verification-to-agentic-development/
+[2026-06-18] https://blog.doyensec.com/2026/06/17/session-switcher.html
+[2026-06-18] https://sansec.io/research/jtl-shop-ssti-rce
+[2026-06-18] https://advisory.splunk.com//advisories/SVD-2026-0614
+[2026-06-18] https://advisory.splunk.com//advisories/SVD-2026-0613
+[2026-06-18] https://www.praetorian.com/blog/ai-vulnerability-research-freebsd-kernel/
+[2026-06-18] https://blog.nviso.eu/2026/06/17/reducing-microsoft-sentinel-costs-without-compromising-detection-part-1-the-summary-rules-quest/
+[2026-06-18] https://redcanary.com/blog/security-operations/rmm-detection/
+[2026-06-18] https://www.sentinelone.com/blog/frontier-ai-and-agentic-soc/
+[2026-06-18] https://www.wiz.io/blog/red-agent-pov-ssrf
+[2026-06-18] https://www.wiz.io/blog/red-agent-pov-series
+[2026-06-18] https://www.blackhillsinfosec.com/introducing-fusion-ai/
