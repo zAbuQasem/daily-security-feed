@@ -681,3 +681,7 @@
 [2026-06-19] https://www.sonarsource.com/blog/ai-is-writing-more-of-your-terraform/
 [2026-06-19] https://www.sonarsource.com/blog/what-nist-should-know-when-updating-the-ssdf-for-ai/
 [2026-06-19] https://www.sonarsource.com/blog/your-ai-bill-is-a-code-quality-problem/
+[2026-06-20] https://outpost24.com/blog/annual-penetration-testing-modern-application-risk/
+[2026-06-20] https://unit42.paloaltonetworks.com/large-scale-credential-attacks/
+[2026-06-20] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-25-7/
+[2026-06-20] https://portswigger.net/blog/burp-extensibility-2026-awards-talks-and-highlights
