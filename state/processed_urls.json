@@ -1922,7 +1922,17 @@
     "https://portswigger.net/blog/burp-extensibility-2026-awards-talks-and-highlights": "2026-06-20",
     "https://0xdf.gitlab.io/2026/06/20/htb-nanocorp.html": "2026-06-21",
     "https://thecontractor.io/ms-surface-eop-system/": "2026-06-21",
-    "https://projectblack.io/blog/liquidfiles-privilege-escalation/": "2026-06-22"
+    "https://projectblack.io/blog/liquidfiles-privilege-escalation/": "2026-06-22",
+    "https://dfir.ch/posts/fantastic_passwords_linux/": "2026-06-23",
+    "https://dirkjanm.io/bypassing-conditional-access-with-resource-exclusion/": "2026-06-23",
+    "https://blog.exodusintel.com/2026/06/22/out-of-shift-how-a-shared-state-bug-in-v8s-asmjs-parser-broke-the-ubercage/": "2026-06-23",
+    "https://code-white.com/public-vulnerability-list/#authentication-bypass-in-lobster-data-platform": "2026-06-23",
+    "https://securitylabs.datadoghq.com/articles/detecting-the-klue-supply-chain-attack-in-salesforce/": "2026-06-23",
+    "https://unit42.paloaltonetworks.com/cloud-bucket-hijacking-risks/": "2026-06-23",
+    "https://salt.security/blog/we-trained-cybersecurity-startups-to-win-povs-not-solve-problems": "2026-06-23",
+    "https://blog.trailofbits.com/2026/06/22/introducing-patch-the-planet/": "2026-06-23",
+    "https://www.wiz.io/blog/wiz-runtime-sensor-for-your-windows-environment": "2026-06-23",
+    "https://blog.thinkst.com/2026/06/one-for-all-the-models-out-there.html": "2026-06-23"
   },
-  "last_updated": "2026-06-22T03:18:36.800197+00:00"
+  "last_updated": "2026-06-23T03:15:09.438381+00:00"
 }
