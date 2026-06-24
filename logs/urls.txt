@@ -698,3 +698,11 @@
 [2026-06-23] https://blog.trailofbits.com/2026/06/22/introducing-patch-the-planet/
 [2026-06-23] https://www.wiz.io/blog/wiz-runtime-sensor-for-your-windows-environment
 [2026-06-23] https://blog.thinkst.com/2026/06/one-for-all-the-models-out-there.html
+[2026-06-24] https://dustri.org/b/trivial-anti-crawler-with-caddy.html
+[2026-06-24] https://schaerli.org/weblog/5-proton//
+[2026-06-24] https://neilmadden.blog/2026/06/23/javas-sslcontext-protocol-name-is-a-footgun/
+[2026-06-24] https://awssecuritydigest.com/past-issues/aws-security-digest-266
+[2026-06-24] https://unit42.paloaltonetworks.com/openclaw-ai-supply-chain-risk/
+[2026-06-24] https://www.aquasec.com/blog/integrate-aqua-and-splunk-for-full-visibility-into-runtime-threats/
+[2026-06-24] https://www.datadoghq.com/blog/using-evaluation-frameworks-with-agent-observability/
+[2026-06-24] https://www.wiz.io/blog/ai-threat-readiness-pillar-4
