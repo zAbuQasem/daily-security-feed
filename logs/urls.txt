@@ -718,3 +718,14 @@
 [2026-06-25] https://www.datadoghq.com/blog/how-to-migrate-feature-flags/
 [2026-06-25] https://www.wiz.io/blog/ai-rewriting-secops-playbook
 [2026-06-25] https://www.blackhillsinfosec.com/insufficient-egress-filtering/
+[2026-06-26] https://www.uncommonengineer.com/docs/engineer/guides/Linux-Printer-Driver
+[2026-06-26] https://www.uncommonengineer.com/docs/engineer/guides/algos-system-design
+[2026-06-26] https://www.uncommonengineer.com/docs/engineer/guides/beehiiv-dns
+[2026-06-26] https://www.uncommonengineer.com/docs/engineer/guides/bits-bytes-hex
+[2026-06-26] https://whereisk0shl.top/post/From%20context_handle%20to%20type%20confusion/
+[2026-06-26] https://blog.talosintelligence.com/beyond-iocs-ai-enabled-threat-intelligence/
+[2026-06-26] https://blog.talosintelligence.com/introduction-to-com-usage-by-windows-threats/
+[2026-06-26] https://trustedsec.com/blog/large-workflows-with-local-llms
+[2026-06-26] https://unit42.paloaltonetworks.com/cl-sta-1062-tinyrct-backdoor/
+[2026-06-26] https://www.datadoghq.com/blog/mitre-attack-enrichment-packs-observability-pipelines/
+[2026-06-26] https://www.wiz.io/blog/runtime-signals-in-security-graph
