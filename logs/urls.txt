@@ -729,3 +729,7 @@
 [2026-06-26] https://unit42.paloaltonetworks.com/cl-sta-1062-tinyrct-backdoor/
 [2026-06-26] https://www.datadoghq.com/blog/mitre-attack-enrichment-packs-observability-pipelines/
 [2026-06-26] https://www.wiz.io/blog/runtime-signals-in-security-graph
+[2026-06-27] https://securitylabs.datadoghq.com/articles/guarddog-3-0-release/
+[2026-06-27] https://www.datadoghq.com/blog/how-we-saved-with-kubernetes-autoscaling/
+[2026-06-27] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-26-7/
+[2026-06-27] https://www.wiz.io/blog/amazon-q-vulnerability
