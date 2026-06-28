@@ -1973,7 +1973,10 @@
     "https://securitylabs.datadoghq.com/articles/guarddog-3-0-release/": "2026-06-27",
     "https://www.datadoghq.com/blog/how-we-saved-with-kubernetes-autoscaling/": "2026-06-27",
     "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-26-7/": "2026-06-27",
-    "https://www.wiz.io/blog/amazon-q-vulnerability": "2026-06-27"
+    "https://www.wiz.io/blog/amazon-q-vulnerability": "2026-06-27",
+    "https://0xdf.gitlab.io/2026/06/27/htb-wingdata.html": "2026-06-28",
+    "https://projectblack.io/blog/a-user-account-restriction-for-example-a-time-of-day-restriction-is-preventing-you-from-logging-on-for-assistance-contact-your-system-administrator-or-technical-support/": "2026-06-28",
+    "https://www.datadoghq.com/blog/reduce-cdn-log-costs-with-searchable-archives/": "2026-06-28"
   },
-  "last_updated": "2026-06-27T03:14:29.862187+00:00"
+  "last_updated": "2026-06-28T03:16:19.088231+00:00"
 }
