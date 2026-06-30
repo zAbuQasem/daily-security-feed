@@ -739,3 +739,10 @@
 [2026-06-29] https://projectblack.io/blog/local-ai-for-cyber-security/
 [2026-06-29] https://projectblack.io/blog/a-user-account-restriction-is-preventing-you-from-logging-on/
 [2026-06-29] https://www.sonarsource.com/blog/model-agnostic-ai-is-key-to-business-continuity-as-models-keep-changing/
+[2026-06-30] https://www.uncommonengineer.com/docs/engineer/guides/docusaurus-algolia-search
+[2026-06-30] https://www.uncommonengineer.com/docs/engineer/AI/ai-trust-model-decomposition-failure
+[2026-06-30] https://labs.watchtowr.com/enterprise-tech-in-shell-out-progress-kemp-loadmaster-uninitialized-heap-to-pre-auth-rce-cve-2026-8037/
+[2026-06-30] https://thedfirreport.com/2026/06/29/from-bing-search-to-ransomware-bumblebee-and-adaptixc2-deliver-akira-3/
+[2026-06-30] https://www.wiz.io/blog/sensor-wls-for-on-prem
+[2026-06-30] https://www.wiz.io/blog/wiz-xm-securing-public-sector-hybrid-environments
+[2026-06-30] https://www.wiz.io/blog/red-agent-pov-bola
