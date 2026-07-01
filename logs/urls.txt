@@ -746,3 +746,16 @@
 [2026-06-30] https://www.wiz.io/blog/sensor-wls-for-on-prem
 [2026-06-30] https://www.wiz.io/blog/wiz-xm-securing-public-sector-hybrid-environments
 [2026-06-30] https://www.wiz.io/blog/red-agent-pov-bola
+[2026-07-01] https://dfir.ch/posts/fantastic_passwords_windows/
+[2026-07-01] https://dustri.org/b/markdown-outline-in-neovim-with-fzf.html
+[2026-07-01] https://frereit.de/notes-on-av-evasion/
+[2026-07-01] https://labs.watchtowr.com/citrixbleed-to-infinity-and-beyond-citrix-netscaler-pre-auth-memory-overread-cve-2026-8451/
+[2026-07-01] https://awssecuritydigest.com/past-issues/aws-security-digest-267
+[2026-07-01] https://redcanary.com/blog/threat-detection/phishing-ai-agent/
+[2026-07-01] https://blog.trailofbits.com/2026/06/30/shipping-post-quantum-cryptography-to-python/
+[2026-07-01] https://unit42.paloaltonetworks.com/phantom-squatting-hallucinated-web-domains/
+[2026-07-01] https://www.aquasec.com/blog/how-do-you-protect-a-workload-you-cannot-afford-to-patch-right-now/
+[2026-07-01] https://www.datadoghq.com/blog/omb-m-26-14-federal-logging-maturity/
+[2026-07-01] https://www.datadoghq.com/blog/datadog-achieves-govramp-high-authorization/
+[2026-07-01] https://www.sonarsource.com/blog/cut-your-coding-agents-cost-with-sonar-semantic-code-navigation/
+[2026-07-01] https://www.sonarsource.com/blog/introducing-sonar-vortex/
