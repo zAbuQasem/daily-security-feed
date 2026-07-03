@@ -774,3 +774,14 @@
 [2026-07-02] https://www.sentinelone.com/blog/the-autonomous-soc-revisited-what-18-months-on-the-road-has-taught-us/
 [2026-07-02] https://www.wiz.io/blog/ai-threat-readiness-with-wizos
 [2026-07-02] https://www.blackhillsinfosec.com/vulnerable-and-outdated-web-application-components/
+[2026-07-03] https://goodworkaround.com/2026/07/02/mass-convert-groups-from-ad-to-entra-id-using-powershell/
+[2026-07-03] https://labs.watchtowr.com/its-37oc-and-all-we-can-think-about-is-coldfusion-adobe-coldfusion-security-bulletin-apsb26-68-cve-bonanza/
+[2026-07-03] https://neilmadden.blog/2026/07/02/are-we-any-closer-to-the-quantum-apocalypse/
+[2026-07-03] https://thalpius.com/2026/06/30/microsoft-purview-vs-defender-for-cloud-apps-preventing-vs-correcting-data-exposure/
+[2026-07-03] https://www.praetorian.com/blog/knossos-decoy-environments/
+[2026-07-03] https://blog.talosintelligence.com/catan-and-mouse/
+[2026-07-03] https://trustedsec.com/blog/inheriting-the-receipts-securing-the-ai-your-company-already-adopted
+[2026-07-03] https://blog.trailofbits.com/2026/07/02/field-reports-from-patch-the-planet/
+[2026-07-03] https://unit42.paloaltonetworks.com/webauthn-added-to-browser-based-rdp/
+[2026-07-03] https://www.wiz.io/blog/introducing-wiz-mcp
+[2026-07-03] https://www.wiz.io/blog/white-house-post-quantum-cryptography-executive-order
