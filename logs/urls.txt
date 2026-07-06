@@ -795,3 +795,5 @@
 [2026-07-05] https://0xdf.gitlab.io/2026/07/04/htb-devarea.html
 [2026-07-05] https://projectblack.io/blog/hestiacp-admin-takeover-rce/
 [2026-07-05] https://projectblack.io/blog/crest-anz-vs-crest-international/
+[2026-07-06] https://thalpius.com/2026/07/05/microsoft-purview-testing-advanced-message-encryptions-branding-revocation-and-expiration/
+[2026-07-06] https://lab.ctbb.show/research/postmessage-targetorigin-bypass-via-ip-normalization
