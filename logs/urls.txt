@@ -797,3 +797,12 @@
 [2026-07-05] https://projectblack.io/blog/crest-anz-vs-crest-international/
 [2026-07-06] https://thalpius.com/2026/07/05/microsoft-purview-testing-advanced-message-encryptions-branding-revocation-and-expiration/
 [2026-07-06] https://lab.ctbb.show/research/postmessage-targetorigin-bypass-via-ip-normalization
+[2026-07-07] https://outpost24.com/blog/5-biggest-challenges-of-ai-in-cybersecurity/
+[2026-07-07] https://rastamouse.me/cpl-hook-chains/
+[2026-07-07] https://awssecuritydigest.com/past-issues/aws-security-digest-268
+[2026-07-07] https://blog.exodusintel.com/2026/07/06/microsoft-windows-installer-folder-delete-privilege-escalation/
+[2026-07-07] https://www.praetorian.com/blog/llm-kernel-exploit-development/
+[2026-07-07] https://securitylabs.datadoghq.com/articles/agent-id-protect-detect-respond/
+[2026-07-07] https://whiteknightlabs.com/2026/07/06/introduction-to-tokenizers-in-llms/
+[2026-07-07] https://www.sonarsource.com/blog/hidden-security-risks-in-jupyter-notebooks/
+[2026-07-07] http://blog.quarkslab.com/cortex-security-audit.html
