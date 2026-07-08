@@ -2048,7 +2048,16 @@
     "https://securitylabs.datadoghq.com/articles/agent-id-protect-detect-respond/": "2026-07-07",
     "https://whiteknightlabs.com/2026/07/06/introduction-to-tokenizers-in-llms/": "2026-07-07",
     "https://www.sonarsource.com/blog/hidden-security-risks-in-jupyter-notebooks/": "2026-07-07",
-    "http://blog.quarkslab.com/cortex-security-audit.html": "2026-07-07"
+    "http://blog.quarkslab.com/cortex-security-audit.html": "2026-07-07",
+    "https://0xdf.gitlab.io/2026/07/07/htb-abducted.html": "2026-07-08",
+    "https://dustri.org/b/the-ai-authored-denial-of-service-attack.html": "2026-07-08",
+    "https://shellsharks.com/notes/2026/07/07/world-wide-web": "2026-07-08",
+    "https://shellsharks.com/things-you-might-not-know-about-this-site": "2026-07-08",
+    "https://sensepost.com/blog/2026/process-parameter-poisoning/": "2026-07-08",
+    "https://blog.nviso.eu/2026/07/07/reducing-microsoft-sentinel-costs-without-compromising-detection-part-2-the-firewall-quest/": "2026-07-08",
+    "https://blog.talosintelligence.com/uat-7810/": "2026-07-08",
+    "https://trustedsec.com/blog/welcoming-obfusgit": "2026-07-08",
+    "https://unit42.paloaltonetworks.com/vidar-stealer-xmrig-miner-campaign-analysis/": "2026-07-08"
   },
-  "last_updated": "2026-07-07T03:12:14.102644+00:00"
+  "last_updated": "2026-07-08T03:09:44.729624+00:00"
 }
