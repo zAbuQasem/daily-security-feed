@@ -815,3 +815,11 @@
 [2026-07-08] https://blog.talosintelligence.com/uat-7810/
 [2026-07-08] https://trustedsec.com/blog/welcoming-obfusgit
 [2026-07-08] https://unit42.paloaltonetworks.com/vidar-stealer-xmrig-miner-campaign-analysis/
+[2026-07-09] https://eaton-works.com/2026/07/08/coal-india-camera-hack/
+[2026-07-09] https://outpost24.com/blog/outpost24-raises-bar-adaptive-application-security-next-gen-cyberflex/
+[2026-07-09] https://securitylabs.datadoghq.com/articles/coordinated-github-api-enumeration/
+[2026-07-09] https://www.sentinelone.com/blog/hpc-ai-workloads-need-runtime-security-the-architecture-already-exists/
+[2026-07-09] https://blog.trailofbits.com/2026/07/08/mutation-testing-comes-to-daml/
+[2026-07-09] https://www.wiz.io/blog/ghostapproval-a-trust-boundary-gap-in-ai-coding-assistants
+[2026-07-09] https://www.wiz.io/blog/wiz-asm-auto-recon
+[2026-07-09] https://www.blackhillsinfosec.com/the-goldilocks-zone/
