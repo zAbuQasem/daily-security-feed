@@ -823,3 +823,15 @@
 [2026-07-09] https://www.wiz.io/blog/ghostapproval-a-trust-boundary-gap-in-ai-coding-assistants
 [2026-07-09] https://www.wiz.io/blog/wiz-asm-auto-recon
 [2026-07-09] https://www.blackhillsinfosec.com/the-goldilocks-zone/
+[2026-07-10] https://blog.talosintelligence.com/wolfssl-vulnerabilities/
+[2026-07-10] https://blog.talosintelligence.com/winning-54-of-the-time/
+[2026-07-10] https://code-white.com/public-vulnerability-list/#multiple-unauthenticated-remote-memory-corruptions-in-agentlink-server-service-i
+[2026-07-10] https://detect.fyi/detection-engineering-in-the-era-of-semantic-malware-663cee8cda7b?source=rss----d5fd8f494f6a---4
+[2026-07-10] https://securitylabs.datadoghq.com/articles/not-so-anonymous-telemetry-injectivelabs-sdk-ts-backdoor/
+[2026-07-10] https://permiso.io/blog/introducing-the-risk-score-engine
+[2026-07-10] https://permiso.io/blog/why-identity-security-needs-risk-scoring
+[2026-07-10] https://trustedsec.com/blog/vulnify-giving-your-agents-a-cve-brain
+[2026-07-10] https://portswigger.net/blog/heading-to-vegas-meet-portswigger-at-black-hat-bsides-and-def-con-34
+[2026-07-10] https://www.sonarsource.com/blog/hunter-agent-beta/
+[2026-07-10] https://www.wiz.io/blog/how-prodsec-uses-wiz
+[2026-07-10] https://www.wiz.io/blog/verizon-dbir-2026-ai-cloud-security
