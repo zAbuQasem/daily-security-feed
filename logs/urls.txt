@@ -860,3 +860,12 @@
 [2026-07-14] https://www.sonarsource.com/blog/ai-regulated-industries-innovation/
 [2026-07-14] https://blog.trailofbits.com/2026/07/13/rust-proof-your-code-with-our-new-testing-handbook-chapter/
 [2026-07-14] https://www.wiz.io/blog/iac-coverage-security-dashboard
+[2026-07-15] https://0xdf.gitlab.io/2026/07/14/htb-orion.html
+[2026-07-15] https://blog.syss.com/posts/bluetooth-realying/
+[2026-07-15] https://blog.talosintelligence.com/microsoft-patch-tuesday-july-2026/
+[2026-07-15] https://blog.talosintelligence.com/video-where-protection-starts-cisco-talos-intelligence-integrations/
+[2026-07-15] https://blog.talosintelligence.com/the-serpents-tongue-luring-the-python-out-of-its-den/
+[2026-07-15] https://securitylabs.datadoghq.com/articles/compromised-asyncapi-npm-packages/
+[2026-07-15] https://trustedsec.com/blog/pandoras-container-part-1-unpacking-azure-container-security
+[2026-07-15] https://www.sonarsource.com/blog/github-enterprise-cloud-data-residency/
+[2026-07-15] https://www.wiz.io/blog/m-red-team-asyncapi-supply-chain-compromise-via-github-actions
