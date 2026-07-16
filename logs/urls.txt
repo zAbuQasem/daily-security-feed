@@ -869,3 +869,16 @@
 [2026-07-15] https://trustedsec.com/blog/pandoras-container-part-1-unpacking-azure-container-security
 [2026-07-15] https://www.sonarsource.com/blog/github-enterprise-cloud-data-residency/
 [2026-07-15] https://www.wiz.io/blog/m-red-team-asyncapi-supply-chain-compromise-via-github-actions
+[2026-07-16] https://www.uncommonengineer.com/docs/engineer/AI/glxtch-knowledge-lookup-search-quality
+[2026-07-16] https://advisory.splunk.com//advisories/SVD-2026-0706
+[2026-07-16] https://advisory.splunk.com//advisories/SVD-2026-0705
+[2026-07-16] https://advisory.splunk.com//advisories/SVD-2026-0704
+[2026-07-16] https://advisory.splunk.com//advisories/SVD-2026-0703
+[2026-07-16] https://advisory.splunk.com//advisories/SVD-2026-0702
+[2026-07-16] https://unit42.paloaltonetworks.com/tuxbot-v3-evolution-iot-botnet/
+[2026-07-16] https://salt.security/blog/meet-the-new-salt
+[2026-07-16] https://www.datadoghq.com/blog/monitor-apigee-x-api-traffic-and-security-with-datadog/
+[2026-07-16] https://www.sygnia.co/blog/when-technical-controls-work-attackers-change-the-rules/
+[2026-07-16] https://www.sygnia.co/blog/ransomware-incident-response/
+[2026-07-16] https://www.wiz.io/blog/red-agent-pov-business-logic
+[2026-07-16] https://www.blackhillsinfosec.com/kape-cheatsheet/
