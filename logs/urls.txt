@@ -882,3 +882,9 @@
 [2026-07-16] https://www.sygnia.co/blog/ransomware-incident-response/
 [2026-07-16] https://www.wiz.io/blog/red-agent-pov-business-logic
 [2026-07-16] https://www.blackhillsinfosec.com/kape-cheatsheet/
+[2026-07-17] https://trustedsec.com/blog/cmmc-is-not-cancelled
+[2026-07-17] https://blog.talosintelligence.com/begun-the-patch-wars-have/
+[2026-07-17] https://blog.talosintelligence.com/the-hunters-paradox-is-it-time-to-embrace-automated-threat-hunting/
+[2026-07-17] https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/
+[2026-07-17] https://unit42.paloaltonetworks.com/ai-incident-response-report/
+[2026-07-17] https://www.datadoghq.com/blog/datadog-observability-platforms-gartner-magic-quadrant-2026/
