@@ -888,3 +888,14 @@
 [2026-07-17] https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/
 [2026-07-17] https://unit42.paloaltonetworks.com/ai-incident-response-report/
 [2026-07-17] https://www.datadoghq.com/blog/datadog-observability-platforms-gartner-magic-quadrant-2026/
+[2026-07-18] https://rastamouse.me/crystal-palace-user-intrinsics/
+[2026-07-18] https://detect.fyi/you-assume-your-logs-are-flowing-a6e8971b676c?source=rss----d5fd8f494f6a---4
+[2026-07-18] https://blog.pwnedlabs.io/cloud-security-statistics
+[2026-07-18] https://blog.pwnedlabs.io/aws-penetration-testing-training
+[2026-07-18] https://blog.pwnedlabs.io/gcp-penetration-testing-training
+[2026-07-18] https://blog.pwnedlabs.io/azure-penetration-testing-training
+[2026-07-18] https://blog.pwnedlabs.io/gcp-pentesting-101
+[2026-07-18] https://unit42.paloaltonetworks.com/siemens-rox-ii-zero-day-vulnerabilities/
+[2026-07-18] https://portswigger.net/blog/burps-new-ambassadors-learn-from-the-people-who-use-burp-suite-everyday
+[2026-07-18] https://www.datadoghq.com/blog/creating-mcp-tools-for-cloud-siem/
+[2026-07-18] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-29-8/
