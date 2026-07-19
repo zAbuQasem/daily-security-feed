@@ -899,3 +899,5 @@
 [2026-07-18] https://portswigger.net/blog/burps-new-ambassadors-learn-from-the-people-who-use-burp-suite-everyday
 [2026-07-18] https://www.datadoghq.com/blog/creating-mcp-tools-for-cloud-siem/
 [2026-07-18] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-29-8/
+[2026-07-19] https://0xdf.gitlab.io/2026/07/18/htb-logging.html
+[2026-07-19] https://www.datadoghq.com/blog/cloud-cost-skill-bits-chat/

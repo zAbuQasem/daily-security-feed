@@ -2143,7 +2143,10 @@
     "https://unit42.paloaltonetworks.com/siemens-rox-ii-zero-day-vulnerabilities/": "2026-07-18",
     "https://portswigger.net/blog/burps-new-ambassadors-learn-from-the-people-who-use-burp-suite-everyday": "2026-07-18",
     "https://www.datadoghq.com/blog/creating-mcp-tools-for-cloud-siem/": "2026-07-18",
-    "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-29-8/": "2026-07-18"
+    "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-29-8/": "2026-07-18",
+    "https://0xdf.gitlab.io/2026/07/18/htb-logging.html": "2026-07-19",
+    "https://fortbridge.co.uk/research/philips-hue-bridge-firmware-emulation-fw2-qemu/": "2026-07-19",
+    "https://www.datadoghq.com/blog/cloud-cost-skill-bits-chat/": "2026-07-19"
   },
-  "last_updated": "2026-07-18T03:08:15.544155+00:00"
+  "last_updated": "2026-07-19T03:09:49.741580+00:00"
 }
