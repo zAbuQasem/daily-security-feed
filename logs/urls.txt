@@ -903,3 +903,11 @@
 [2026-07-19] https://www.datadoghq.com/blog/cloud-cost-skill-bits-chat/
 [2026-07-20] https://computer.rip/2026-07-19-email-encryption.html
 [2026-07-20] https://projectblack.io/blog/should-i-domain-join-backup-servers/
+[2026-07-21] https://raesene.github.io/blog/2026/07/20/show-us-zee-pages/
+[2026-07-21] https://awssecuritydigest.com/past-issues/aws-security-digest-270
+[2026-07-21] https://blog.exodusintel.com/2026/07/20/dnsmasq-dns-remote-heap-buffer-overflow/
+[2026-07-21] https://unit42.paloaltonetworks.com/ai-insights-incident-response-report/
+[2026-07-21] https://detect.fyi/defenders-remote-connections-blind-spot-fourtosixmapping-ce3f19658d05?source=rss----d5fd8f494f6a---4
+[2026-07-21] https://www.sonarsource.com/blog/introducing-sonarqube-server-2026-4/
+[2026-07-21] https://www.wiz.io/blog/wp2shell-cve-2026-63030-cve-2026-60137
+[2026-07-21] https://www.sentinelone.com/blog/the-agentic-soc-transforming-data-into-defensive-velocity/
