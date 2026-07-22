@@ -2158,7 +2158,14 @@
     "https://detect.fyi/defenders-remote-connections-blind-spot-fourtosixmapping-ce3f19658d05?source=rss----d5fd8f494f6a---4": "2026-07-21",
     "https://www.sonarsource.com/blog/introducing-sonarqube-server-2026-4/": "2026-07-21",
     "https://www.wiz.io/blog/wp2shell-cve-2026-63030-cve-2026-60137": "2026-07-21",
-    "https://www.sentinelone.com/blog/the-agentic-soc-transforming-data-into-defensive-velocity/": "2026-07-21"
+    "https://www.sentinelone.com/blog/the-agentic-soc-transforming-data-into-defensive-velocity/": "2026-07-21",
+    "https://projectdiscovery.io/blog/introducing-internal-network-scanning-see-your-network-the-way-an-attacker-inside-it-would": "2026-07-22",
+    "https://detect.fyi/detecting-emails-sent-using-unexpected-languages-kql-query-41c435e3176b?source=rss----d5fd8f494f6a---4": "2026-07-22",
+    "https://trustedsec.com/blog/the-new-hotness-in-phishing-device-code-attacks-in-m365": "2026-07-22",
+    "https://www.aquasec.com/blog/integrate-aqua-and-servicenow-to-prioritize-vulnerabilities-by-runtime-reality/": "2026-07-22",
+    "https://www.datadoghq.com/blog/native-otel-with-datadog/": "2026-07-22",
+    "https://www.wiz.io/blog/agentless-visibility-uncovering-cloud-blind-spots": "2026-07-22",
+    "https://www.wiz.io/blog/wiz-integration-network-reaches-300": "2026-07-22"
   },
-  "last_updated": "2026-07-21T03:09:25.914533+00:00"
+  "last_updated": "2026-07-22T03:10:01.217200+00:00"
 }
