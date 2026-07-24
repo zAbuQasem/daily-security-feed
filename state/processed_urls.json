@@ -2177,7 +2177,17 @@
     "https://www.datadoghq.com/blog/engineering/jfr-cpu-time-profiling/": "2026-07-23",
     "https://www.sonarsource.com/blog/escape-from-applescript/": "2026-07-23",
     "https://www.wiz.io/blog/agentless-threat-hunting-fortigate": "2026-07-23",
-    "https://www.blackhillsinfosec.com/life-of-a-soc-analyst/": "2026-07-23"
+    "https://www.blackhillsinfosec.com/life-of-a-soc-analyst/": "2026-07-23",
+    "https://redcanary.com/blog/threat-intelligence/intelligence-insights-july-2026/": "2026-07-24",
+    "https://unit42.paloaltonetworks.com/russian-webmail-espionage/": "2026-07-24",
+    "https://trustedsec.com/blog/ccpa-update-whos-in-scope-part-1": "2026-07-24",
+    "https://www.sonarsource.com/blog/cobol-is-back/": "2026-07-24",
+    "https://salt.security/blog/understanding-the-importance-of-mcp-security": "2026-07-24",
+    "https://blog.talosintelligence.com/dont-swing-at-everything/": "2026-07-24",
+    "https://blog.talosintelligence.com/chaos-msarat-living-off-the-browser-to-build-covert-c2-channel/": "2026-07-24",
+    "https://blog.talosintelligence.com/preview-cisco-talos-at-black-hat-usa-2026/": "2026-07-24",
+    "https://www.datadoghq.com/blog/choosing-apm-instrumentation/": "2026-07-24",
+    "https://www.sentinelone.com/blog/mount-here-read-there-twin-path-traversal-cves-in-kubernetes-storage/": "2026-07-24"
   },
-  "last_updated": "2026-07-23T03:10:00.595970+00:00"
+  "last_updated": "2026-07-24T03:09:39.312665+00:00"
 }
