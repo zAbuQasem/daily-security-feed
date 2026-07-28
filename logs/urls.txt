@@ -948,3 +948,15 @@
 [2026-07-25] https://defcon.org/html/links/dc-news.html#dcmepostponed
 [2026-07-26] https://0xdf.gitlab.io/2026/07/25/htb-fries.html
 [2026-07-26] http://antirez.com/news/171
+[2026-07-28] https://eaton-works.com/2026/07/27/my-eicher-hack/
+[2026-07-28] https://dfir.ch/posts/field_notes_nssm/
+[2026-07-28] https://taggart-tech.com/sharp-objects/
+[2026-07-28] https://awssecuritydigest.com/past-issues/aws-security-digest-271
+[2026-07-28] https://starlabs.sg/blog/2026/07-when-ai-makes-0-days-feel-like-n-days/
+[2026-07-28] https://blog.exodusintel.com/2026/07/27/from-virtual-share-to-physical-shell-leveraging-windows-inconsistent-access-control-for-lpe/
+[2026-07-28] https://detect.fyi/siem-bypasses-diffracting-the-creepydrive-urls-sentinel-rule-82e066b00f8c?source=rss----d5fd8f494f6a---4
+[2026-07-28] https://securitylabs.datadoghq.com/articles/detection-primitives-for-ebpf-rootkits/
+[2026-07-28] https://portswigger.net/blog/introducing-burp-at
+[2026-07-28] https://www.sygnia.co/blog/why-most-ot-cyber-incidents-never-reach-the-ot-environment/
+[2026-07-28] https://www.sygnia.co/webinars/when-ransomware-hides-in-onedrive-inside-safepay-exfiltration-play/
+[2026-07-28] https://www.sonarsource.com/blog/now-available-sonarqube-plugin-for-antigravity/
