@@ -999,3 +999,8 @@
 [2026-07-31] https://www.datadoghq.com/blog/a-practical-guide-to-react-error-monitoring/
 [2026-07-31] https://www.wiz.io/blog/agentic-code-security
 [2026-07-31] https://www.wiz.io/blog/cosmosescape-taking-over-every-database-in-azure-cosmos-db
+[2026-08-01] https://dustri.org/b/unpacking-ioncube.html
+[2026-08-01] https://unit42.paloaltonetworks.com/xcsset-v40-malware-analysis/
+[2026-08-01] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-31-8/
+[2026-08-01] https://www.sonarsource.com/blog/migrating-to-sonarqube-cloud-just-got-a-whole-lot-easier/
+[2026-08-01] https://www.sonarsource.com/blog/why-sonar-signed-the-open-weights-and-american-ai-leadership-letter/
