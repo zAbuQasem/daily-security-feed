@@ -1004,3 +1004,6 @@
 [2026-08-01] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-31-8/
 [2026-08-01] https://www.sonarsource.com/blog/migrating-to-sonarqube-cloud-just-got-a-whole-lot-easier/
 [2026-08-01] https://www.sonarsource.com/blog/why-sonar-signed-the-open-weights-and-american-ai-leadership-letter/
+[2026-08-02] https://0xdf.gitlab.io/2026/08/01/htb-kobold.html
+[2026-08-02] https://binary.ninja/2026/08/01/a-decade-or-more-in-review.html
+[2026-08-02] https://www.datadoghq.com/blog/runtime-prioritization-engine/
