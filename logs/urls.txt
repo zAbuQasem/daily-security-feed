@@ -1007,3 +1007,6 @@
 [2026-08-02] https://0xdf.gitlab.io/2026/08/01/htb-kobold.html
 [2026-08-02] https://binary.ninja/2026/08/01/a-decade-or-more-in-review.html
 [2026-08-02] https://www.datadoghq.com/blog/runtime-prioritization-engine/
+[2026-08-03] https://computer.rip/2026-08-02-telephone-leasing.html
+[2026-08-03] https://projectblack.io/blog/bypassing-hotel-wi-fi-captive-portals/
+[2026-08-03] https://www.wiz.io/blog/s3-clones-in-the-neoclouds
