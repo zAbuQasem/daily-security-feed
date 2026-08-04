@@ -2261,7 +2261,13 @@
     "https://www.datadoghq.com/blog/runtime-prioritization-engine/": "2026-08-02",
     "https://computer.rip/2026-08-02-telephone-leasing.html": "2026-08-03",
     "https://projectblack.io/blog/bypassing-hotel-wi-fi-captive-portals/": "2026-08-03",
-    "https://www.wiz.io/blog/s3-clones-in-the-neoclouds": "2026-08-03"
+    "https://www.wiz.io/blog/s3-clones-in-the-neoclouds": "2026-08-03",
+    "https://awssecuritydigest.com/past-issues/aws-security-digest-272": "2026-08-04",
+    "https://projectdiscovery.io/blog/watching-agents-work-a-behavioral-audit-of-offensive-security-llm-runs": "2026-08-04",
+    "https://blog.talosintelligence.com/webinar-tales-from-the-frontlines-an-exclusive-briefing-on-q2-incidents/": "2026-08-04",
+    "https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/": "2026-08-04",
+    "https://securitylabs.datadoghq.com/articles/coding-agent-project-trust-code-execution-before-first-prompt/": "2026-08-04",
+    "https://www.wiz.io/blog/introducing-the-wiz-sensor-for-developer-workstations": "2026-08-04"
   },
-  "last_updated": "2026-08-03T03:08:46.153386+00:00"
+  "last_updated": "2026-08-04T03:07:41.502290+00:00"
 }
