@@ -2283,7 +2283,16 @@
     "https://trustedsec.com/blog/tls-encryption-and-compliance": "2026-08-05",
     "https://www.sentinelone.com/blog/from-input-to-impact-secure-ai-where-it-runs/": "2026-08-05",
     "https://www.wiz.io/blog/wiz-at-black-hat-2026": "2026-08-05",
-    "https://www.wiz.io/blog/keyv-and-cacheable-npm-supply-chain-attack": "2026-08-05"
+    "https://www.wiz.io/blog/keyv-and-cacheable-npm-supply-chain-attack": "2026-08-05",
+    "https://dirkjanm.io/borrowing-windows-hello-keys/": "2026-08-06",
+    "https://shells.systems/abusing-extended-attributes-to-bypass-application-control-for-business/": "2026-08-06",
+    "https://blog.trailofbits.com/2026/08/05/a-few-notes-on-aws-nitro-enclaves-kms-integration/": "2026-08-06",
+    "https://portswigger.net/research/crlf-powered-desync-attacks": "2026-08-06",
+    "https://portswigger.net/research/http-terminator": "2026-08-06",
+    "https://www.sygnia.co/threat-reports-and-advisories/shai-hulud-returns-software-supply-chain-attack-npm-keyv/": "2026-08-06",
+    "https://www.sonarsource.com/blog/the-return-of-shai-hulud/": "2026-08-06",
+    "https://defcon.org/html/defcon-34/dc-34-news.html#welcomeparty": "2026-08-06",
+    "https://info.defcon.org/defcon34/documents/670": "2026-08-06"
   },
-  "last_updated": "2026-08-05T03:07:32.000810+00:00"
+  "last_updated": "2026-08-06T03:08:32.012064+00:00"
 }
