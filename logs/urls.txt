@@ -1055,3 +1055,5 @@
 [2026-08-08] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-32-8/
 [2026-08-08] https://www.datadoghq.com/blog/session-replay-investigate-collaborate/
 [2026-08-08] https://defcon.org/html/defcon-34/dc-34-news.html#selloutparty
+[2026-08-09] https://www.uncommonengineer.com/docs/hacker/cve-2026-18953-aws-transform-mcp-arbitrary-file-write
+[2026-08-09] https://0xdf.gitlab.io/2026/08/08/htb-helix.html
