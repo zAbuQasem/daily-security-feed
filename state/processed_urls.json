@@ -2326,7 +2326,18 @@
     "https://www.sonarsource.com/blog/sonar-joins-the-open-secure-ai-alliance/": "2026-08-11",
     "https://www.sygnia.co/press-release/sygnia-brings-expert-led-managed-detection-and-response-to-aws-marketplace/": "2026-08-11",
     "https://www.sygnia.co/guides-and-tools/crypto-threat-environment-2026-ebook/": "2026-08-11",
-    "https://defcon.org/html/defcon-34/dc-34-news.html#dc34wrap": "2026-08-11"
+    "https://defcon.org/html/defcon-34/dc-34-news.html#dc34wrap": "2026-08-11",
+    "https://sansec.io/research/adobe-commerce-account-takeover-apsb26-92": "2026-08-12",
+    "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-august-2026/": "2026-08-12",
+    "https://trustedsec.com/blog/a-vault-with-no-treasure-cmmc-level-2-compliance-for-subcontractors-with-no-cui": "2026-08-12",
+    "https://unit42.paloaltonetworks.com/kimwolf-v7-botnet-malware/": "2026-08-12",
+    "https://www.datadoghq.com/blog/engineering/improving-apm-java-startup-with-a-prefix-trie/": "2026-08-12",
+    "https://www.datadoghq.com/blog/product-analytics-account-segments/": "2026-08-12",
+    "https://www.datadoghq.com/blog/how-to-manage-unfixed-kubernetes-cves/": "2026-08-12",
+    "https://www.datadoghq.com/blog/serverless-agentic-onboarding/": "2026-08-12",
+    "http://blog.quarkslab.com/bypassing-android-hardware-attestation.html": "2026-08-12",
+    "https://blog.trailofbits.com/2026/08/11/how-trail-of-bits-helps-verify-the-integrity-of-your-signal-chats/": "2026-08-12",
+    "https://lab.ctbb.show/research/from-defcon-research-to-automated-supply-chain-defense-with-npxconfuse": "2026-08-12"
   },
-  "last_updated": "2026-08-11T02:47:14.073772+00:00"
+  "last_updated": "2026-08-12T02:58:09.394086+00:00"
 }
