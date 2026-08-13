@@ -1081,3 +1081,5 @@
 [2026-08-12] http://blog.quarkslab.com/bypassing-android-hardware-attestation.html
 [2026-08-12] https://blog.trailofbits.com/2026/08/11/how-trail-of-bits-helps-verify-the-integrity-of-your-signal-chats/
 [2026-08-12] https://lab.ctbb.show/research/from-defcon-research-to-automated-supply-chain-defense-with-npxconfuse
+[2026-08-13] https://portswigger.net/blog/can-ai-invent-new-attack-techniques-new-research-from-james-kettle-and-portswigger-research
+[2026-08-13] https://www.datadoghq.com/blog/azure-secretless-authentication/
