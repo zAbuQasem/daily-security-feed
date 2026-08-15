@@ -1089,3 +1089,11 @@
 [2026-08-14] http://blog.quarkslab.com/from-p-code-to-gnn-extract-binary-code-semantics.html
 [2026-08-14] https://www.wiz.io/blog/investigating-github-pat-compromise
 [2026-08-14] https://www.wiz.io/blog/securing-personal-repositories
+[2026-08-15] https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/
+[2026-08-15] https://labs.watchtowr.com/youre-back-in-the-room-citrix-netscaler-pre-auth-rce-cve-2026-8452/
+[2026-08-15] https://www.mdsec.co.uk/2026/08/arm64-stack-internals-and-obfuscation-on-apple-silicon/
+[2026-08-15] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-33-8/
+[2026-08-15] https://www.datadoghq.com/blog/data-pipeline-monitoring/
+[2026-08-15] https://www.wiz.io/blog/how-wiz-finops-uses-wiz-cloud-cost
+[2026-08-15] https://www.wiz.io/blog/securing-data-in-the-ai-era
+[2026-08-15] https://lab.ctbb.show/writeups/mathjax-macro-redefinition-overrides-builtin-operators
