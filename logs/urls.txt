@@ -1097,3 +1097,5 @@
 [2026-08-15] https://www.wiz.io/blog/how-wiz-finops-uses-wiz-cloud-cost
 [2026-08-15] https://www.wiz.io/blog/securing-data-in-the-ai-era
 [2026-08-15] https://lab.ctbb.show/writeups/mathjax-macro-redefinition-overrides-builtin-operators
+[2026-08-16] https://0xdf.gitlab.io/2026/08/15/htb-cobblestone.html
+[2026-08-16] https://defcon.org/html/defcon-34/dc-34-news.html#dc34press
