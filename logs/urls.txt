@@ -1118,3 +1118,14 @@
 [2026-08-19] https://www.datadoghq.com/blog/two-ways-to-measure-cumulative-impact/
 [2026-08-19] https://www.datadoghq.com/blog/work-management/
 [2026-08-19] https://www.datadoghq.com/blog/trace-aws-lambda-durable-functions/
+[2026-08-20] https://advisory.splunk.com/advisories/SVD-2026-0808
+[2026-08-20] https://advisory.splunk.com/advisories/SVD-2026-0807
+[2026-08-20] https://advisory.splunk.com/advisories/SVD-2026-0806
+[2026-08-20] https://advisory.splunk.com/advisories/SVD-2026-0805
+[2026-08-20] https://advisory.splunk.com/advisories/SVD-2026-0804
+[2026-08-20] https://securitylabs.datadoghq.com/articles/putting-models-to-the-secure-coding-test-plan-vs-default-mode/
+[2026-08-20] https://blog.talosintelligence.com/describing-attacks-with-crime-script-analysis/
+[2026-08-20] https://www.datadoghq.com/blog/cisa-bod-26-04-vulnerability-prioritization/
+[2026-08-20] https://www.datadoghq.com/blog/engineering/gitretriever/
+[2026-08-20] https://www.wiz.io/blog/wiz-pen-test-findings-is-now-ga
+[2026-08-20] https://falconforce.nl/bsides-amsterdam-november-2026/
