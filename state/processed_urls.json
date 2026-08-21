@@ -2386,7 +2386,19 @@
     "https://www.datadoghq.com/blog/cisa-bod-26-04-vulnerability-prioritization/": "2026-08-20",
     "https://www.datadoghq.com/blog/engineering/gitretriever/": "2026-08-20",
     "https://www.wiz.io/blog/wiz-pen-test-findings-is-now-ga": "2026-08-20",
-    "https://falconforce.nl/bsides-amsterdam-november-2026/": "2026-08-20"
+    "https://falconforce.nl/bsides-amsterdam-november-2026/": "2026-08-20",
+    "https://securitylabs.datadoghq.com/articles/n4d-mesh-controller-go-titan-new-infrastructure-hunting/": "2026-08-21",
+    "https://unit42.paloaltonetworks.com/communication-channel-identity-risks/": "2026-08-21",
+    "https://redcanary.com/blog/threat-intelligence/intelligence-insights-august-2026/": "2026-08-21",
+    "https://salt.security/blog/what-is-security-posture-management-and-why-is-it-important": "2026-08-21",
+    "https://www.aquasec.com/blog/integrate-aqua-and-datadog-to-connect-runtime-security-with-application-performance/": "2026-08-21",
+    "http://blog.quarkslab.com/defeating-ai-assisted-reverse-engineering-or-at-least-trying-to.html": "2026-08-21",
+    "https://www.datadoghq.com/blog/ai-native-sast-detect-llm-vulnerabilities/": "2026-08-21",
+    "https://www.datadoghq.com/blog/systemic-risk-ai-agents-datadog/": "2026-08-21",
+    "https://blog.talosintelligence.com/is-cyber-missing-the-marque/": "2026-08-21",
+    "https://blog.talosintelligence.com/uat-10147-deploys-spectre-a-cross-platform-implant-with-linux-rootkit-and-byovd-capabilities/": "2026-08-21",
+    "https://blog.talosintelligence.com/uat-10147-chinese-speaking-adversary-integrates-agentic-ai-into-post-compromise-operations/": "2026-08-21",
+    "https://www.wiz.io/blog/rust-supply-chain-attack-on-arrayref-significant-overlap-with-dprk-campaigns": "2026-08-21"
   },
-  "last_updated": "2026-08-20T02:28:13.753372+00:00"
+  "last_updated": "2026-08-21T02:34:18.597774+00:00"
 }
