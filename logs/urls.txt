@@ -1141,3 +1141,7 @@
 [2026-08-21] https://blog.talosintelligence.com/uat-10147-deploys-spectre-a-cross-platform-implant-with-linux-rootkit-and-byovd-capabilities/
 [2026-08-21] https://blog.talosintelligence.com/uat-10147-chinese-speaking-adversary-integrates-agentic-ai-into-post-compromise-operations/
 [2026-08-21] https://www.wiz.io/blog/rust-supply-chain-attack-on-arrayref-significant-overlap-with-dprk-campaigns
+[2026-08-22] https://raesene.github.io/blog/2026/08/21/api-server-proxy-netpol-bypass/
+[2026-08-22] https://unit42.paloaltonetworks.com/sdlc-supply-chain/
+[2026-08-22] https://www.datadoghq.com/blog/control-trace-volume-with-opentelemetry-tail-based-sampling/
+[2026-08-22] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-34-8/
