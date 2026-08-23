@@ -1145,3 +1145,4 @@
 [2026-08-22] https://unit42.paloaltonetworks.com/sdlc-supply-chain/
 [2026-08-22] https://www.datadoghq.com/blog/control-trace-volume-with-opentelemetry-tail-based-sampling/
 [2026-08-22] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-34-8/
+[2026-08-23] https://computer.rip/2026-08-22-figure-of-the-earth.html
