@@ -1169,3 +1169,11 @@
 [2026-08-27] https://www.wiz.io/blog/cost-attribution-with-the-wiz-service-catalog
 [2026-08-27] https://www.wiz.io/blog/cloud-risk-report-2026
 [2026-08-27] https://falconforce.nl/in-your-logs-now/
+[2026-08-28] https://blog.talosintelligence.com/sorry-i-cant-help-with-that-how-your-guardrails-might-become-the-attackers-best-friend/
+[2026-08-28] https://blog.talosintelligence.com/javascript-obfuscation-from-party-trick-to-phishing-kit/
+[2026-08-28] https://www.datadoghq.com/blog/live-debugger/
+[2026-08-28] https://www.datadoghq.com/blog/ai-agent-security-lessons/
+[2026-08-28] https://www.sonarsource.com/blog/hunter-agent-detects-logical-flaws/
+[2026-08-28] https://www.wiz.io/blog/ai-infrastructure-honeypot
+[2026-08-28] https://www.wiz.io/blog/bucket-scanner-to-context-engine
+[2026-08-28] https://www.wiz.io/blog/vcs-dfir-threat-hunting-github-gitlab-azure-devops
