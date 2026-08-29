@@ -1177,3 +1177,10 @@
 [2026-08-28] https://www.wiz.io/blog/ai-infrastructure-honeypot
 [2026-08-28] https://www.wiz.io/blog/bucket-scanner-to-context-engine
 [2026-08-28] https://www.wiz.io/blog/vcs-dfir-threat-hunting-github-gitlab-azure-devops
+[2026-08-29] https://5stars217.github.io/2026-08-28-the-embodied-lethal-trifecta/
+[2026-08-29] https://goodworkaround.com/2026/08/28/help-my-github-claims-matching-expressions-are-no-longer-working/
+[2026-08-29] https://www.mdsec.co.uk/2026/08/when-it-snows-it-pours-anatomy-of-a-servicenow-red-team/
+[2026-08-29] https://falconforce.nl/cyberhagen-september-2026/
+[2026-08-29] https://unit42.paloaltonetworks.com/perturbation-probing-llm-safety/
+[2026-08-29] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-35-8/
+[2026-08-29] https://www.datadoghq.com/blog/rum-build-time-privacy-allowlist/
