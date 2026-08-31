@@ -1184,3 +1184,6 @@
 [2026-08-29] https://unit42.paloaltonetworks.com/perturbation-probing-llm-safety/
 [2026-08-29] https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-35-8/
 [2026-08-29] https://www.datadoghq.com/blog/rum-build-time-privacy-allowlist/
+[2026-08-31] https://metalbear.com/events/
+[2026-08-31] https://www.sygnia.co/blog/fire-ant-evolves-from-hypervisors-to-trusted-infrastructure/
+[2026-08-31] https://www.sygnia.co/press-release/sygnia-reveals-new-activity-by-china-nexus-threat-actor-fire-ant-targeting-trusted-infrastructure/
