@@ -1187,3 +1187,14 @@
 [2026-08-31] https://metalbear.com/events/
 [2026-08-31] https://www.sygnia.co/blog/fire-ant-evolves-from-hypervisors-to-trusted-infrastructure/
 [2026-08-31] https://www.sygnia.co/press-release/sygnia-reveals-new-activity-by-china-nexus-threat-actor-fire-ant-targeting-trusted-infrastructure/
+[2026-09-01] https://clearbluejar.github.io/posts/does-abliteration-skew-your-bug-hunting/
+[2026-09-01] https://pgj11.com/posts/Analysis-of-Bincrypter-and-gsocket-gs-netcat/
+[2026-09-01] https://blog.includesecurity.com/2026/08/encryptedsharedpreferences-is-dead-heres-what-you-should-use-instead/
+[2026-09-01] https://awssecuritydigest.com/past-issues/aws-security-digest-276
+[2026-09-01] https://certitude.consulting/blog/en/enhanced-cybersecurity-with-digital-forensics-incident-response/
+[2026-09-01] https://securitylabs.datadoghq.com/articles/aws-root-user-bruteforce-campaign/
+[2026-09-01] https://unit42.paloaltonetworks.com/spring-ring-voice-phishing-campaigns/
+[2026-09-01] https://salt.security/blog/secure-what-agents-do-not-just-what-they-say
+[2026-09-01] https://www.datadoghq.com/blog/how-bits-database-optimization-proves-a-query-rewrite-is-faster/
+[2026-09-01] https://www.datadoghq.com/blog/tines-observability-pipelines-security-automation/
+[2026-09-01] https://www.datadoghq.com/blog/bitbucket-cloud-source-code-integration/
