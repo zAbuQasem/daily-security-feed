@@ -1198,3 +1198,10 @@
 [2026-09-01] https://www.datadoghq.com/blog/how-bits-database-optimization-proves-a-query-rewrite-is-faster/
 [2026-09-01] https://www.datadoghq.com/blog/tines-observability-pipelines-security-automation/
 [2026-09-01] https://www.datadoghq.com/blog/bitbucket-cloud-source-code-integration/
+[2026-09-02] https://dustri.org/b/snuffleupagus-0140-blumenbach.html
+[2026-09-02] https://trustedsec.com/blog/waf-fu-or-some-log-replay-nonsense
+[2026-09-02] https://www.wiz.io/blog/introducing-cva
+[2026-09-02] https://www.datadoghq.com/blog/engineering/rust-tracing-opentelemetry/
+[2026-09-02] https://www.datadoghq.com/blog/from-traces-to-experiments-a-loop-for-improving-ai-agents/
+[2026-09-02] https://www.datadoghq.com/blog/cuped-adjustments-visualization/
+[2026-09-02] https://www.sonarsource.com/blog/stop-the-context-tax/
