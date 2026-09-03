@@ -2471,7 +2471,14 @@
     "https://www.datadoghq.com/blog/engineering/rust-tracing-opentelemetry/": "2026-09-02",
     "https://www.datadoghq.com/blog/from-traces-to-experiments-a-loop-for-improving-ai-agents/": "2026-09-02",
     "https://www.datadoghq.com/blog/cuped-adjustments-visualization/": "2026-09-02",
-    "https://www.sonarsource.com/blog/stop-the-context-tax/": "2026-09-02"
+    "https://www.sonarsource.com/blog/stop-the-context-tax/": "2026-09-02",
+    "https://0xdf.gitlab.io/2026/09/02/htb-nexus.html": "2026-09-03",
+    "https://www.outflank.nl/blog/2026/09/02/red-team-ai-skills/": "2026-09-03",
+    "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/": "2026-09-03",
+    "https://www.datadoghq.com/blog/monitor-prompt-caching-optimize-token-usage/": "2026-09-03",
+    "http://blog.quarkslab.com/chamilo-lms-its-raining-0days-hallelujah-its-raining-0days.html": "2026-09-03",
+    "https://www.sygnia.co/webinars/fire-ant-evolves-from-hypervisors-to-trusted-infrastructure-webinar/": "2026-09-03",
+    "https://www.sygnia.co/blog/how-the-safepay-ransomware-group-abused-onedrive-to-steal-data/": "2026-09-03"
   },
-  "last_updated": "2026-09-02T02:37:19.053730+00:00"
+  "last_updated": "2026-09-03T02:28:38.905717+00:00"
 }
