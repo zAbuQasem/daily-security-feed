@@ -1211,3 +1211,10 @@
 [2026-09-03] http://blog.quarkslab.com/chamilo-lms-its-raining-0days-hallelujah-its-raining-0days.html
 [2026-09-03] https://www.sygnia.co/webinars/fire-ant-evolves-from-hypervisors-to-trusted-infrastructure-webinar/
 [2026-09-03] https://www.sygnia.co/blog/how-the-safepay-ransomware-group-abused-onedrive-to-steal-data/
+[2026-09-04] https://binary.ninja/2026/09/03/binary-ninja-6.0-krypton.html
+[2026-09-04] https://trustedsec.com/blog/llmhaxor-update
+[2026-09-04] https://unit42.paloaltonetworks.com/ai-tool-use-targeting-latam-orgs/
+[2026-09-04] https://salt.security/blog/ten-years-two-photos-and-one-bet-that-got-much-bigger
+[2026-09-04] https://blog.talosintelligence.com/the-story-behind-the-intelligence/
+[2026-09-04] https://www.datadoghq.com/blog/build-datadog-workflows-ai-agents/
+[2026-09-04] https://www.wiz.io/blog/prevent-production-risk-at-code-stage
