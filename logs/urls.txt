@@ -1221,3 +1221,7 @@
 [2026-09-05] https://blog.thinkst.com/2026/09/getting-agents-to-tell-on-themselves.html
 [2026-09-05] https://www.sonarsource.com/blog/four-new-languages-arrive-in-sonarqube-cloud/
 [2026-09-05] https://www.datadoghq.com/blog/stop-runtime-threats-with-workload-protection-response-actions/
+[2026-09-06] https://0xdf.gitlab.io/2026/09/05/htb-pirate.html
+[2026-09-06] https://computer.rip/2026-09-05-avalanche.html
+[2026-09-06] https://sansec.io/research/stylesmuggler
+[2026-09-06] https://www.antitree.com/2026/09/firecracker-io_uring-and-validating-layers-of-defense/
