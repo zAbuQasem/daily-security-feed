@@ -1225,3 +1225,7 @@
 [2026-09-06] https://computer.rip/2026-09-05-avalanche.html
 [2026-09-06] https://sansec.io/research/stylesmuggler
 [2026-09-06] https://www.antitree.com/2026/09/firecracker-io_uring-and-validating-layers-of-defense/
+[2026-09-08] https://dustri.org/b/a-simple-git-gutter-in-vim.html
+[2026-09-08] https://sansec.io/research/stylesmuggler-0day
+[2026-09-08] https://taggart-tech.com/speed/
+[2026-09-08] https://awssecuritydigest.com/past-issues/aws-security-digest-277
