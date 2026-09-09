@@ -1229,3 +1229,11 @@
 [2026-09-08] https://sansec.io/research/stylesmuggler-0day
 [2026-09-08] https://taggart-tech.com/speed/
 [2026-09-08] https://awssecuritydigest.com/past-issues/aws-security-digest-277
+[2026-09-09] https://blog.scrt.ch/2026/09/08/hp-one-agent-local-privilege-escalation-through-race-condition-cve-2026-5064/
+[2026-09-09] https://blog.talosintelligence.com/microsoft-patch-tuesday-for-september-2026/
+[2026-09-09] https://blog.talosintelligence.com/clearfake-webdav-infection-chain/
+[2026-09-09] https://blog.talosintelligence.com/clickfix-moves-into-the-browser/
+[2026-09-09] https://www.datadoghq.com/blog/coordinate-product-launches-with-datadog/
+[2026-09-09] https://www.sygnia.co/blog/shai-hulud-in-the-wild-what-security-and-incident-response-teams-need-to-know/
+[2026-09-09] https://www.sonarsource.com/blog/the-next-state-of-code-developer-survey-is-open/
+[2026-09-09] https://projectzero.google/2026/09/maccconc-race-condition.html
