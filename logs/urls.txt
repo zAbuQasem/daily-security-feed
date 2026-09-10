@@ -1237,3 +1237,11 @@
 [2026-09-09] https://www.sygnia.co/blog/shai-hulud-in-the-wild-what-security-and-incident-response-teams-need-to-know/
 [2026-09-09] https://www.sonarsource.com/blog/the-next-state-of-code-developer-survey-is-open/
 [2026-09-09] https://projectzero.google/2026/09/maccconc-race-condition.html
+[2026-09-10] https://advisory.splunk.com/advisories/SVD-2026-0901
+[2026-09-10] https://unit42.paloaltonetworks.com/ppi-network-malware-campaign-analysis/
+[2026-09-10] https://blog.talosintelligence.com/fmc-ongoing-exploitation/
+[2026-09-10] https://salt.security/blog/introducing-the-salt-claude-connect-continuous-mcp-server-visibility-for-claude-enterprise
+[2026-09-10] https://www.datadoghq.com/blog/ai-development-golden-paths/
+[2026-09-10] https://www.sonarsource.com/blog/seven-questions-for-assessing-cyber-resilience-act-codebase-readiness/
+[2026-09-10] https://blog.trailofbits.com/2026/09/09/a-proof-of-fermats-last-theorem-that-fits-the-margin/
+[2026-09-10] https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise
