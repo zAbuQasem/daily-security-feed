@@ -2518,7 +2518,16 @@
     "https://www.datadoghq.com/blog/ai-development-golden-paths/": "2026-09-10",
     "https://www.sonarsource.com/blog/seven-questions-for-assessing-cyber-resilience-act-codebase-readiness/": "2026-09-10",
     "https://blog.trailofbits.com/2026/09/09/a-proof-of-fermats-last-theorem-that-fits-the-margin/": "2026-09-10",
-    "https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise": "2026-09-10"
+    "https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise": "2026-09-10",
+    "https://blog.doyensec.com/2026/09/10/oneplus-session-takeover.html": "2026-09-11",
+    "https://blog.talosintelligence.com/weve-got-one-word-for-it-and-its-usually-the-wrong-one/": "2026-09-11",
+    "https://salt.security/blog/the-role-of-agentic-ai-in-cybersecurity": "2026-09-11",
+    "https://trustedsec.com/blog/so-you-found-aws-access-keys-part-1": "2026-09-11",
+    "https://unit42.paloaltonetworks.com/kubernetes-spiffe-spire-identity-spoofing/": "2026-09-11",
+    "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201": "2026-09-11",
+    "https://www.wiz.io/blog/wiz-govramp-high": "2026-09-11",
+    "https://www.datadoghq.com/blog/how-we-built-datadog-experiments/": "2026-09-11",
+    "https://www.datadoghq.com/blog/kafka-console/": "2026-09-11"
   },
-  "last_updated": "2026-09-10T02:23:35.455268+00:00"
+  "last_updated": "2026-09-11T02:20:58.025310+00:00"
 }
