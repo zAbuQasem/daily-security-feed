@@ -2527,7 +2527,11 @@
     "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201": "2026-09-11",
     "https://www.wiz.io/blog/wiz-govramp-high": "2026-09-11",
     "https://www.datadoghq.com/blog/how-we-built-datadog-experiments/": "2026-09-11",
-    "https://www.datadoghq.com/blog/kafka-console/": "2026-09-11"
+    "https://www.datadoghq.com/blog/kafka-console/": "2026-09-11",
+    "https://falconforce.nl/introducing-falcondash-your-tuning-companion/": "2026-09-12",
+    "https://www.datadoghq.com/blog/chatgpt-datadog-experiments/": "2026-09-12",
+    "https://www.datadoghq.com/blog/understanding-netflow-duplication/": "2026-09-12",
+    "https://www.sonarsource.com/blog/beyond-cheap-code-the-next-commit/": "2026-09-12"
   },
-  "last_updated": "2026-09-11T02:20:58.025310+00:00"
+  "last_updated": "2026-09-12T02:20:51.722727+00:00"
 }
