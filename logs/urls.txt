@@ -1258,3 +1258,4 @@
 [2026-09-12] https://www.datadoghq.com/blog/chatgpt-datadog-experiments/
 [2026-09-12] https://www.datadoghq.com/blog/understanding-netflow-duplication/
 [2026-09-12] https://www.sonarsource.com/blog/beyond-cheap-code-the-next-commit/
+[2026-09-13] https://0xdf.gitlab.io/2026/09/12/htb-silentium.html
