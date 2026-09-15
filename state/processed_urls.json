@@ -2532,7 +2532,17 @@
     "https://www.datadoghq.com/blog/chatgpt-datadog-experiments/": "2026-09-12",
     "https://www.datadoghq.com/blog/understanding-netflow-duplication/": "2026-09-12",
     "https://www.sonarsource.com/blog/beyond-cheap-code-the-next-commit/": "2026-09-12",
-    "https://0xdf.gitlab.io/2026/09/12/htb-silentium.html": "2026-09-13"
+    "https://0xdf.gitlab.io/2026/09/12/htb-silentium.html": "2026-09-13",
+    "https://captmeelo.com/research/2026/09/13/the-drm-flag-that-isnt-drm.html": "2026-09-15",
+    "https://dfir.ch/posts/field_notes_av_impacket/": "2026-09-15",
+    "https://dfir.ch/talks/bsides_frankfurt_2026/": "2026-09-15",
+    "https://awssecuritydigest.com/past-issues/aws-security-digest-278": "2026-09-15",
+    "https://detect.fyi/threat-hunting-with-ja4-ja4s-practical-kql-queries-ef673fc5fcc0?source=rss----d5fd8f494f6a---4": "2026-09-15",
+    "https://unit42.paloaltonetworks.com/behavioral-clustering-map-to-cloud-identities/": "2026-09-15",
+    "https://www.sonarsource.com/blog/your-ai-agent-doesnt-know-your-codebases-context-or-constraints/": "2026-09-15",
+    "https://www.sonarsource.com/blog/agents-md-is-a-workaround-not-a-solution/": "2026-09-15",
+    "https://www.sonarsource.com/blog/sonar-supports-openai-call-for-collective-action-on-cyber-defense/": "2026-09-15",
+    "https://www.datadoghq.com/blog/datadog-observability-platforms-gartner-ai-vendor-race-2026/": "2026-09-15"
   },
-  "last_updated": "2026-09-13T02:20:24.337762+00:00"
+  "last_updated": "2026-09-15T02:23:42.154053+00:00"
 }
