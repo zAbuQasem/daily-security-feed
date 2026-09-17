@@ -1279,3 +1279,13 @@
 [2026-09-16] https://www.wiz.io/blog/wiz-defend-and-google-security-operations
 [2026-09-16] https://www.sonarsource.com/blog/automatic-analysis-for-gitlab-is-now-available/
 [2026-09-16] https://www.sonarsource.com/blog/sonar-extends-technical-debt-governance-to-r/
+[2026-09-17] https://dfir.ch/posts/zsh_modules/
+[2026-09-17] https://sansec.io/research/brevo-supply-chain-attack
+[2026-09-17] https://www.praetorian.com/blog/credential-testing-brutus/
+[2026-09-17] https://securitylabs.datadoghq.com/articles/mapping-out-your-unknown-threat-hunters-guide-to-github/
+[2026-09-17] https://www.aquasec.com/blog/why-is-detection-and-response-too-slow-for-machine-speed-attacks/
+[2026-09-17] https://unit42.paloaltonetworks.com/atomic-macos-amos-stealer-activity/
+[2026-09-17] https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/
+[2026-09-17] https://www.datadoghq.com/blog/bits-chat-slack-incident-response/
+[2026-09-17] https://www.datadoghq.com/blog/observability-pipelines-microsoft-sentinel-packs/
+[2026-09-17] http://blog.quarkslab.com/overview-of-passive-optical-networks-pons-security.html
