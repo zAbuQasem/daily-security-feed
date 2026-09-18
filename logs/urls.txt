@@ -1289,3 +1289,10 @@
 [2026-09-17] https://www.datadoghq.com/blog/bits-chat-slack-incident-response/
 [2026-09-17] https://www.datadoghq.com/blog/observability-pipelines-microsoft-sentinel-packs/
 [2026-09-17] http://blog.quarkslab.com/overview-of-passive-optical-networks-pons-security.html
+[2026-09-18] https://blog.doyensec.com/2026/09/17/ovs.html
+[2026-09-18] https://blog.talosintelligence.com/should-you-care-about-an-ai-slowdown/
+[2026-09-18] https://blog.talosintelligence.com/ransomware-incidents-in-japan-in-the-first-half-of-2026/
+[2026-09-18] https://trustedsec.com/blog/unpacking-a-lazzzy-donut
+[2026-09-18] https://unit42.paloaltonetworks.com/soc-cross-environment-pivot/
+[2026-09-18] https://www.wiz.io/blog/exploring-the-new-aws-sign-up-experience
+[2026-09-18] https://www.wiz.io/blog/building-an-ai-detection-engine-for-agent-intent
