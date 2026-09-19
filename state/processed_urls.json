@@ -2571,7 +2571,14 @@
     "https://trustedsec.com/blog/unpacking-a-lazzzy-donut": "2026-09-18",
     "https://unit42.paloaltonetworks.com/soc-cross-environment-pivot/": "2026-09-18",
     "https://www.wiz.io/blog/exploring-the-new-aws-sign-up-experience": "2026-09-18",
-    "https://www.wiz.io/blog/building-an-ai-detection-engine-for-agent-intent": "2026-09-18"
+    "https://www.wiz.io/blog/building-an-ai-detection-engine-for-agent-intent": "2026-09-18",
+    "https://clo.ng/blog/2026_astra_solves_icloud_keychain/": "2026-09-19",
+    "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/": "2026-09-19",
+    "https://securitylabs.datadoghq.com/articles/attacker-infrastructure-but-vibe-coded/": "2026-09-19",
+    "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/": "2026-09-19",
+    "https://www.sonarsource.com/blog/the-refactor-you-could-never-afford/": "2026-09-19",
+    "https://www.sonarsource.com/blog/openai-gpt-6-astra-an-evaluation/": "2026-09-19",
+    "https://www.datadoghq.com/blog/custom-iac-security-rules/": "2026-09-19"
   },
-  "last_updated": "2026-09-18T02:22:09.703791+00:00"
+  "last_updated": "2026-09-19T02:17:39.181449+00:00"
 }
