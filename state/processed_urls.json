@@ -2578,7 +2578,9 @@
     "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/": "2026-09-19",
     "https://www.sonarsource.com/blog/the-refactor-you-could-never-afford/": "2026-09-19",
     "https://www.sonarsource.com/blog/openai-gpt-6-astra-an-evaluation/": "2026-09-19",
-    "https://www.datadoghq.com/blog/custom-iac-security-rules/": "2026-09-19"
+    "https://www.datadoghq.com/blog/custom-iac-security-rules/": "2026-09-19",
+    "https://www.uncommonengineer.com/docs/engineer/LAB/unifi-zone-segmentation-mcp-agent": "2026-09-20",
+    "https://www.uncommonengineer.com/docs/engineer/guides/chrome-macos26-local-network-eaddrunreach": "2026-09-20"
   },
-  "last_updated": "2026-09-19T02:17:39.181449+00:00"
+  "last_updated": "2026-09-20T02:18:26.609723+00:00"
 }

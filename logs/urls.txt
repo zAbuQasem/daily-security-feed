@@ -1303,3 +1303,5 @@
 [2026-09-19] https://www.sonarsource.com/blog/the-refactor-you-could-never-afford/
 [2026-09-19] https://www.sonarsource.com/blog/openai-gpt-6-astra-an-evaluation/
 [2026-09-19] https://www.datadoghq.com/blog/custom-iac-security-rules/
+[2026-09-20] https://www.uncommonengineer.com/docs/engineer/LAB/unifi-zone-segmentation-mcp-agent
+[2026-09-20] https://www.uncommonengineer.com/docs/engineer/guides/chrome-macos26-local-network-eaddrunreach
