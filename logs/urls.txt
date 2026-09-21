@@ -1305,3 +1305,9 @@
 [2026-09-19] https://www.datadoghq.com/blog/custom-iac-security-rules/
 [2026-09-20] https://www.uncommonengineer.com/docs/engineer/LAB/unifi-zone-segmentation-mcp-agent
 [2026-09-20] https://www.uncommonengineer.com/docs/engineer/guides/chrome-macos26-local-network-eaddrunreach
+[2026-09-21] https://www.uncommonengineer.com/docs/archive/docker-wordpress/index
+[2026-09-21] https://www.uncommonengineer.com/docs/archive/terraform-aws-ec2/index
+[2026-09-21] https://www.uncommonengineer.com/docs/engineer/AWS/index
+[2026-09-21] https://computer.rip/2026-09-20-denver-baggage.html
+[2026-09-21] https://scorpiosoftware.net/2026/09/21/is-ai-coding-the-end-of-coding/
+[2026-09-21] https://www.accidentalrebel.com/testing-jev-as-a-gate-for-agent-submitted-knowledge-f6a56d11.html
