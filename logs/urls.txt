@@ -1311,3 +1311,13 @@
 [2026-09-21] https://computer.rip/2026-09-20-denver-baggage.html
 [2026-09-21] https://scorpiosoftware.net/2026/09/21/is-ai-coding-the-end-of-coding/
 [2026-09-21] https://www.accidentalrebel.com/testing-jev-as-a-gate-for-agent-submitted-knowledge-f6a56d11.html
+[2026-09-22] https://0xdf.gitlab.io/2026/09/21/htb-hercules.html
+[2026-09-22] https://captmeelo.com/mobile/2026/09/21/loupe.html
+[2026-09-22] https://dustri.org/b/using-the-whole-screen-on-asahi-linux-with-gnome.html
+[2026-09-22] https://awssecuritydigest.com/past-issues/aws-security-digest-279
+[2026-09-22] https://unit42.paloaltonetworks.com/detecting-exposed-aws-iam-credentials/
+[2026-09-22] https://www.sonarsource.com/blog/vortex-vs-agents-md/
+[2026-09-22] https://www.sonarsource.com/blog/how-hunter-agent-adds-a-new-layer-of-assurance/
+[2026-09-22] https://www.datadoghq.com/blog/product-analytics-journey-paths/
+[2026-09-22] https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/
+[2026-09-22] https://projectzero.google/2026/09/windows-dangling-com.html
