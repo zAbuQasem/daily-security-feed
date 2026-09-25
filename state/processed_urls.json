@@ -2622,7 +2622,20 @@
     "https://www.datadoghq.com/blog/tap-to-parse-logs/": "2026-09-24",
     "https://www.datadoghq.com/blog/rum-remote-configuration/": "2026-09-24",
     "https://www.sygnia.co/blog/when-it-support-is-the-attack-how-law-firms-can-defend-against-silent-ransom-group/": "2026-09-24",
-    "https://www.sygnia.co/webinars/how-law-firms-can-defend-against-silent-ransom-group/": "2026-09-24"
+    "https://www.sygnia.co/webinars/how-law-firms-can-defend-against-silent-ransom-group/": "2026-09-24",
+    "https://dfir.ch/posts/compiled_zsh/": "2026-09-25",
+    "https://blog.doyensec.com/2026/09/24/chrome-ios-policy-bypass.html": "2026-09-25",
+    "https://projectblack.io/blog/bypassing-edr-with-local-ai/": "2026-09-25",
+    "https://starlabs.sg/blog/2026/09-dirty-cert-cisco-smart-software-managers-silently-patched-rce/": "2026-09-25",
+    "https://starlabs.sg/blog/2026/09-how-i-found-a-113337-af_alg-linux-local-privilege-escalation-before-copy-fail/": "2026-09-25",
+    "https://blog.talosintelligence.com/trust-and-the-enticing-consultancy-offer/": "2026-09-25",
+    "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/": "2026-09-25",
+    "https://www.aquasec.com/blog/fewer-findings-faster-answers-how-activestate-and-trivy-turn-a-scan-into-a-verdict/": "2026-09-25",
+    "https://www.datadoghq.com/blog/jev-evals-agent-observability/": "2026-09-25",
+    "https://defcon.org/html/defcon-34/dc-34-news.html#sing2dates": "2026-09-25",
+    "https://trustedsec.com/blog/whats-new-in-hate-crack-since-2-0": "2026-09-25",
+    "https://www.wiz.io/blog/forrester-wave-for-proactive-security-2026": "2026-09-25",
+    "https://www.wiz.io/blog/scan-for-good-critical-ai-exposures": "2026-09-25"
   },
-  "last_updated": "2026-09-24T02:19:07.227384+00:00"
+  "last_updated": "2026-09-25T02:19:22.977618+00:00"
 }
