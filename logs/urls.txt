@@ -1364,3 +1364,4 @@
 [2026-09-26] https://www.sonarsource.com/blog/the-sonarqube-remediation-agent-using-claude-opus-5-5/
 [2026-09-26] https://www.sonarsource.com/blog/open-ai-gpt-6-sol-evaluation/
 [2026-09-27] https://0xdf.gitlab.io/2026/09/26/htb-smarthire.html
+[2026-09-28] https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials
