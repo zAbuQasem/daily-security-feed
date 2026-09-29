@@ -1365,3 +1365,9 @@
 [2026-09-26] https://www.sonarsource.com/blog/open-ai-gpt-6-sol-evaluation/
 [2026-09-27] https://0xdf.gitlab.io/2026/09/26/htb-smarthire.html
 [2026-09-28] https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials
+[2026-09-29] https://labs.watchtowr.com/oh-look-the-foot-gun-went-off-again-citrix-netscaler-preauth-command-injection-cve-2026-88771/
+[2026-09-29] https://pgj11.com/posts/Windows-NCSI-Proxy-Auth-Coercion-Part-2/
+[2026-09-29] https://pgj11.com/posts/Windows-NCSI-Proxy-Auth-Coercion-Part-1/
+[2026-09-29] https://awssecuritydigest.com/past-issues/aws-security-digest-280
+[2026-09-29] https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/
+[2026-09-29] https://www.wiz.io/blog/introducing-wiz-partner-alliance-managed-service-provider-program
