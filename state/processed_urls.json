@@ -2653,7 +2653,17 @@
     "https://fortbridge.co.uk/research/cve-2026-32740-nextjs-sharp-libheif-rce/": "2026-09-29",
     "https://awssecuritydigest.com/past-issues/aws-security-digest-280": "2026-09-29",
     "https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/": "2026-09-29",
-    "https://www.wiz.io/blog/introducing-wiz-partner-alliance-managed-service-provider-program": "2026-09-29"
+    "https://www.wiz.io/blog/introducing-wiz-partner-alliance-managed-service-provider-program": "2026-09-29",
+    "https://labs.watchtowr.com/here-we-go-again-citrix-netscaler-dtls-preauth-memory-overflow-cve-2026-88772/": "2026-09-30",
+    "https://binary.ninja/2026/09/29/debugger-conditional-breakpoint.html": "2026-09-30",
+    "https://blog.talosintelligence.com/securing-the-keys-to-the-kingdom-announcing-executive-threat-detection/": "2026-09-30",
+    "https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/": "2026-09-30",
+    "https://www.sonarsource.com/blog/the-acceptance-gap/": "2026-09-30",
+    "https://www.sonarsource.com/blog/how-to-achieve-first-pass-quality-with-ai-coding-agents/": "2026-09-30",
+    "https://www.sonarsource.com/blog/enable-smarter-model-routing-for-ai-coding/": "2026-09-30",
+    "https://www.sonarsource.com/blog/sonarqube-server-2026-5-lta/": "2026-09-30",
+    "http://blog.quarkslab.com/from-ai-agents-to-rce-building-a-vulnerability-research-workflow.html": "2026-09-30",
+    "https://www.wiz.io/blog/blue-agent-data-exfiltration-investigation": "2026-09-30"
   },
-  "last_updated": "2026-09-29T02:20:49.963784+00:00"
+  "last_updated": "2026-09-30T02:24:21.263741+00:00"
 }
