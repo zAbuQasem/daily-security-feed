@@ -1381,3 +1381,11 @@
 [2026-09-30] https://www.sonarsource.com/blog/sonarqube-server-2026-5-lta/
 [2026-09-30] http://blog.quarkslab.com/from-ai-agents-to-rce-building-a-vulnerability-research-workflow.html
 [2026-09-30] https://www.wiz.io/blog/blue-agent-data-exfiltration-investigation
+[2026-10-01] https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/
+[2026-10-01] https://blog.talosintelligence.com/china-nexus-uat-11587-targets-government-and-policy-organizations-across-asia-with-antino-backdoor/
+[2026-10-01] https://www.aquasec.com/blog/supply-chain-security-has-the-operating-model-backwards/
+[2026-10-01] https://www.sygnia.co/threat-reports-and-advisories/actively-exploited-netscaler-vulnerabilities/
+[2026-10-01] https://www.sygnia.co/webinars/ai-threat-realities-prompt-proactive-security-readiness/
+[2026-10-01] https://www.datadoghq.com/blog/engineering/async-python-profiler/
+[2026-10-01] https://whiteknightlabs.com/2026/09/30/automating-ai-hacking-with-tree-of-attack/
+[2026-10-01] https://www.wiz.io/blog/wizos-helm-charts
