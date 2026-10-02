@@ -2672,7 +2672,20 @@
     "https://www.sygnia.co/webinars/ai-threat-realities-prompt-proactive-security-readiness/": "2026-10-01",
     "https://www.datadoghq.com/blog/engineering/async-python-profiler/": "2026-10-01",
     "https://whiteknightlabs.com/2026/09/30/automating-ai-hacking-with-tree-of-attack/": "2026-10-01",
-    "https://www.wiz.io/blog/wizos-helm-charts": "2026-10-01"
+    "https://www.wiz.io/blog/wizos-helm-charts": "2026-10-01",
+    "http://blog.lockboxx.org/2026/10/how-dream-serpent-inspired-openclaw.html": "2026-10-02",
+    "https://dfir.ch/posts/field_notes_trickdump/": "2026-10-02",
+    "https://dustri.org/b/probabilistic-analysis-of-mte-tagging-schemes.html": "2026-10-02",
+    "https://trustedsec.com/blog/hashcatrosetta-reading-the-rosetta-stone-of-password-cracking": "2026-10-02",
+    "https://salt.security/blog/when-a-security-guardrail-detects-the-attack-and-still-cant-stop-it": "2026-10-02",
+    "https://salt.security/blog/how-we-hijacked-an-ai-agent-with-a-single-email": "2026-10-02",
+    "https://blog.talosintelligence.com/give-yourself-room-to-be-human/": "2026-10-02",
+    "https://blog.talosintelligence.com/the-fine-art-of-frustrating-the-adversary/": "2026-10-02",
+    "https://www.datadoghq.com/blog/engineering/distributed-datafusion/": "2026-10-02",
+    "https://www.datadoghq.com/blog/monitor-warehouse-data-quality-beyond-pipeline-health/": "2026-10-02",
+    "https://www.datadoghq.com/blog/supply-chain-firewall-code-security/": "2026-10-02",
+    "https://www.sonarsource.com/blog/sonarqube-remediation-agent-is-now-available-on-sonarqube-server/": "2026-10-02",
+    "http://blog.quarkslab.com/cato-vpn-client-split-tunnel-and-privilege-escalation-cve-2026-10739.html": "2026-10-02"
   },
-  "last_updated": "2026-10-01T02:29:10.732850+00:00"
+  "last_updated": "2026-10-02T02:24:02.589982+00:00"
 }
