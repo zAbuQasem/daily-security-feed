@@ -2685,7 +2685,18 @@
     "https://www.datadoghq.com/blog/monitor-warehouse-data-quality-beyond-pipeline-health/": "2026-10-02",
     "https://www.datadoghq.com/blog/supply-chain-firewall-code-security/": "2026-10-02",
     "https://www.sonarsource.com/blog/sonarqube-remediation-agent-is-now-available-on-sonarqube-server/": "2026-10-02",
-    "http://blog.quarkslab.com/cato-vpn-client-split-tunnel-and-privilege-escalation-cve-2026-10739.html": "2026-10-02"
+    "http://blog.quarkslab.com/cato-vpn-client-split-tunnel-and-privilege-escalation-cve-2026-10739.html": "2026-10-02",
+    "https://schaerli.org/weblog/6-internxt//": "2026-10-03",
+    "https://www.da.vidbuchanan.co.uk/blog/reversing.html": "2026-10-03",
+    "https://www.da.vidbuchanan.co.uk/blog/hacking-time.html": "2026-10-03",
+    "https://syfuhs.net/adventures-in-credential-manager-trivia": "2026-10-03",
+    "https://www.aquasec.com/blog/integrate-aqua-and-jira-to-turn-security-findings-into-action/": "2026-10-03",
+    "https://www.datadoghq.com/blog/key-metrics-for-databricks-monitoring/": "2026-10-03",
+    "https://www.datadoghq.com/blog/databricks-native-monitoring-resources/": "2026-10-03",
+    "https://www.datadoghq.com/blog/how-to-monitor-databricks-with-datadog/": "2026-10-03",
+    "https://www.datadoghq.com/blog/the-first-72-hours-of-a-ransomware-attack-why-restored-isnt-recovered/": "2026-10-03",
+    "https://www.sonarsource.com/blog/how-one-squad-at-sonar-review-ai-code/": "2026-10-03",
+    "https://blog.trailofbits.com/2026/10/02/sequencehash-multihashing-for-the-rest-of-us/": "2026-10-03"
   },
-  "last_updated": "2026-10-02T02:24:02.589982+00:00"
+  "last_updated": "2026-10-03T02:20:31.671279+00:00"
 }
