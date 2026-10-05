@@ -1412,3 +1412,5 @@
 [2026-10-03] https://www.datadoghq.com/blog/the-first-72-hours-of-a-ransomware-attack-why-restored-isnt-recovered/
 [2026-10-03] https://www.sonarsource.com/blog/how-one-squad-at-sonar-review-ai-code/
 [2026-10-03] https://blog.trailofbits.com/2026/10/02/sequencehash-multihashing-for-the-rest-of-us/
+[2026-10-05] https://amalmurali.me/about/
+[2026-10-05] https://0xdf.gitlab.io/2026/10/03/htb-reactor.html
