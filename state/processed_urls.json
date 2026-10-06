@@ -2698,7 +2698,16 @@
     "https://www.sonarsource.com/blog/how-one-squad-at-sonar-review-ai-code/": "2026-10-03",
     "https://blog.trailofbits.com/2026/10/02/sequencehash-multihashing-for-the-rest-of-us/": "2026-10-03",
     "https://amalmurali.me/about/": "2026-10-05",
-    "https://0xdf.gitlab.io/2026/10/03/htb-reactor.html": "2026-10-05"
+    "https://0xdf.gitlab.io/2026/10/03/htb-reactor.html": "2026-10-05",
+    "http://localhost:1313/posts/today_i_learned_python_start_files/": "2026-10-06",
+    "http://localhost:1313/posts/field_notes_trickdump/": "2026-10-06",
+    "https://fortbridge.co.uk/research/wordpress-libheif-rce/": "2026-10-06",
+    "https://awssecuritydigest.com/past-issues/aws-security-digest-281": "2026-10-06",
+    "https://securitylabs.datadoghq.com/articles/kubernetes-rbac-built-in-principals-dangerous-permissions/": "2026-10-06",
+    "https://portswigger.net/research/smashing-the-token-limit": "2026-10-06",
+    "https://www.datadoghq.com/blog/observability-pipelines-exabeam-packs/": "2026-10-06",
+    "https://www.wiz.io/blog/wiz-service-catalog-updates": "2026-10-06",
+    "https://lab.ctbb.show/research/challenge-not-just-another-xss": "2026-10-06"
   },
-  "last_updated": "2026-10-05T02:29:44.276267+00:00"
+  "last_updated": "2026-10-06T02:22:41.199968+00:00"
 }
