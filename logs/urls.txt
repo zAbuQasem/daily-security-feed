@@ -1420,3 +1420,16 @@
 [2026-10-06] https://www.datadoghq.com/blog/observability-pipelines-exabeam-packs/
 [2026-10-06] https://www.wiz.io/blog/wiz-service-catalog-updates
 [2026-10-06] https://lab.ctbb.show/research/challenge-not-just-another-xss
+[2026-10-07] https://blog.scrt.ch/2026/10/06/a-practical-guide-to-plugpwn-for-pentesters-and-defenders/
+[2026-10-07] https://dfir.ch/posts/today_i_learned_python_start_files/
+[2026-10-07] https://labs.watchtowr.com/you-wont-hear-about-these-even-in-myths-atlassian-jira-confluence-and-more-pre-auth-arbitrary-file-read-cve-2026-21589/
+[2026-10-07] https://binary.ninja/2026/10/06/reverse-engineering-airbnb-captive-portal.html
+[2026-10-07] https://securitylabs.datadoghq.com/articles/beyond-valid-credentials-how-exposed-aws-keys-are-tested-for-amazon-bedrock-access/
+[2026-10-07] https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/
+[2026-10-07] https://trustedsec.com/blog/logging-is-a-discipline-not-a-switch
+[2026-10-07] https://portswigger.net/research/the-model-isnt-cooperating
+[2026-10-07] https://www.aquasec.com/blog/can-vulnerability-scanning-tell-you-what-youre-exposed-to-right-now/
+[2026-10-07] https://www.datadoghq.com/blog/ci-cd-optimization/
+[2026-10-07] https://www.wiz.io/blog/introducing-wiz-ai-sast
+[2026-10-07] https://www.sonarsource.com/blog/sonar-vortex-is-now-available-on-sonarqube-server/
+[2026-10-07] https://projectzero.google/2026/10/emergency-patching.html
