@@ -2721,7 +2721,18 @@
     "https://www.datadoghq.com/blog/ci-cd-optimization/": "2026-10-07",
     "https://www.wiz.io/blog/introducing-wiz-ai-sast": "2026-10-07",
     "https://www.sonarsource.com/blog/sonar-vortex-is-now-available-on-sonarqube-server/": "2026-10-07",
-    "https://projectzero.google/2026/10/emergency-patching.html": "2026-10-07"
+    "https://projectzero.google/2026/10/emergency-patching.html": "2026-10-07",
+    "https://advisory.splunk.com/advisories/SVD-2026-1005": "2026-10-08",
+    "https://advisory.splunk.com/advisories/SVD-2026-1004": "2026-10-08",
+    "https://advisory.splunk.com/advisories/SVD-2026-1003": "2026-10-08",
+    "https://advisory.splunk.com/advisories/SVD-2026-1002": "2026-10-08",
+    "https://advisory.splunk.com/advisories/SVD-2026-1001": "2026-10-08",
+    "https://comsec.ethz.ch/promotion-in-2026/": "2026-10-08",
+    "https://blog.talosintelligence.com/microsoft-adobe-apple-and-foxit-vulnerabilities/": "2026-10-08",
+    "https://blog.talosintelligence.com/one-breach-please-and-make-no-mistakes/": "2026-10-08",
+    "https://www.datadoghq.com/blog/how-we-replaced-our-host-vulnerability-scanner-with-the-datadog-agent/": "2026-10-08",
+    "https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/": "2026-10-08",
+    "https://www.wiz.io/blog/red-agent-financial-services-data-exposure": "2026-10-08"
   },
-  "last_updated": "2026-10-07T02:27:37.790559+00:00"
+  "last_updated": "2026-10-08T02:26:01.892693+00:00"
 }
