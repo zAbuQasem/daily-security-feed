@@ -1450,3 +1450,7 @@
 [2026-10-09] https://salt.security/blog/your-ai-transformation-needs-runtime-protection-for-the-whole-agentic-estate
 [2026-10-09] https://www.datadoghq.com/blog/product-analytics-visual-labeling/
 [2026-10-09] https://www.datadoghq.com/blog/fedramp-high-incident-response/
+[2026-10-10] https://labs.watchtowr.com/death-by-a-thousand-papercuts-papercut-pre-auth-rce-chain-and-patch-bypasses-wt-2026-0141-0144-cve-2026-82077-cve-2026-82078-cve-2026-81578/
+[2026-10-10] https://www.praetorian.com/blog/slack-integration/
+[2026-10-10] https://www.datadoghq.com/blog/byoc-cross-cluster-queries/
+[2026-10-10] https://www.sonarsource.com/blog/openai-gpt-6-1-sol-evaluation/
