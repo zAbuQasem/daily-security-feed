@@ -1454,3 +1454,4 @@
 [2026-10-10] https://www.praetorian.com/blog/slack-integration/
 [2026-10-10] https://www.datadoghq.com/blog/byoc-cross-cluster-queries/
 [2026-10-10] https://www.sonarsource.com/blog/openai-gpt-6-1-sol-evaluation/
+[2026-10-11] https://0xdf.gitlab.io/2026/10/10/htb-devhub.html
