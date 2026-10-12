@@ -1455,3 +1455,5 @@
 [2026-10-10] https://www.datadoghq.com/blog/byoc-cross-cluster-queries/
 [2026-10-10] https://www.sonarsource.com/blog/openai-gpt-6-1-sol-evaluation/
 [2026-10-11] https://0xdf.gitlab.io/2026/10/10/htb-devhub.html
+[2026-10-12] https://blog.cryptographyengineering.com/2026/10/11/new-website-estimating-human-cryptanalytic-work/
+[2026-10-12] https://www.sygnia.co/press-release/sygnia-expands-global-mdr-operations-austin-singapore-soc-hubs/
