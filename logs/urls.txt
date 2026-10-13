@@ -1457,3 +1457,7 @@
 [2026-10-11] https://0xdf.gitlab.io/2026/10/10/htb-devhub.html
 [2026-10-12] https://blog.cryptographyengineering.com/2026/10/11/new-website-estimating-human-cryptanalytic-work/
 [2026-10-12] https://www.sygnia.co/press-release/sygnia-expands-global-mdr-operations-austin-singapore-soc-hubs/
+[2026-10-13] https://computer.rip/2026-10-12-plesiochronous.html
+[2026-10-13] https://dustri.org/b/a-simple-script-to-benchmarkexercise-vim-syntax-highlighting.html
+[2026-10-13] https://raesene.github.io/blog/2026/10/08/dearbhadh-retrospective/
+[2026-10-13] https://awssecuritydigest.com/past-issues/aws-security-digest-282
