@@ -1473,3 +1473,17 @@
 [2026-10-14] https://www.sonarsource.com/blog/sonar-joins-openai-daybreak-program/
 [2026-10-14] https://www.sonarsource.com/blog/when-agents-outpace-the-organization/
 [2026-10-14] https://www.datadoghq.com/blog/how-datadog-defines-service-criticality-at-scale/
+[2026-10-15] https://dfir.ch/posts/field_notes_etherrat/
+[2026-10-15] https://advisory.splunk.com/advisories/SVD-2026-1006
+[2026-10-15] https://binary.ninja/2026/10/13/why-binary-ninja-installs-windbg.html
+[2026-10-15] https://certitude.consulting/blog/en/critical-vulnerabilities-discovered-in-google-chrome-and-arm-gpu-drivers/
+[2026-10-15] https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/
+[2026-10-15] https://www.blackhillsinfosec.com/threat-hunting-fly-wheel/
+[2026-10-15] https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/
+[2026-10-15] https://www.sonarsource.com/blog/vulnerability-reachability-is-now-available-in-sonarqube/
+[2026-10-15] https://www.sonarsource.com/blog/best-llm-for-coding/
+[2026-10-15] https://www.sonarsource.com/blog/sonars-new-js-ts-engine/
+[2026-10-15] https://www.sonarsource.com/blog/ai-coding-roi-is-a-problem-verification-solves-it/
+[2026-10-15] https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners
+[2026-10-15] https://www.wiz.io/blog/wiz-for-gov-agents-fedramp
+[2026-10-15] https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem/
