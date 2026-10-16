@@ -1487,3 +1487,17 @@
 [2026-10-15] https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners
 [2026-10-15] https://www.wiz.io/blog/wiz-for-gov-agents-fedramp
 [2026-10-15] https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem/
+[2026-10-16] https://blog.syss.com/posts/pass-the-passkeys/
+[2026-10-16] https://sansec.io/research/blockstrap-magento-rce
+[2026-10-16] https://starlabs.sg/blog/2026/10-yuankong-rat-the-android-remote-control-service-that-stamps-its-operators-names-into-every-build/
+[2026-10-16] https://securitylabs.datadoghq.com/articles/jev-as-a-judge-how-counterfeit-policy-steers-jev/
+[2026-10-16] https://salt.security/blog/under-cps-234-your-apis-are-information-assets-can-you-prove-youre-protecting-them
+[2026-10-16] https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/
+[2026-10-16] https://www.aquasec.com/blog/japans-cyber-emergency-is-a-warning-for-the-world/
+[2026-10-16] https://blog.talosintelligence.com/the-q3-vulnerability-pulse-discovery-exploitation/
+[2026-10-16] https://trustedsec.com/blog/two-config-files-two-release-tracks-and-one-very-bad-commit
+[2026-10-16] https://portswigger.net/blog/burp-at-whats-new-since-black-hat
+[2026-10-16] https://www.datadoghq.com/blog/ai/introducing-scout-sre-specialized-model-bits-ai/
+[2026-10-16] https://www.datadoghq.com/blog/rum-operations-monitoring/
+[2026-10-16] https://www.datadoghq.com/blog/how-kubernetes-dra-can-improve-gpu-utilization-and-cut-costs/
+[2026-10-16] http://blog.quarkslab.com/internship-offers-for-the-2026-2027-season.html
