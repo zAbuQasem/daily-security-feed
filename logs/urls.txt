@@ -1503,3 +1503,5 @@
 [2026-10-16] http://blog.quarkslab.com/internship-offers-for-the-2026-2027-season.html
 [2026-10-17] https://blog.nviso.eu/2026/10/16/keystrokes-in-disguise-forensic-analysis-of-a-digispark-hid-device/
 [2026-10-17] https://unit42.paloaltonetworks.com/top-5-initial-access-vectors-september-2026/
+[2026-10-18] https://0xdf.gitlab.io/2026/10/17/htb-eloquia.html
+[2026-10-18] https://starlabs.sg/blog/2026/10-two-hawks-in-a-pod-one-android-rat-behind-a-flock-of-fake-japanese-brands/
