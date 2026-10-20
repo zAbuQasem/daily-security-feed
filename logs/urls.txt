@@ -1505,3 +1505,7 @@
 [2026-10-17] https://unit42.paloaltonetworks.com/top-5-initial-access-vectors-september-2026/
 [2026-10-18] https://0xdf.gitlab.io/2026/10/17/htb-eloquia.html
 [2026-10-18] https://starlabs.sg/blog/2026/10-two-hawks-in-a-pod-one-android-rat-behind-a-flock-of-fake-japanese-brands/
+[2026-10-20] https://awssecuritydigest.com/past-issues/aws-security-digest-283
+[2026-10-20] https://securitylabs.datadoghq.com/articles/putting-models-to-the-secure-coding-test-security-rules/
+[2026-10-20] https://www.wiz.io/blog/detect-supply-chain-zero-days-at-publication
+[2026-10-20] https://www.wiz.io/blog/anatomy-of-ai-driven-cloud-attacks
