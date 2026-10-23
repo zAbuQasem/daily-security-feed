@@ -2,7 +2,7 @@ name: daily-security-feed-bot
 
 on:
   schedule:
-    - cron: "0 5 * * *"
+    - cron: "0 23 * * *"
       timezone: "Asia/Amman"
   workflow_dispatch:
     inputs:
@@ -86,6 +86,7 @@ jobs:
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL || '' }}
+          COPILOT_MODEL: ${{ vars.COPILOT_MODEL || '' }}
           SKIP_CLASSIFY: ${{ vars.SKIP_CLASSIFY || 'false' }}
 
       - name: Step 3 — Write vault notes
@@ -111,7 +112,7 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          PAGES_URL: ${{ vars.PAGES_URL || '' }}
+          PAGES_URL: ${{ vars.PAGES_URL || format('https://{0}.github.io/{1}/', github.repository_owner, github.event.repository.name) }}
 
       - name: Notify Slack — success
         if: success()
@@ -120,7 +121,7 @@ jobs:
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          PAGES_URL: ${{ vars.PAGES_URL || '' }}
+          PAGES_URL: ${{ vars.PAGES_URL || format('https://{0}.github.io/{1}/', github.repository_owner, github.event.repository.name) }}
 
       - name: Notify Discord — failure
         if: failure()
@@ -129,7 +130,7 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          PAGES_URL: ${{ vars.PAGES_URL || '' }}
+          PAGES_URL: ${{ vars.PAGES_URL || format('https://{0}.github.io/{1}/', github.repository_owner, github.event.repository.name) }}
           FAILED_STEP: ${{ github.job }}
 
       - name: Notify Slack — failure
@@ -139,5 +140,5 @@ jobs:
           NOTIFY_CHANNELS: ${{ vars.NOTIFY_CHANNELS || 'both' }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          PAGES_URL: ${{ vars.PAGES_URL || '' }}
+          PAGES_URL: ${{ vars.PAGES_URL || format('https://{0}.github.io/{1}/', github.repository_owner, github.event.repository.name) }}
           FAILED_STEP: ${{ github.job }}

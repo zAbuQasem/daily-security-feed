@@ -82,6 +82,9 @@ def _classify_with_copilot(article: dict) -> dict | None:
         **os.environ,
         "COPILOT_GITHUB_TOKEN": os.environ.get("COPILOT_GITHUB_TOKEN", ""),
     }
+    # Copilot CLI reads COPILOT_MODEL natively; drop it when blank so the CLI default applies
+    if not env.get("COPILOT_MODEL"):
+        env.pop("COPILOT_MODEL", None)
 
     try:
         result = subprocess.run(

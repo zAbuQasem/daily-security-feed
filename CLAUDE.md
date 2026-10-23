@@ -81,6 +81,7 @@ Feed content is treated as **untrusted input**. Malicious RSS items can contain 
 | Copilot auth | `COPILOT_TOKEN` secret (fine-grained PAT, Copilot Requests: Read) |
 | Claude auth | `ANTHROPIC_API_KEY` secret (required when backend is `claude`) |
 | Claude model | `CLAUDE_MODEL` repo variable (default: `claude-sonnet-4-20250514`) |
+| Copilot model | `COPILOT_MODEL` repo variable (blank = Copilot CLI default) |
 | Skip AI classification | `SKIP_CLASSIFY=true` repo variable |
 | Notification channels | `NOTIFY_CHANNELS`: `both`, `discord`, or `slack` |
 | Pages URL | `PAGES_URL` repo variable (used in Discord/Slack "Browse feed" links) |
@@ -90,6 +91,6 @@ Feed content is treated as **untrusted input**. Malicious RSS items can contain 
 
 | Workflow | Schedule | Purpose |
 |----------|----------|---------|
-| `security_feed.yml` | 05:00 Amman daily | Full pipeline |
+| `security_feed.yml` | 23:00 Amman daily | Full pipeline |
 | `pages.yml` | On push to main or after `security_feed.yml` | Jekyll build + GitHub Pages deploy |
 | `secret_rotation_reminder.yml` | 1st of month, 09:00 Amman | Discord/Slack reminder to rotate `COPILOT_TOKEN` |

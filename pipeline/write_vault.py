@@ -67,13 +67,15 @@ def build_note(article: dict) -> str:
 
     cat_yaml = "[RSS]"
 
-    # Escape title for YAML
-    safe_title = title.replace('"', '\\"').replace("\n", " ").replace("\r", " ")
+    # A JSON string is a valid YAML double-quoted scalar, so this escapes \ and " correctly
+    safe_title = json.dumps(
+        title.replace("\n", " ").replace("\r", " "), ensure_ascii=False
+    )
 
     frontmatter = (
         "---\n"
         "layout: post\n"
-        f'title: "{safe_title}"\n'
+        f"title: {safe_title}\n"
         f"date: {date} +0300\n"
         f"categories: {cat_yaml}\n"
         f"tags: {tag_yaml}\n"

@@ -15,7 +15,7 @@ Environment variables:
     RUN_URL               GitHub Actions run URL (set in workflow)
     RUN_DATE              ISO date string (optional, defaults to today UTC)
     NOTIFY_CHANNELS       Notification targets: discord, slack, both, or comma-separated list
-    PAGES_URL             GitHub Pages site URL (optional, for "Browse feed" link)
+    PAGES_URL             GitHub Pages site URL (optional, for "Read the full feed" link)
 """
 
 import argparse
@@ -38,7 +38,7 @@ from config import USER_AGENT
 COLOR_SUCCESS = 0x57F287  # green
 COLOR_FAILURE = 0xED4245  # red
 
-MAX_TITLE_LEN = 80
+MAX_TITLE_LEN = 65
 
 
 def build_feed_embed(articles: list[dict]) -> dict:
@@ -66,7 +66,7 @@ def build_feed_embed(articles: list[dict]) -> dict:
         lines.append(f"{i}. [{t}]({url})" if url else f"{i}. {t}")
 
     if pages:
-        lines.append(f"\n[Browse feed →]({pages})")
+        lines.append(f"\n**[🌐  Read the full feed  →]({pages})**")
 
     description = "\n".join(lines)
     if len(description) > 4096:
@@ -103,7 +103,7 @@ def build_failure_embed(step: str) -> dict:
     pages = pages_url()
     if pages:
         embed["fields"].append(
-            {"name": "Feed", "value": f"[Browse feed →]({pages})", "inline": False}
+            {"name": "Feed", "value": f"**[🌐  Read the full feed  →]({pages})**", "inline": False}
         )
 
     return embed
