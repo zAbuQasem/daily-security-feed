@@ -2858,7 +2858,9 @@
     "https://www.blackhillsinfosec.com/detection-engineering/": "2026-10-23",
     "https://www.wiz.io/blog/aspm-ai-era-pt-2-prioritize-appsec-risk": "2026-10-23",
     "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors": "2026-10-23",
-    "http://localhost:1313/posts/field_note_attacker_workflow/": "2026-10-23"
+    "http://localhost:1313/posts/field_note_attacker_workflow/": "2026-10-23",
+    "https://portswigger.net/blog/php2shell-x-burp-suite-detection-in-your-hands-within-a-day-of-disclosure": "2026-10-23",
+    "https://blog.nviso.eu/2026/10/23/php2shell-operational-guidance/": "2026-10-23"
   },
-  "last_updated": "2026-10-23T11:40:09.050033+00:00"
+  "last_updated": "2026-10-23T20:14:41.999410+00:00"
 }
