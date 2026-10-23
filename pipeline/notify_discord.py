@@ -51,12 +51,15 @@ def build_feed_embed(articles: list[dict]) -> dict:
     if not sorted_articles:
         embed = {
             "title": title,
-            "description": "No new content today.",
+            "description": "No new articles since the last run.",
             "color": 0x99AAB5,
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
         if pages:
             embed["url"] = pages
+            embed["description"] += (
+                f"\n\n**[🌐  Catch up on recent articles  →]({pages})**"
+            )
         return embed
 
     lines = []
