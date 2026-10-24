@@ -1559,3 +1559,6 @@
 [2026-10-23] https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors
 [2026-10-23] https://portswigger.net/blog/php2shell-x-burp-suite-detection-in-your-hands-within-a-day-of-disclosure
 [2026-10-23] https://blog.nviso.eu/2026/10/23/php2shell-operational-guidance/
+[2026-10-24] https://0xdf.gitlab.io/2026/10/24/htb-checkpoint.html
+[2026-10-24] https://dfir.ch/posts/field_note_attacker_workflow/
+[2026-10-24] https://binary.ninja/2026/10/22/breaking-more-encrypted-usb-drives-with-ai.html

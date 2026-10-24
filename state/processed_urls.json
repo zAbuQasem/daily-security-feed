@@ -2860,7 +2860,11 @@
     "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors": "2026-10-23",
     "http://localhost:1313/posts/field_note_attacker_workflow/": "2026-10-23",
     "https://portswigger.net/blog/php2shell-x-burp-suite-detection-in-your-hands-within-a-day-of-disclosure": "2026-10-23",
-    "https://blog.nviso.eu/2026/10/23/php2shell-operational-guidance/": "2026-10-23"
+    "https://blog.nviso.eu/2026/10/23/php2shell-operational-guidance/": "2026-10-23",
+    "https://0xdf.gitlab.io/2026/10/24/htb-checkpoint.html": "2026-10-24",
+    "https://dfir.ch/posts/field_note_attacker_workflow/": "2026-10-24",
+    "https://fortbridge.co.uk/research/php2shell-out-of-memory-to-remote-code-execution/": "2026-10-24",
+    "https://binary.ninja/2026/10/22/breaking-more-encrypted-usb-drives-with-ai.html": "2026-10-24"
   },
-  "last_updated": "2026-10-23T20:14:41.999410+00:00"
+  "last_updated": "2026-10-24T20:12:26.264898+00:00"
 }
