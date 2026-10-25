@@ -2864,7 +2864,11 @@
     "https://0xdf.gitlab.io/2026/10/24/htb-checkpoint.html": "2026-10-24",
     "https://dfir.ch/posts/field_note_attacker_workflow/": "2026-10-24",
     "https://fortbridge.co.uk/research/php2shell-out-of-memory-to-remote-code-execution/": "2026-10-24",
-    "https://binary.ninja/2026/10/22/breaking-more-encrypted-usb-drives-with-ai.html": "2026-10-24"
+    "https://binary.ninja/2026/10/22/breaking-more-encrypted-usb-drives-with-ai.html": "2026-10-24",
+    "https://sansec.io/research/magento-cms-block-loader-deepveindrilling": "2026-10-25",
+    "https://scorpiosoftware.net/2026/10/25/is-software-development-a-solved-problem/": "2026-10-25",
+    "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles": "2026-10-25",
+    "https://www.wiz.io/blog/cve-2026-111497-brotli-rce-node-js": "2026-10-25"
   },
-  "last_updated": "2026-10-24T20:12:26.264898+00:00"
+  "last_updated": "2026-10-25T20:14:49.996753+00:00"
 }
