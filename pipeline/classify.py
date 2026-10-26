@@ -25,7 +25,9 @@ COPILOT_FLAGS = [
     "--no-custom-instructions",
     "--max-autopilot-continues",
     "0",
-    "--available-tools",  # nothing listed: no tools at all
+    # Allowlist holding only an empty name: no real tool matches, so the model gets none
+    "--available-tools",
+    "",
 ]
 CLAUDE_TIMEOUT = 120
 CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-20250514")
