@@ -182,6 +182,7 @@ def main() -> None:
 
     classified: list[dict] = []
     counts: dict[str, int] = {}
+    attempted = failures = 0
 
     for i, article in enumerate(articles, 1):
         print(f"[{i}/{len(articles)}] {article['title'][:70]}")
@@ -238,7 +239,9 @@ def main() -> None:
             continue
 
         result = classify_article(article)
+        attempted += 1
         if result is None:
+            failures += 1
             continue
 
         category = result.get("category", "noise")
@@ -262,6 +265,14 @@ def main() -> None:
     CLASSIFIED_FILE.write_text(json.dumps(classified, indent=2))
     print(f"\nClassification complete: {counts}")
     print(f"Results written to {CLASSIFIED_FILE}")
+
+    # A dead token or a rejected model name fails every call. Fail the run so persist_state.py
+    # doesn't commit these URLs as seen (they'd never be retried) and Discord reports the failure.
+    if attempted and failures == attempted:
+        print(
+            "Every classification failed — check the token and model", file=sys.stderr
+        )
+        sys.exit(1)
 
 
 if __name__ == "__main__":
