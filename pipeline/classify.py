@@ -18,6 +18,15 @@ from config import CLASSIFIED_FILE, PROMPTS_DIR, STAGING_FILE
 from injection_scanner import scan_for_injection
 
 COPILOT_TIMEOUT = 120
+# One billed turn per article: `copilot -p` is a full agent that otherwise loads repo
+# instructions, tries tools and bills up to 5 "continuation" turns per prompt. No tools
+# also keeps untrusted feed content from steering it into anything.
+COPILOT_FLAGS = [
+    "--no-custom-instructions",
+    "--max-autopilot-continues",
+    "0",
+    "--available-tools",  # nothing listed: no tools at all
+]
 CLAUDE_TIMEOUT = 120
 CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-20250514")
 CLASSIFIER_BACKEND = os.environ.get("CLASSIFIER_BACKEND", "copilot").lower()
@@ -82,13 +91,19 @@ def _classify_with_copilot(article: dict) -> dict | None:
         **os.environ,
         "COPILOT_GITHUB_TOKEN": os.environ.get("COPILOT_GITHUB_TOKEN", ""),
     }
-    # Copilot CLI reads COPILOT_MODEL natively; drop it when blank so the CLI default applies
-    if not env.get("COPILOT_MODEL"):
-        env.pop("COPILOT_MODEL", None)
+    # Passed as --model, not left to COPILOT_MODEL: the env var silently falls back to the
+    # default when the model isn't on the plan, while the flag fails the call loudly.
+    model = env.pop("COPILOT_MODEL", "")
 
     try:
         result = subprocess.run(
-            ["copilot", "--prompt", prompt],
+            [
+                "copilot",
+                "--prompt",
+                prompt,
+                *COPILOT_FLAGS,
+                *(["--model", model] if model else []),
+            ],
             stdin=subprocess.DEVNULL,
             capture_output=True,
             text=True,
