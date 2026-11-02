@@ -2923,7 +2923,18 @@
     "https://www.wiz.io/blog/php2shell-exploitation-so-far": "2026-11-01",
     "https://www.wiz.io/blog/github-actions-security-pwn-request-reckoning": "2026-11-01",
     "https://portswigger.net/blog/heading-to-san-francisco-meet-portswigger-at-owasp-global-appsec-usa-2026": "2026-11-01",
-    "https://projectzero.google/2026/10/fuzzing-v-AI.html": "2026-11-01"
+    "https://projectzero.google/2026/10/fuzzing-v-AI.html": "2026-11-01",
+    "https://a13xp0p0v.tech/2026/11/02/CVE-2026-31695.html": "2026-11-02",
+    "https://dfir.ch/posts/field_note_mha/": "2026-11-02",
+    "https://awssecuritydigest.com/past-issues/aws-security-digest-285": "2026-11-02",
+    "https://detect.fyi/implementing-detection-as-code-as-a-multi-platform-mssp-6518cc5289b4?source=rss----d5fd8f494f6a---4": "2026-11-02",
+    "https://www.datadoghq.com/blog/datadog-electron-sdk/": "2026-11-02",
+    "https://www.datadoghq.com/blog/rum-managed-archive/": "2026-11-02",
+    "https://www.datadoghq.com/blog/export-pipelines/": "2026-11-02",
+    "https://www.datadoghq.com/blog/monitor-native-apps-datadog-rum/": "2026-11-02",
+    "https://www.datadoghq.com/blog/datadog-anthropic-claude-marketplace/": "2026-11-02",
+    "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/": "2026-11-02",
+    "https://www.wiz.io/blog/soc-alerts-red-and-blue-agents": "2026-11-02"
   },
-  "last_updated": "2026-11-01T20:03:42.512682+00:00"
+  "last_updated": "2026-11-02T20:03:29.168279+00:00"
 }
