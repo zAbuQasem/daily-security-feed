@@ -2934,7 +2934,18 @@
     "https://www.datadoghq.com/blog/monitor-native-apps-datadog-rum/": "2026-11-02",
     "https://www.datadoghq.com/blog/datadog-anthropic-claude-marketplace/": "2026-11-02",
     "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/": "2026-11-02",
-    "https://www.wiz.io/blog/soc-alerts-red-and-blue-agents": "2026-11-02"
+    "https://www.wiz.io/blog/soc-alerts-red-and-blue-agents": "2026-11-02",
+    "https://fortbridge.co.uk/research/cve-2026-111497-wordpress-pingback-rce-reproduction/": "2026-11-03",
+    "https://schaerli.org/weblog/7-filen//": "2026-11-03",
+    "https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential/": "2026-11-03",
+    "https://trustedsec.com/blog/the-quiet-phase-active-directory-group-enumeration": "2026-11-03",
+    "https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/": "2026-11-03",
+    "https://www.wiz.io/blog/green-agent-agentic-remediation": "2026-11-03",
+    "https://js2shell.com": "2026-11-03",
+    "https://next2shell.ru": "2026-11-03",
+    "https://php2shell.ru": "2026-11-03",
+    "https://windows2shell.com": "2026-11-03",
+    "https://claude2shell.com": "2026-11-03"
   },
-  "last_updated": "2026-11-02T20:03:29.168279+00:00"
+  "last_updated": "2026-11-03T20:07:18.435387+00:00"
 }
