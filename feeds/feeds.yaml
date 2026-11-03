@@ -313,6 +313,7 @@ feeds:
   - https://lab.ctbb.show/feed.xml
 
   # --- DFIR / Threat Intel ---
+  - https://star2shell.com/feed.xml
   - https://thedfirreport.com/feed/
 
   # --- Cloud / DevSecOps ---
