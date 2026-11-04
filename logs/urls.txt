@@ -1606,3 +1606,11 @@
 [2026-11-03] https://www.wiz.io/blog/green-agent-agentic-remediation
 [2026-11-03] https://php2shell.ru
 [2026-11-03] https://claude2shell.com
+[2026-11-04] https://neodyme.io/en/blog/puppet_rce/
+[2026-11-04] https://certitude.consulting/blog/en/from-crisis-to-control-cybersecurity-meets-high-performance/
+[2026-11-04] https://blog.nviso.eu/2026/11/04/detection-engineering-implementing-detection-as-code-in-an-existing-environment-part-2-execution/
+[2026-11-04] https://portswigger.net/research/making-http-header-injection-critical-with-one-prompt
+[2026-11-04] https://whiteknightlabs.com/2026/11/04/exploiting-php-foundational-vulnerabilities/
+[2026-11-04] https://wasm2shell.com
+[2026-11-04] https://www.datadoghq.com/blog/online-experiments-agent-observability/
+[2026-11-04] https://www.datadoghq.com/blog/fireworks-ai-integration/
