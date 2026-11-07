@@ -2979,7 +2979,13 @@
     "https://nodejs2shell.com": "2026-11-06",
     "https://www.datadoghq.com/blog/prompt-cache-investigation-ccm-agent-observability/": "2026-11-06",
     "https://www.aquasec.com/blog/integrate-aquasec-and-jenkins-to-stop-unsafe-images-before-they-run/": "2026-11-06",
-    "https://www.blackhillsinfosec.com/core-skills-in-age-of-ai/": "2026-11-06"
+    "https://www.blackhillsinfosec.com/core-skills-in-age-of-ai/": "2026-11-06",
+    "https://0xdf.gitlab.io/2026/11/07/htb-garfield.html": "2026-11-07",
+    "https://fortbridge.co.uk/research/cve-2026-114612-litellm-proxy-admin-rce/": "2026-11-07",
+    "https://samcurry.net/forgerock": "2026-11-07",
+    "https://samcurry.net/wardogs": "2026-11-07",
+    "https://unit42.paloaltonetworks.com/europes-refrigeration-systems-attacks/": "2026-11-07",
+    "https://ip2shell.com": "2026-11-07"
   },
-  "last_updated": "2026-11-06T20:03:19.396335+00:00"
+  "last_updated": "2026-11-07T20:03:05.283446+00:00"
 }
