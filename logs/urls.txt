@@ -1636,3 +1636,5 @@
 [2026-11-07] https://samcurry.net/forgerock
 [2026-11-07] https://samcurry.net/wardogs
 [2026-11-07] https://unit42.paloaltonetworks.com/europes-refrigeration-systems-attacks/
+[2026-11-08] https://luemmelsec.github.io/AI-Slop-Makes-The-World-Stop/
+[2026-11-08] https://ear2shell.com
