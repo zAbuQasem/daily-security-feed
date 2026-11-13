@@ -1687,3 +1687,7 @@
 [2026-11-12] https://bramsen2shell.click
 [2026-11-12] https://www.wiz.io/blog/aspm-ai-era-pt-3-fixing-risk-code-speed
 [2026-11-12] https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability
+[2026-11-13] https://blog.nviso.eu/2026/11/13/detection-engineering-implementing-detection-as-code-in-an-existing-environment-part-3-validation-and-future-possibilities/
+[2026-11-13] https://www.datadoghq.com/blog/cloud-siem-investigate-user-entity-risks/
+[2026-11-13] https://www.wiz.io/blog/inside-green-agent-investigation
+[2026-11-13] https://projectzero.google/2026/11/disclosure-policy.html

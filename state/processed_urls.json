@@ -3048,7 +3048,14 @@
     "https://meow2shell.org": "2026-11-12",
     "https://bramsen2shell.click": "2026-11-12",
     "https://www.wiz.io/blog/aspm-ai-era-pt-3-fixing-risk-code-speed": "2026-11-12",
-    "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability": "2026-11-12"
+    "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability": "2026-11-12",
+    "https://fortbridge.co.uk/research/cve-2026-114607-better-auth-oauth-state-account-takeover/": "2026-11-13",
+    "https://blog.nviso.eu/2026/11/13/detection-engineering-implementing-detection-as-code-in-an-existing-environment-part-3-validation-and-future-possibilities/": "2026-11-13",
+    "https://www.datadoghq.com/blog/cloud-siem-investigate-user-entity-risks/": "2026-11-13",
+    "https://rev2shell.com": "2026-11-13",
+    "https://2shell.wtf": "2026-11-13",
+    "https://www.wiz.io/blog/inside-green-agent-investigation": "2026-11-13",
+    "https://projectzero.google/2026/11/disclosure-policy.html": "2026-11-13"
   },
-  "last_updated": "2026-11-12T20:03:30.508916+00:00"
+  "last_updated": "2026-11-13T20:03:26.373118+00:00"
 }
