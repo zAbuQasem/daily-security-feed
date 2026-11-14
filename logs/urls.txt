@@ -1691,3 +1691,5 @@
 [2026-11-13] https://www.datadoghq.com/blog/cloud-siem-investigate-user-entity-risks/
 [2026-11-13] https://www.wiz.io/blog/inside-green-agent-investigation
 [2026-11-13] https://projectzero.google/2026/11/disclosure-policy.html
+[2026-11-14] https://0xdf.gitlab.io/2026/11/14/htb-nimbus.html
+[2026-11-14] https://blog.talosintelligence.com/artex-and-beyond/
