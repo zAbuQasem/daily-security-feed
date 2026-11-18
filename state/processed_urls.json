@@ -3092,7 +3092,31 @@
     "https://www.datadoghq.com/blog/datadog-observability-pipelines-gartner-magic-quadrant-2026/": "2026-11-17",
     "https://www.datadoghq.com/blog/azure-ai-monitoring-ignite-2026/": "2026-11-17",
     "https://unit42.paloaltonetworks.com/custom-rats-target-southeast-asia-governments/": "2026-11-17",
-    "https://www.aquasec.com/blog/ironworm-ebpf-rootkit-ghostmap-linux/": "2026-11-17"
+    "https://www.aquasec.com/blog/ironworm-ebpf-rootkit-ghostmap-linux/": "2026-11-17",
+    "https://blog.syss.com/posts/wkhtmltopdf-rce/": "2026-11-18",
+    "https://eaton-works.com/2026/11/18/credit-nirvana-hack/": "2026-11-18",
+    "https://research.openanalysis.net/hdgfx/fileinfector/worm/usb/polymorphic/config/2026/11/17/hdgfx-infector.html": "2026-11-18",
+    "https://advisory.splunk.com/advisories/SVD-2026-1102": "2026-11-18",
+    "https://certitude.consulting/blog/en/certitude-gets-access-to-anthropics-mythos-ai-model-for-offensive-security-testing/": "2026-11-18",
+    "https://detect.fyi/kqls-for-major-brands-compromised-through-optimizely-86fdaf055707?source=rss----d5fd8f494f6a---4": "2026-11-18",
+    "https://detect.fyi/data-pipelines-unlocking-the-full-potential-of-detection-engineering-d59c3770a64c?source=rss----d5fd8f494f6a---4": "2026-11-18",
+    "https://medium.com/@delivrto/cache-and-carry-from-browser-cache-to-code-execution-e1a969444947?source=rss-1242be189bc------2": "2026-11-18",
+    "https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/": "2026-11-18",
+    "https://portswigger.net/research/achieving-the-impossible-xss-in-innerhtml-without-equals": "2026-11-18",
+    "https://www.sonarsource.com/blog/inside-secretless-analysis/": "2026-11-18",
+    "https://www.sonarsource.com/blog/java4shell-find-affected-java-in-your-container-images/": "2026-11-18",
+    "https://www.sonarsource.com/blog/why-you-need-a-cbom/": "2026-11-18",
+    "https://www.datadoghq.com/blog/datadog-byoc-minio-aistor/": "2026-11-18",
+    "https://www.datadoghq.com/blog/datadogs-agentic-vulnerability-hunting-system/": "2026-11-18",
+    "https://www.datadoghq.com/blog/fine-tuning-patterns-baseten/": "2026-11-18",
+    "https://java2shell.org": "2026-11-18",
+    "https://www.aquasec.com/blog/java4shell-vulnerability-how-should-security-teams-identify-and-reduce-exposure/": "2026-11-18",
+    "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities": "2026-11-18",
+    "https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk": "2026-11-18",
+    "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi": "2026-11-18",
+    "https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/": "2026-11-18",
+    "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/": "2026-11-18",
+    "https://blog.talosintelligence.com/java4shell/": "2026-11-18"
   },
-  "last_updated": "2026-11-17T20:03:59.935978+00:00"
+  "last_updated": "2026-11-18T20:03:23.851554+00:00"
 }
