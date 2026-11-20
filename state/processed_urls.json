@@ -3141,7 +3141,22 @@
     "https://www.aquasec.com/blog/nginx-http2-vulnerabilities-affected-images/": "2026-11-19",
     "https://www.datadoghq.com/blog/engineering/semantic-translation-otel/": "2026-11-19",
     "https://www.datadoghq.com/blog/lighthouse-audits-rum-synthetic-monitoring/": "2026-11-19",
-    "https://www.datadoghq.com/blog/flex-logs-bring-your-own-bucket/": "2026-11-19"
+    "https://www.datadoghq.com/blog/flex-logs-bring-your-own-bucket/": "2026-11-19",
+    "https://dustri.org/b/how-many-phrack-73-articles-used-ai.html": "2026-11-20",
+    "https://www.praetorian.com/blog/breaking-free-a-new-jailbreak-for-the-unitree-go2/": "2026-11-20",
+    "https://advisory.splunk.com/advisories/SVD-2026-1113": "2026-11-20",
+    "https://advisory.splunk.com/advisories/SVD-2026-1112": "2026-11-20",
+    "https://kube2shell.com": "2026-11-20",
+    "https://json2shell.com": "2026-11-20",
+    "https://google2shell.com": "2026-11-20",
+    "https://java2shell.io": "2026-11-20",
+    "https://2shell.news": "2026-11-20",
+    "https://www.datadoghq.com/blog/observability-pipelines-mcp-server-ai-agents/": "2026-11-20",
+    "https://www.datadoghq.com/blog/agentic-onboarding/": "2026-11-20",
+    "https://www.datadoghq.com/blog/agentic-reporting-product-analytics/": "2026-11-20",
+    "https://www.datadoghq.com/blog/data-security-posture-management/": "2026-11-20",
+    "https://www.wiz.io/blog/phpaftershell-critical-php-rce-vulnerabilities-cve-2026-126714": "2026-11-20",
+    "https://cyb3rops.medium.com/the-sweet-spot-is-a-day-old-11881459f82b?source=rss-2fdc032a69b3------2": "2026-11-20"
   },
-  "last_updated": "2026-11-19T20:03:28.806824+00:00"
+  "last_updated": "2026-11-20T20:03:16.825079+00:00"
 }
