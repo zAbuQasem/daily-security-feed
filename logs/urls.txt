@@ -1773,3 +1773,6 @@
 [2026-11-20] https://www.datadoghq.com/blog/agentic-reporting-product-analytics/
 [2026-11-20] https://www.datadoghq.com/blog/data-security-posture-management/
 [2026-11-20] https://www.wiz.io/blog/phpaftershell-critical-php-rce-vulnerabilities-cve-2026-126714
+[2026-11-21] https://0xdf.gitlab.io/2026/11/21/htb-pingpong.html
+[2026-11-21] https://ii4gsp.github.io/iterm2-rce/
+[2026-11-21] https://unit42.paloaltonetworks.com/com-affiliate-vishing-attacks/
