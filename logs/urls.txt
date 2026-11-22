@@ -1776,3 +1776,4 @@
 [2026-11-21] https://0xdf.gitlab.io/2026/11/21/htb-pingpong.html
 [2026-11-21] https://ii4gsp.github.io/iterm2-rce/
 [2026-11-21] https://unit42.paloaltonetworks.com/com-affiliate-vishing-attacks/
+[2026-11-22] https://munson2shell.com
