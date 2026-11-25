@@ -1806,3 +1806,13 @@
 [2026-11-24] https://www.sonarsource.com/blog/how-we-cleared-our-backlog-with-sonarqube-remediation-agent/
 [2026-11-24] https://www.wiz.io/blog/fedramp-vdr-ver-event-key-takeaways
 [2026-11-24] https://www.wiz.io/blog/wiz-openai-codex-integration
+[2026-11-25] https://0xdf.gitlab.io/cheatsheets/ldap-enum
+[2026-11-25] https://www.praetorian.com/blog/cve-2026-119618-2/
+[2026-11-25] https://blog.talosintelligence.com/oh-is-it-thanksgiving-i-hadnt-noticed/
+[2026-11-25] https://blog.talosintelligence.com/the-great-escape-tradecraft-insights-from-an-agentic-swarm/
+[2026-11-25] https://blog.talosintelligence.com/securing-grandmas-groceries-with-pierre-cadieux/
+[2026-11-25] https://unit42.paloaltonetworks.com/ai-threat-horizon/
+[2026-11-25] https://unit42.paloaltonetworks.com/cve-2026-123633-nginx-http2-vulnerability/
+[2026-11-25] https://salt.security/blog/ai-code-security-best-practices
+[2026-11-25] https://www.datadoghq.com/blog/ai/agentic-property-based-testing-with-ephyra/
+[2026-11-25] https://www.wiz.io/blog/agentic-offensive-frameworks-intent-ids-artex-cairn
